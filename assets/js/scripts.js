@@ -77,7 +77,7 @@
               wordDisplay.textContent = guessedName.join(" ");
               updateProgressBar(); // Call the function to update the progress bar
               if (!guessedName.includes("_")) {
-                message.innerHTML = `<p>Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours!</p>`;
+                message.innerHTML = `<p>Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below: </p>`;
                 displayRandomQuote();
                 submitLetter.disabled = true;
                 playAnotherRound.style.display = "block";
