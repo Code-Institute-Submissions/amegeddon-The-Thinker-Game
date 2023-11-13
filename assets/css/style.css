@@ -2,7 +2,23 @@ body {
   border: 1px solid black;
 }
 
+/* Style the progress bar background (track) */
 progress {
     width: 100%;
     height: 20px;
+    appearance: none; /* Remove default appearance */
+    background-color: #f3f3f3; /* Light gray background */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Style the progress bar value (progress) */
+progress::-webkit-progress-value {
+    background-color: #4caf50; /* Green background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+progress::-moz-progress-bar {
+    background-color: #4caf50; /* Green background */
+    border-radius: 10px; /* Rounded corners */
 }

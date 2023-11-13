@@ -55,44 +55,50 @@
     }
 
 // Handles the guess and displays the appropriate message    
-function handleGuess() {
-    const letter = letterInput.value.toLowerCase();
-    if (letter.length !== 1 || !/^[a-z]$/.test(letter)) {
-      message.textContent = "Please enter a single letter.";
-    } else if (guessedLetters.includes(letter)) {
-      message.textContent = `You've already guessed the letter '${letter}'. Try a different one.`;
-    } else {
-      guessedLetters.push(letter);
-      const upperCaseHiddenName = hiddenName.toUpperCase();
-      const upperCaseLetter = letter.toUpperCase();
-
-      if (upperCaseHiddenName.includes(upperCaseLetter) && !guessedName.includes(upperCaseLetter)) {
-        for (let i = 0; i < upperCaseHiddenName.length; i++) {
-          if (upperCaseHiddenName[i] === upperCaseLetter) {
-            guessedName[i] = upperCaseLetter;
-          }
-        }
-        wordDisplay.textContent = guessedName.join(" ");
-        if (!guessedName.includes("_")) {
-          message.textContent = "Congratulations O Wise One! You've guessed our Great Thinker";
-          submitLetter.disabled = true;
-          playAnotherRound.style.display = "block";
-        }
-      } else {
-        attemptsLeft--;
-        attemptsLeftDisplay.textContent = attemptsLeft;
+    function handleGuess() {
         if (attemptsLeft === 0) {
-          message.textContent = `O heck....You've run out of attempts. The name was '${hiddenName}'.`;
-          submitLetter.disabled = true;
-          playAnotherRound.style.display = "block";
+          // ... (existing code)
         } else {
-          message.textContent = `The letter '${letter}' is not in the name. Try again.`;
+          const letter = letterInput.value.toUpperCase();
+          // Check if the letter has already been guessed
+          if (guessedLetters.includes(letter)) {
+            message.innerHTML = `<p>You've already guessed the letter '${letter}'. Try a different one.</p>`;
+          } else {
+            // Add the letter to the guessed letters array
+            guessedLetters.push(letter);
+            if (letter.length !== 1 || !/^[A-Z]$/.test(letter)) {
+              message.innerHTML = "<p>Please enter a single uppercase letter.</p>";
+            } else if (hiddenName.includes(letter) && !guessedName.includes(letter)) {
+              for (let i = 0; i < hiddenName.length; i++) {
+                if (hiddenName[i] === letter) {
+                  guessedName[i] = letter;
+                }
+              }
+              wordDisplay.textContent = guessedName.join(" ");
+              updateProgressBar(); // Call the function to update the progress bar
+              if (!guessedName.includes("_")) {
+                message.innerHTML = `<p>Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours!</p>`;
+                displayRandomQuote();
+                submitLetter.disabled = true;
+                playAnotherRound.style.display = "block";
+              }
+            } else {
+              attemptsLeft--;
+              attemptsLeftDisplay.textContent = attemptsLeft;
+              if (attemptsLeft === 0) {
+                message.innerHTML = `<p>O heck .... You've run out of attempts. The correct Thinker was'${hiddenName}'.</p>`;
+                submitLetter.disabled = true;
+                playAnotherRound.style.display = "block";
+              } else {
+                message.innerHTML = `<p>The letter '${letter}' is not in the name. Please try again.</p>`;
+              }
+            }
+          }
+          letterInput.value = "";
+          letterInput.focus();
         }
       }
-    }
-    letterInput.value = "";
-    letterInput.focus();
-  }
+      
 
 // Displays a random quote from the quotes array    
     function displayRandomQuote() {
@@ -100,11 +106,13 @@ function handleGuess() {
       message.innerHTML += `<p>${randomQuote}</p>`;
     }
   
-// doesnt work currently   
     function updateProgressBar() {
-        let correctGuesses = guessedName.filter(char => char !== '_').length;
+ // Calculate the progress based on the number of correctly guessed letters
+        let correctGuesses = guessedName.filter(letter => letter !== '_').length;
         let totalLetters = guessedName.length;
         let progress = (correctGuesses / totalLetters) * 100;
+    
+ // Update the progress bar
         let progressBar = document.getElementById('progressBar');
         progressBar.value = progress;
-      }
+    }
