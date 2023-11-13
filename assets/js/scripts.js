@@ -1,4 +1,4 @@
-
+// arrays and let variables
     const names = ["albert einstien", "pablo picasso", "william shakespeare", "leonardo da vinci", "plato", "fyodor dostoevsky", "vincent van gogh", "marie curie"];
     const quotes = [
       "The only source of knowledge is experience. - Albert Einstein",
@@ -16,16 +16,24 @@
     let attemptsLeftDisplay = document.getElementById("attemptsLeft");
     let attemptsLeft = 6;
     let guessedName = createGuessedNameArray(hiddenName);
+// Array to store guessed letters
+    let guessedLetters = [];
 
+
+
+// Displays the hidden name as underscores
     wordDisplay.textContent = guessedName.join(" ");
 
+// Event listeners Clicking the "Submit Letter" button or pressing Enter in the letter input field triggers the handleGuess function.   
     submitLetter.addEventListener("click", handleGuess);
+// Event listeners Clicking the "Play Another Round" button triggers the handleGuess function.    
     letterInput.addEventListener("keypress", function (event) {
       if (event.key === "Enter") {
         handleGuess();
       }
     });
 
+    // Event listeners Clicking the "Play Another Round" button triggers the handleGuess function.
     playAnotherRound.addEventListener("click", function () {
       hiddenName = getRandomName().toUpperCase();
       guessedName = createGuessedNameArray(hiddenName);
@@ -37,17 +45,20 @@
       message.innerHTML = "";
     });
 
+// Random name generator    
     function getRandomName() {
       return names[Math.floor(Math.random() * names.length)];
     }
 
+// Creates an array of underscores and spaces to display the hidden name   
     function createGuessedNameArray(name) {
       return name.split('').map(char => (char === ' ' ? ' ' : '_'));
     }
 
+// Handles the guess and displays the appropriate message    
     function handleGuess() {
       if (attemptsLeft === 0) {
-        message.innerHTML = `<p>Darkness descends as you have run out of attempts. The Great Thinker who alluded you was '${hiddenName}'.</p>`;
+        message.innerHTML = `<p>Darkness descends as you have run out of attempts. Perhaps you might like to play</p>`;
         submitLetter.disabled = true;
         playAnotherRound.style.display = "block";
       } else {
@@ -83,8 +94,17 @@
       letterInput.focus();
     }
 
+// Displays a random quote from the quotes array    
     function displayRandomQuote() {
       const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
       message.innerHTML += `<p>${randomQuote}</p>`;
     }
   
+// doesnt work currently   
+    function updateProgressBar() {
+        let correctGuesses = guessedName.filter(char => char !== '_').length;
+        let totalLetters = guessedName.length;
+        let progress = (correctGuesses / totalLetters) * 100;
+        let progressBar = document.getElementById('progressBar');
+        progressBar.value = progress;
+      }
