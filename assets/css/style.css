@@ -22,3 +22,8 @@ progress::-moz-progress-bar {
     background-color: #4caf50; /* Green background */
     border-radius: 10px; /* Rounded corners */
 }
+
+#message img {
+    width: 300px;
+    height: auto;
+}

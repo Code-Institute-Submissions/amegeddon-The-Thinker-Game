@@ -79,6 +79,17 @@
               if (!guessedName.includes("_")) {
                 message.innerHTML = `<p>Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below: </p>`;
                 displayRandomQuote();
+                if (!guessedName.includes("_")) {
+                    message.innerHTML = `<p>Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours!</p>`;
+                    displayRandomQuote();
+                    // Append an image to the message container
+                    let congratulationsImage = document.createElement('img');
+                    congratulationsImage.src = 'assets/images/eureka.jpg'; // Replace with the path to your image
+                    congratulationsImage.alt = 'Congratulations!';
+                    message.appendChild(congratulationsImage);
+                    submitLetter.disabled = true;
+                    playAnotherRound.style.display = "block";
+                  }
                 submitLetter.disabled = true;
                 playAnotherRound.style.display = "block";
               }
