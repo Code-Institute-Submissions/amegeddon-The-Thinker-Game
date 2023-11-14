@@ -1,5 +1,5 @@
 // arrays and let variables
-    const names = ["albert einstien", "pablo picasso", "william shakespeare", "leonardo da vinci", "plato", "fyodor dostoevsky", "vincent van gogh", "marie curie"];
+    const names = ["Albert Einstien", "Pablo Picasso", "William Shakespeare", "Leonardo Da Vinci", "Plato", "Fyodor Dostoevsky", "Vincent Van ogh", "marie curie"];
     const quotes = [
       "The only source of knowledge is experience. - Albert Einstein",
       "Every artist was first an amateur. - Ralph Waldo Emerson",
@@ -65,7 +65,6 @@
 // Handles the guess and displays the appropriate message    
     function handleGuess() {
         if (attemptsLeft === 0) {
-          // ... (existing code)
         } else {
           const letter = letterInput.value.toUpperCase();
           // Check if the letter has already been guessed
@@ -150,4 +149,10 @@
       // Reset the progress bar
       let progressBar = document.getElementById('progressBar');
       progressBar.value = 0;
+
+      // Clear the guessed letters array
+   guessedLetters = [];
   });
+ 
+
+   
