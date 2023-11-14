@@ -1,5 +1,10 @@
 body {
-  background: #DAA520;
+  background: #daa520;
+  border: #001f3f 3px solid;
+}
+
+.border-4 {
+  border: 5px solid #d0573b!important;
 }
 
 /* Style the progress bar background (track) */
@@ -7,7 +12,7 @@ progress {
   width: 50%;
   height: 15px;
   appearance: none; /* Remove default appearance */
-  background-color: #001F3F; /* blue background */
+  background-color: #001f3f; /* blue background */
   border: none; /* Remove border */
   border-radius: 10px; /* Rounded corners */
 }
@@ -30,8 +35,8 @@ progress::-moz-progress-bar {
 }
 
 #message p {
-    font-size: px;
-    border : 5px solid black;
+  font-size: px;
+  border: 5px solid black;
 }
 
 #wordDisplay {

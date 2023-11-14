@@ -51,8 +51,16 @@
 
 // Creates an array of underscores and spaces to display the hidden name   
     function createGuessedNameArray(name) {
-      return name.split('').map(char => (char === ' ' ? ' ' : '_'));
-    }
+      let guessedName = [];
+      for (let i = 0; i < name.length; i++) {
+        if (name[i] === " ") {
+          guessedName.push(" ");
+        } else {
+          guessedName.push("_");
+        }
+      }
+      return guessedName;
+  }
 
 // Handles the guess and displays the appropriate message    
     function handleGuess() {
@@ -128,3 +136,18 @@
         let progressBar = document.getElementById('progressBar');
         progressBar.value = progress;
     }
+
+    playAnotherRound.addEventListener("click", function () {
+      hiddenName = getRandomName().toUpperCase();
+      guessedName = createGuessedNameArray(hiddenName);
+      wordDisplay.textContent = guessedName.join(" ");
+      attemptsLeft = 6;
+      attemptsLeftDisplay.textContent = attemptsLeft;
+      submitLetter.disabled = false;
+      playAnotherRound.style.display = "none";
+      message.innerHTML = "";
+  
+      // Reset the progress bar
+      let progressBar = document.getElementById('progressBar');
+      progressBar.value = 0;
+  });
