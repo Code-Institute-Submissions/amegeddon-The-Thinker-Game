@@ -76,15 +76,16 @@
               }
               wordDisplay.textContent = guessedName.join(" ");
               updateProgressBar(); // Call the function to update the progress bar
+              // this looks like a repeat but if deleted game starts working
               if (!guessedName.includes("_")) {
                 message.innerHTML = `<p>Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below: </p>`;
                 displayRandomQuote();
                 if (!guessedName.includes("_")) {
-                    message.innerHTML = `<p>Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours!</p>`;
+                    message.innerHTML = `<p>'Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below:</p>`;
                     displayRandomQuote();
                     // Append an image to the message container
                     let congratulationsImage = document.createElement('img');
-                    congratulationsImage.src = 'assets/images/eureka.jpg'; // Replace with the path to your image
+                    congratulationsImage.src = 'assets/images/eureka.webp'; // Replace with the path to your image
                     congratulationsImage.alt = 'Congratulations!';
                     message.appendChild(congratulationsImage);
                     submitLetter.disabled = true;
