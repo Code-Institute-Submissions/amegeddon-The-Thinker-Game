@@ -125,15 +125,17 @@ function handleGuess() {
         attemptsLeft--;
         attemptsLeftDisplay.textContent = attemptsLeft;
         if (attemptsLeft === 0) {
-            let darknessImage = document.createElement("img");
-            darknessImage.src = "assets/images/freud.jpeg";
-            darknessImage.alt = "Darkness descends!";
-            message.appendChild(darknessImage);
-            message.innerHTML = `<p>oh 'eck .... You've run out of attempts. However, as the Greatest of Freudian's once said "From error to error, one discovers the entire truth...and this guessing game really is quite delightful”- Sigmund Freud</p>` + message.innerHTML;
-            submitLetter.disabled = true;
-            playAnotherRound.style.display = "block";
-          } else {
-           message.innerHTML = `<p>The letter '${letter}' is not in the name. Please try again.</p>`;
+          document.body.style.backgroundImage ="url('assets/images/freud.jpeg')";
+          document.body.style.backgroundSize = "cover"; // Cover the entire page
+          document.body.style.backgroundRepeat = "no-repeat"; // Don't repeat the image
+          document.body.style.backgroundPosition = "center"; // Center the image
+          message.innerHTML = `<p>oh 'eck .... You've run out of attempts. However, as the Greatest of Freudian's once said "From error to error, one discovers the entire truth...and this guessing game really is quite delightful”- Sigmund Freud</p>`;
+          submitLetter.disabled = true;
+          playAnotherRound.style.display = "block";
+          let gameArea = document.getElementById('gameArea'); // Replace 'gameArea' with the actual id of your game area element
+          gameArea.style.display = "none";
+        } else {
+          message.innerHTML = `<p>The letter '${letter}' is not in the name. Please try again.</p>`;
         }
       }
     }
@@ -175,4 +177,7 @@ playAnotherRound.addEventListener("click", function () {
 
   // Clear the guessed letters array
   guessedLetters = [];
+
+  // Reset the background image
+document.body.style.backgroundImage = "none"; 
 });
