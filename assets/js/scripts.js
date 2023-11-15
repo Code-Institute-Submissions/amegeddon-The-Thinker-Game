@@ -134,6 +134,11 @@ function handleGuess() {
         submitLetter.classList.add("hide");
         wordDisplay.classList.add("hide");
         progressBar.classList.add("hide");
+        Game.classList.add("hide");
+        let activeGameElements = document.getElementsByClassName("activeGame");
+  for (let element of activeGameElements) {
+    element.classList.add("hide");
+  }
       }
     }
   }
