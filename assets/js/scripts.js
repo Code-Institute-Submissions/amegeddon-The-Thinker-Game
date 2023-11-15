@@ -56,17 +56,6 @@ letterInput.addEventListener("keypress", function (event) {
   }
 });
 
-// Event listeners Clicking the "Play Another Round" button triggers the handleGuess function.
-playAnotherRound.addEventListener("click", function () {
-  hiddenName = getRandomName().toUpperCase();
-  guessedName = createGuessedNameArray(hiddenName);
-  wordDisplay.textContent = guessedName.join(" ");
-  attemptsLeft = 6;
-  attemptsLeftDisplay.textContent = attemptsLeft;
-  submitLetter.disabled = false;
-  playAnotherRound.style.display = "none";
-  message.innerHTML = "";
-});
 
 // Random name generator
 function getRandomName() {
