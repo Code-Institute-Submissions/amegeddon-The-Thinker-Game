@@ -64,7 +64,7 @@
     }
 
 // Creates an array of underscores and spaces to display the hidden name   
-function createGuessedNameArray(name) {
+   function createGuessedNameArray(name) {
   let guessedName = [];
   for (let i = 0; i < name.length; i++) {
     if (name[i] === " ") {
