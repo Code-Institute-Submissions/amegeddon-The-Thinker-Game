@@ -31,9 +31,13 @@ let guessedName = createGuessedNameArray(hiddenName);
 // guessedLetters is an array that will hold the letters the user has guessed.
 let guessedLetters = [];
 
-for (let button of startBtn) {
+let initialAttempts; // The number of attempts the user starts with 
+let startButtons = document.querySelectorAll(".btn-diff");
+
+for (let button of startButtons) {
   button.addEventListener("click", (event) => {
-    attemptsLeft = parseInt(event.target.value);
+    initialAttempts = parseInt(event.target.value); // Set the initial number of attempts
+    attemptsLeft = initialAttempts; 
     attemptsLeftDisplay.textContent = attemptsLeft;
     difficultySelect.classList.add("hide");
     gameArea.classList.remove("hide");
@@ -159,11 +163,11 @@ playAnotherRound.addEventListener("click", function () {
   guessedName = createGuessedNameArray(hiddenName);
   guessedLetters = []; // Clear the guessed letters
   wordDisplay.textContent = guessedName.join(" ");
+  attemptsLeft = initialAttempts;
   attemptsLeftDisplay.textContent = attemptsLeft;
   submitLetter.disabled = false;
   playAnotherRound.style.display = "none";
   message.innerHTML = "";
-
   document.body.style.backgroundImage = ""; // Reset the background image
   message.innerHTML = ""; // Clear the message
   submitLetter.disabled = false;
@@ -171,6 +175,9 @@ playAnotherRound.addEventListener("click", function () {
   submitLetter.classList.remove("hide");
   wordDisplay.classList.remove("hide");
   progressBar.classList.remove("hide");
+  
+
+  
 
   // Reset the progress bar
   let progressBar = document.getElementById("progressBar");
@@ -182,3 +189,4 @@ playAnotherRound.addEventListener("click", function () {
   // Reset the background image
 document.body.style.backgroundImage = "none"; 
 });
+
