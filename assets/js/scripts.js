@@ -28,6 +28,7 @@
         attemptsLeft = parseInt(event.target.value);
         difficultySelect.classList.add('hide');
         gameArea.classList.remove('hide');
+        startGame()
       });
     }
 
