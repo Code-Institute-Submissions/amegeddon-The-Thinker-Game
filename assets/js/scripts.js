@@ -22,6 +22,16 @@
 // guessedLetters is an array that will hold the letters the user has guessed.
     let guessedLetters = [];    
 
+    
+    for (let button of startBtn) {
+      button.addEventListener("click", (event) => {
+        attemptsLeft = parseInt(event.target.value);
+        difficultySelect.classList.add('hide');
+        gameArea.classList.remove('hide');
+      });
+    }
+
+
 
 // Displays the hidden name as underscores
     wordDisplay.textContent = guessedName.join(" ");
