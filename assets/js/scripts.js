@@ -7,6 +7,8 @@
       "Simplicity is the ultimate sophistication. - Leonardo da Vinci",
       "All the world's a stage, and all the men and women merely players. - William Shakespeare"
     ];
+    const gameArea = document.getElementById("game");
+    const difficultySelect = document.getElementById("difficulty");
     let hiddenName = getRandomName().toUpperCase();
     let wordDisplay = document.getElementById("wordDisplay");
     let letterInput = document.getElementById("letterInput");
