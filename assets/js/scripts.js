@@ -10,14 +10,14 @@
     const gameArea = document.getElementById("game");
     const startBtn = document.getElementsByClassName("btn-diff");
     const difficultySelect = document.getElementById("difficulty");
-    const hiddenName = getRandomName().toUpperCase();
+    let hiddenName = getRandomName().toUpperCase();
     const wordDisplay = document.getElementById("wordDisplay");
     const letterInput = document.getElementById("letterInput");
     const submitLetter = document.getElementById("submitLetter");
     const playAnotherRound = document.getElementById("playAnotherRound");
     let message = document.getElementById("message");
     let attemptsLeftDisplay = document.getElementById("attemptsLeft");
-    let attemptsLeft = 6;
+    
     let guessedName = createGuessedNameArray(hiddenName);
 // guessedLetters is an array that will hold the letters the user has guessed.
     let guessedLetters = [];    
@@ -26,9 +26,9 @@
     for (let button of startBtn) {
       button.addEventListener("click", (event) => {
         attemptsLeft = parseInt(event.target.value);
+        attemptsLeftDisplay.textContent = attemptsLeft;
         difficultySelect.classList.add('hide');
         gameArea.classList.remove('hide');
-        startGame()
       });
     }
 
