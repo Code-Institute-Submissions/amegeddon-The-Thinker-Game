@@ -157,12 +157,20 @@ function updateProgressBar() {
 playAnotherRound.addEventListener("click", function () {
   hiddenName = getRandomName().toUpperCase();
   guessedName = createGuessedNameArray(hiddenName);
+  guessedLetters = []; // Clear the guessed letters
   wordDisplay.textContent = guessedName.join(" ");
-  attemptsLeft = 6;
   attemptsLeftDisplay.textContent = attemptsLeft;
   submitLetter.disabled = false;
   playAnotherRound.style.display = "none";
   message.innerHTML = "";
+
+  document.body.style.backgroundImage = ""; // Reset the background image
+  message.innerHTML = ""; // Clear the message
+  submitLetter.disabled = false;
+  playAnotherRound.style.display = "none";
+  submitLetter.classList.remove("hide");
+  wordDisplay.classList.remove("hide");
+  progressBar.classList.remove("hide");
 
   // Reset the progress bar
   let progressBar = document.getElementById("progressBar");
