@@ -8,7 +8,7 @@
       "All the world's a stage, and all the men and women merely players. - William Shakespeare"
     ];
     const gameArea = document.getElementById("game");
-    const startBtn = document.getElementById("btn-diff");
+    const startBtn = document.getElementsByClassName("btn-diff");
     const difficultySelect = document.getElementById("difficulty");
     const hiddenName = getRandomName().toUpperCase();
     const wordDisplay = document.getElementById("wordDisplay");
