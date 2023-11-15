@@ -125,15 +125,15 @@ function handleGuess() {
         attemptsLeft--;
         attemptsLeftDisplay.textContent = attemptsLeft;
         if (attemptsLeft === 0) {
-          message.innerHTML = `<p>oh 'eck .... You've run out of attempts. However, as the Greatest of Freudian's once said "From error to error, one discovers the entire truth...and this guessing game really is quite delightful”- Sigmund Freud</p>`;
-          let darknessImage = document.createElement("img");
-          darknessImage.src = "assets/images/freud.jpeg";
-          darknessImage.alt = "Darkness descends!";
-          message.appendChild(darknessImage);
-          submitLetter.disabled = true;
-          playAnotherRound.style.display = "block";
-        } else {
-          message.innerHTML = `<p>The letter '${letter}' is not in the name. Please try again.</p>`;
+            let darknessImage = document.createElement("img");
+            darknessImage.src = "assets/images/freud.jpeg";
+            darknessImage.alt = "Darkness descends!";
+            message.appendChild(darknessImage);
+            message.innerHTML = `<p>oh 'eck .... You've run out of attempts. However, as the Greatest of Freudian's once said "From error to error, one discovers the entire truth...and this guessing game really is quite delightful”- Sigmund Freud</p>` + message.innerHTML;
+            submitLetter.disabled = true;
+            playAnotherRound.style.display = "block";
+          } else {
+           message.innerHTML = `<p>The letter '${letter}' is not in the name. Please try again.</p>`;
         }
       }
     }
