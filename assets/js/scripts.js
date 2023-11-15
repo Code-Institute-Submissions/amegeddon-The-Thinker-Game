@@ -135,7 +135,7 @@ function handleGuess() {
         wordDisplay.classList.add("hide");
         progressBar.classList.add("hide");
         Game.classList.add("hide");
-        let activeGameElements = document.getElementsByClassName("activeGame");
+        let activeGameElements = Array.from(document.getElementsByClassName("activeGame"));
   for (let element of activeGameElements) {
     element.classList.add("hide");
   }
