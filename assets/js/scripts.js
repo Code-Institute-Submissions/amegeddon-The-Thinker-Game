@@ -85,63 +85,56 @@ function createGuessedNameArray(name) {
 // Handles the guess and displays the appropriate message
 function handleGuess() {
   if (attemptsLeft === 0) {
+    return;
+  }
+
+  const letter = letterInput.value.toUpperCase();
+  // Check if the letter has already been guessed
+  if (guessedLetters.includes(letter)) {
+    message.innerHTML = `<p>You've already guessed the letter '${letter}'. Try a different one.</p>`;
   } else {
-    const letter = letterInput.value.toUpperCase();
-    // Check if the letter has already been guessed
-    if (guessedLetters.includes(letter)) {
-      message.innerHTML = `<p>You've already guessed the letter '${letter}'. Try a different one.</p>`;
-    } else {
-      // Add the letter to the guessed letters array
-      guessedLetters.push(letter);
-      if (letter.length !== 1 || !/^[A-Z]$/.test(letter)) {
-        message.innerHTML = "<p>Please enter a single uppercase letter.</p>";
-      } else if (hiddenName.includes(letter) && !guessedName.includes(letter)) {
-        for (let i = 0; i < hiddenName.length; i++) {
-          if (hiddenName[i] === letter) {
-            guessedName[i] = letter;
-          }
-        }
-        wordDisplay.textContent = guessedName.join(" ");
-        updateProgressBar(); // Call the function to update the progress bar
-        // this looks like a repeat but if deleted game starts working
-        if (!guessedName.includes("_")) {
-          message.innerHTML = `<p>Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below: </p>`;
-          displayRandomQuote();
-          if (!guessedName.includes("_")) {
-            message.innerHTML = `<p>'Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below:</p>`;
-            displayRandomQuote();
-            // Append an image to the message container
-            let congratulationsImage = document.createElement("img");
-            congratulationsImage.src = "assets/images/eureka.webp";
-            congratulationsImage.alt = "Congratulations!";
-            message.appendChild(congratulationsImage);
-            submitLetter.disabled = true;
-            playAnotherRound.style.display = "block";
-          }
-          submitLetter.disabled = true;
-          playAnotherRound.style.display = "block";
-        }
-      } else {
-        attemptsLeft--;
-        attemptsLeftDisplay.textContent = attemptsLeft;
-        if (attemptsLeft === 0) {
-          document.body.style.backgroundImage ="url('assets/images/freud.jpeg')";
-          document.body.style.backgroundSize = "cover"; // Cover the entire page
-          document.body.style.backgroundRepeat = "no-repeat"; // Don't repeat the image
-          document.body.style.backgroundPosition = "center"; // Center the image
-          message.innerHTML = `<p>oh 'eck .... You've run out of attempts. However, as the Greatest of Freudian's once said "From error to error, one discovers the entire truth...and this guessing game really is quite delightful”- Sigmund Freud</p>`;
-          submitLetter.disabled = true;
-          playAnotherRound.style.display = "block";
-          let gameArea = document.getElementById('gameArea'); // Replace 'gameArea' with the actual id of your game area element
-          gameArea.style.display = "none";
-        } else {
-          message.innerHTML = `<p>The letter '${letter}' is not in the name. Please try again.</p>`;
+    // Add the letter to the guessed letters array
+    guessedLetters.push(letter);
+    if (letter.length !== 1 || !/^[A-Z]$/.test(letter)) {
+      message.innerHTML = "<p>Please enter a single uppercase letter.</p>";
+    } else if (hiddenName.includes(letter) && !guessedName.includes(letter)) {
+      for (let i = 0; i < hiddenName.length; i++) {
+        if (hiddenName[i] === letter) {
+          guessedName[i] = letter;
         }
       }
+      wordDisplay.textContent = guessedName.join(" ");
+      updateProgressBar(); // Call the function to update the progress bar
+      if (!guessedName.includes("_")) {
+        message.innerHTML = `<p>Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below: </p>`;
+        displayRandomQuote();
+        // Append an image to the message container
+        let congratulationsImage = document.createElement("img");
+        congratulationsImage.src = "assets/images/eureka.webp";
+        congratulationsImage.alt = "Congratulations!";
+        message.appendChild(congratulationsImage);
+        submitLetter.disabled = true;
+        playAnotherRound.style.display = "block";
+      }
+    } else {
+      attemptsLeft--;
+      attemptsLeftDisplay.textContent = attemptsLeft;
+      if (attemptsLeft === 0) {
+        document.body.style.backgroundImage ="url('assets/images/freud.jpeg')";
+        document.body.style.backgroundSize = "cover"; // Cover the entire page
+        document.body.style.backgroundRepeat = "no-repeat"; // Don't repeat the image
+        document.body.style.backgroundPosition = "center"; // Center the image
+        message.innerHTML = `<p>oh 'eck .... You've run out of attempts. However, as the Greatest of Freudian's once said "From error to error, one discovers the entire truth...and this guessing game really is quite delightful”- Sigmund Freud</p>`;
+        submitLetter.disabled = true;
+        playAnotherRound.style.display = "block";
+        submitLetter.classList.add("hide");
+        wordDisplay.classList.add("hide");
+        progressBar.classList.add("hide");
+      }
     }
-    letterInput.value = "";
-    letterInput.focus();
   }
+  letterInput.value = "";
+  letterInput.focus();
 }
 
 // Displays a random quote from the quotes array
