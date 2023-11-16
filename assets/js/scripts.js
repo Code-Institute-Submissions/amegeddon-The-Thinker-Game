@@ -104,11 +104,11 @@ function handleGuess() {
       if (!guessedName.includes("_")) {
         message.innerHTML = `<p>Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below: </p>`;
         displayRandomQuote();
-        // Append an image to the message container
-        let congratulationsImage = document.createElement("img");
-        congratulationsImage.src = "assets/images/eureka.webp";
-        congratulationsImage.alt = "Congratulations!";
-        message.appendChild(congratulationsImage);
+        document.body.style.backgroundImage ="url('assets/images/eureka.webp')";
+        document.body.style.backgroundSize = "cover"; // Cover the entire page
+        document.body.style.backgroundRepeat = "no-repeat"; // Don't repeat the image
+        document.body.style.backgroundPosition = "center"; // Center the image
+       
         submitLetter.disabled = true;
         playAnotherRound.style.display = "block";
       }
