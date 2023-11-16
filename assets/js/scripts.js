@@ -34,6 +34,9 @@ let guessedLetters = [];
 let initialAttempts; // The number of attempts the user starts with 
 let startButtons = document.querySelectorAll(".btn-diff");
 
+  
+
+
 for (let button of startButtons) {
   button.addEventListener("click", (event) => {
     initialAttempts = parseInt(event.target.value); // Set the initial number of attempts
@@ -125,8 +128,8 @@ function handleGuess() {
         progressBar.classList.add("hide");
         Game.classList.add("hide");
         let activeGameElements = Array.from(document.getElementsByClassName("activeGame"));
-  for (let element of activeGameElements) {
-    element.classList.add("hide");
+  for (let i = 0; i < gameActiveElements.length; i++) {
+    gameActiveElements[i].classList.add('hide');
   }
       }
     }
