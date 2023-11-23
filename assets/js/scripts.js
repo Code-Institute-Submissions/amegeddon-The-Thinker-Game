@@ -126,7 +126,8 @@ function handleGuess() {
         submitLetter.classList.add("hide");
         wordDisplay.classList.add("hide");
         progressBar.classList.add("hide");
-        Game.classList.add("hide");
+        // still not working - need to hide the active game elements
+        gameActiveElements.classList.add("hide");
         let activeGameElements = Array.from(document.getElementsByClassName("activeGame"));
   for (let i = 0; i < gameActiveElements.length; i++) {
     gameActiveElements[i].classList.add('hide');
