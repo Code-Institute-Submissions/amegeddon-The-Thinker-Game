@@ -41,7 +41,8 @@ progress::-moz-progress-bar {
 
 #wordDisplay {
   font-size: 30px;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.6rem;
+  white-space: pre;
 }
 
 .hide {
