@@ -16,6 +16,7 @@ const quotes = [
   "Simplicity is the ultimate sophistication. - Leonardo da Vinci",
   "All the world's a stage, and all the men and women merely players. - William Shakespeare",
 ];
+
 const startGameSection = document.getElementById("startGameSection");
 const gameArea = document.getElementById("game");
 const endGameSection = document.getElementById("endGameSection");
@@ -26,17 +27,19 @@ const wordDisplay = document.getElementById("wordDisplay");
 const letterInput = document.getElementById("letterInput");
 const submitLetter = document.getElementById("submitLetter");
 const playAnotherRound = document.getElementById("playAnotherRound");
+const progressBar = document.getElementById("progressBar");
 let message = document.getElementById("message");
 let attemptsLeftDisplay = document.getElementById("attemptsLeft");
-
 let guessedName = createGuessedNameArray(hiddenName);
 // guessedLetters is an array that will hold the letters the user has guessed.
 let guessedLetters = [];
-
 let initialAttempts; // The number of attempts the user starts with 
 let startButtons = document.querySelectorAll(".btn-diff");
 
-  
+function hideOrDisplayElements(element) {
+  element.classList.contains("hide")
+    ? element.classList.remove("hide")
+    : element.classList.add("hide"); 
 
 
 for (let button of startButtons) {
@@ -44,8 +47,8 @@ for (let button of startButtons) {
     initialAttempts = parseInt(event.target.value); // Set the initial number of attempts
     attemptsLeft = initialAttempts; 
     attemptsLeftDisplay.textContent = attemptsLeft;
-    difficultySelect.classList.add("hide");
-    gameArea.classList.remove("hide");
+    hideOrDisplay(startGameSection);
+    hideOrDisplay(gameArea)
   });
 }
 
