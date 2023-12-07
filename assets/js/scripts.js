@@ -6,8 +6,8 @@ const names = [
   "Leonardo Da Vinci",
   "Plato",
   "Fyodor Dostoevsky",
-  "Vincent Van ogh",
-  "marie curie",
+  "Vincent Van Gogh",
+  "Marie Curie",
 ];
 const quotes = [
   "The only source of knowledge is experience. - Albert Einstein",
@@ -16,7 +16,9 @@ const quotes = [
   "Simplicity is the ultimate sophistication. - Leonardo da Vinci",
   "All the world's a stage, and all the men and women merely players. - William Shakespeare",
 ];
+const startGameSection = document.getElementById("startGameSection");
 const gameArea = document.getElementById("game");
+const endGameSection = document.getElementById("endGameSection");
 const startBtn = document.getElementsByClassName("btn-diff");
 const difficultySelect = document.getElementById("difficulty");
 let hiddenName = getRandomName().toUpperCase();
