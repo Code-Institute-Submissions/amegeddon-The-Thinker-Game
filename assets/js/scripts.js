@@ -160,16 +160,12 @@ playAnotherRound.addEventListener("click", function () {
   wordDisplay.textContent = guessedName.join(" ");
   attemptsLeft = initialAttempts;
   attemptsLeftDisplay.textContent = attemptsLeft;
-  submitLetter.disabled = false;
-  playAnotherRound.style.display = "none";
+  hideOrDisplay(endGameSection);
+  hideOrDisplay(gameArea);
   message.innerHTML = "";
   document.body.style.backgroundImage = ""; // Reset the background image
   message.innerHTML = ""; // Clear the message
-  submitLetter.disabled = false;
-  playAnotherRound.style.display = "none";
-  submitLetter.classList.remove("hide");
-  wordDisplay.classList.remove("hide");
-  progressBar.classList.remove("hide");
+  
   
 
   
