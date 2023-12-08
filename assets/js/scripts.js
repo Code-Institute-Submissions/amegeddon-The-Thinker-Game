@@ -69,10 +69,16 @@ letterInput.addEventListener("keypress", function (event) {
 // quit button Event listener
   document.getElementById("quitGame").addEventListener("click", function () {
   hideOrDisplay(endGameSection);
-  hideOrDisplay(gameArea);
+  //hideOrDisplay(gameArea);
   hideOrDisplay(startGameSection); 
   document.body.style.backgroundImage = ""; // Reset the background image
   message.innerHTML = ""; 
+  hiddenName = getRandomName().toUpperCase();
+  guessedName = createGuessedNameArray(hiddenName);
+  guessedLetters = [];
+  wordDisplay.textContent = guessedName.join(" ");
+  attemptsLeft = 0;
+  attemptsLeftDisplay.textContent = attemptsLeft;
 });
 
 
