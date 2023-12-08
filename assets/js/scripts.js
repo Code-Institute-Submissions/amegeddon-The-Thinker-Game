@@ -28,6 +28,7 @@ const letterInput = document.getElementById("letterInput");
 const submitLetter = document.getElementById("submitLetter");
 const playAnotherRound = document.getElementById("playAnotherRound");
 const progressBar = document.getElementById("progressBar");
+const quitButton = document.getElementById("quit");
 let message = document.getElementById("message");
 let attemptsLeftDisplay = document.getElementById("attemptsLeft");
 let guessedName = createGuessedNameArray(hiddenName);
