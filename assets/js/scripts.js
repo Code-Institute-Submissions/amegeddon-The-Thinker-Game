@@ -66,6 +66,15 @@ letterInput.addEventListener("keypress", function (event) {
   }
 });
 
+// quit button Event listener
+  document.getElementById("quitGame").addEventListener("click", function () {
+  hideOrDisplay(endGameSection);
+  hideOrDisplay(gameArea);
+  hideOrDisplay(startGameSection); 
+  document.body.style.backgroundImage = ""; // Reset the background image
+  message.innerHTML = ""; 
+});
+
 
 // Random name generator
 function getRandomName() {
@@ -182,4 +191,5 @@ playAnotherRound.addEventListener("click", function () {
   // Reset the background image
 document.body.style.backgroundImage = "none"; 
 });
+
 
