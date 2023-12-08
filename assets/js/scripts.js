@@ -37,10 +37,10 @@ let initialAttempts; // The number of attempts the user starts with
 let startButtons = document.querySelectorAll(".btn-diff");
 
 function hideOrDisplay(element) {
-  element.classList.contains("hide")
-    ? element.classList.remove("hide")
-    : element.classList.add("hide"); 
-
+  element.classList.contains('hide')
+    ? element.classList.remove('hide')
+    : element.classList.add('hide');
+}
 
 for (let button of startButtons) {
   button.addEventListener("click", (event) => {
@@ -48,7 +48,8 @@ for (let button of startButtons) {
     attemptsLeft = initialAttempts; 
     attemptsLeftDisplay.textContent = attemptsLeft;
     hideOrDisplay(startGameSection);
-    hideOrDisplay(gameArea)
+    hideOrDisplay(gameArea);
+    hideOrDisplay(endGameSection);
   });
 }
 
