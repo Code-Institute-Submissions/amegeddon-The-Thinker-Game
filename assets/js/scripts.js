@@ -36,7 +36,7 @@ let guessedLetters = [];
 let initialAttempts; // The number of attempts the user starts with 
 let startButtons = document.querySelectorAll(".btn-diff");
 
-function hideOrDisplayElements(element) {
+function hideOrDisplay(element) {
   element.classList.contains("hide")
     ? element.classList.remove("hide")
     : element.classList.add("hide"); 
