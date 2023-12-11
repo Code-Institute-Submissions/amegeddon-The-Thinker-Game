@@ -81,6 +81,13 @@ letterInput.addEventListener("keypress", function (event) {
   attemptsLeftDisplay.textContent = attemptsLeft;
 });
 
+// back button Event listener
+document.getElementById("backButton").addEventListener("click", function () {
+  hideOrDisplay(gameArea);
+  hideOrDisplay(startGameSection); 
+});   
+  
+
 
 // Random name generator
 function getRandomName() {
