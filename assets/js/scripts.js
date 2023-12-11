@@ -68,9 +68,9 @@ letterInput.addEventListener("keypress", function (event) {
 
 // quit button Event listener
   document.getElementById("quitGame").addEventListener("click", function () {
-  hideOrDisplay(endGameSection);
-  //hideOrDisplay(gameArea);
+  alert(`Correct Guesses: ${correctGuessCount}`);
   hideOrDisplay(startGameSection); 
+  hideOrDisplay(startGameSection); //needs to be repeated or doesnt show startgamesection
   document.body.style.backgroundImage = ""; // Reset the background image
   message.innerHTML = ""; 
   hiddenName = getRandomName().toUpperCase();
@@ -186,7 +186,7 @@ playAnotherRound.addEventListener("click", function () {
   message.innerHTML = "";
   document.body.style.backgroundImage = ""; // Reset the background image
   message.innerHTML = ""; // Clear the message
-  
+  submitLetter.disabled = false;
   
 
   
