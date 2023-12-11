@@ -36,6 +36,7 @@ let guessedName = createGuessedNameArray(hiddenName);
 let guessedLetters = [];
 let initialAttempts; // The number of attempts the user starts with 
 let startButtons = document.querySelectorAll(".btn-diff");
+let correctGuessCount = 0;
 
 function hideOrDisplay(element) {
   element.classList.contains('hide')
@@ -50,7 +51,6 @@ for (let button of startButtons) {
     attemptsLeftDisplay.textContent = attemptsLeft;
     hideOrDisplay(startGameSection);
     hideOrDisplay(gameArea);
-    hideOrDisplay(endGameSection);
   });
 }
 
@@ -124,7 +124,9 @@ function handleGuess() {
       wordDisplay.textContent = guessedName.join(" ");
       updateProgressBar(); // Call the function to update the progress bar
       if (!guessedName.includes("_")) {
-        message.innerHTML = `<p>Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below: </p>`;
+          correctGuessCount++;
+          updateScoreboard(); // Update the scoreboard when a correct guess is made
+          message.innerHTML = `<p>Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below: </p>`;
         displayRandomQuote();
         document.body.style.backgroundImage ="url('assets/images/eureka.webp')";
         document.body.style.backgroundSize = "cover"; // Cover the entire page
@@ -146,6 +148,8 @@ function handleGuess() {
         message.innerHTML = `<p>Close but no Cigar .... You've run out of attempts. However, as the Greatest of Freudian's once said "From error to error, one discovers the entire truth...and this guessing game really is quite delightful”- Sigmund Freud</p>`;
         hideOrDisplay(gameArea);
         hideOrDisplay(endGameSection);
+        document.getElementById("endGameSection").classList.remove("hide");
+
       }
     }
   }
@@ -198,4 +202,31 @@ playAnotherRound.addEventListener("click", function () {
 document.body.style.backgroundImage = "none"; 
 });
 
+document.getElementById("quitGame").addEventListener("click", function () {
+  hideOrDisplay(endGameSection);
+  hideOrDisplay(startGameSection);
+  document.body.style.backgroundImage = ""; // Reset the background image
+  message.innerHTML = "";
+  
+  // Increment correctGuessCount when quitting - this can be deleted as being perfromed above 
+  if (!guessedName.includes("_")) {
+    correctGuessCount++;
+  }
 
+  // Reset game state
+  hiddenName = getRandomName().toUpperCase();
+  guessedName = createGuessedNameArray(hiddenName);
+  guessedLetters = [];
+  wordDisplay.textContent = guessedName.join(" ");
+  attemptsLeft = 0;
+  attemptsLeftDisplay.textContent = attemptsLeft;
+
+  // Update and display correct guess count on the scoreboard
+  updateScoreboard();
+});
+
+// Function to update and display correct guess count on the scoreboard
+function updateScoreboard() {
+  const scoreboardElement = document.getElementById("scoreboard");
+  scoreboardElement.textContent = `Correct Guesses: ${correctGuessCount}`;
+}
