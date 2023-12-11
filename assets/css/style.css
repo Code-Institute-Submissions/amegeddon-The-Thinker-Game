@@ -53,3 +53,9 @@ progress::-moz-progress-bar {
   width: 100%;
   height: auto;
 }
+
+#backButton {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;   
+}
