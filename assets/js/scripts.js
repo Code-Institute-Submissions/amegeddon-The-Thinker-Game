@@ -42,7 +42,7 @@ let correctGuessCount = 0;
 let correctGuesses = guessedName.filter((letter) => letter !== "_").length;
 let totalLetters = guessedName.length;
 let progress = (correctGuesses / totalLetters) * 100;
-let progressBar = document.getElementById("progressBar");
+
 
 // Function to hide or display the three game stages
 function hideOrDisplay(element) {
@@ -80,6 +80,7 @@ letterInput.addEventListener("keypress", function (event) {
   startNewRound();
   alert(`Correct Guesses: ${correctGuessCount}`);
   hideOrDisplay(startGameSection); 
+  hideOrDisplay(endGameSection);
 });
 
 // back button Event listener
