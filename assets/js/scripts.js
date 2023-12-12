@@ -166,9 +166,12 @@ function handleGuess() {
 
 // Displays a random quote from the quotes array
 function displayRandomQuote() {
-  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-  message.innerHTML += `<p>${randomQuote}</p>`;
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    const quoteElement = document.getElementById("quote");
+    quoteElement.innerHTML = `<p>${randomQuote}</p>`;
 }
+
+
 
  function updateProgressBar() {
   // Calculate the progress based on the number of correctly guessed letters
