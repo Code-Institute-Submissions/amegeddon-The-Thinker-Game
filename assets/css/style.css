@@ -56,7 +56,7 @@ progress::-moz-progress-bar {
   font-size: 1rem;
   background-color: #d0573b;
   position: fixed;
-  bottom: 15%;
+  bottom: 30%;
   left: 10%;
   right:10%;
   padding: 1rem 1rem 1rem 1rem;
@@ -70,9 +70,18 @@ progress::-moz-progress-bar {
   right: 10%;
 }
 
-#playAnotherRound {
+#quote {
   position: fixed;
   bottom: 10%;
+  left: 10%;
+  right: 10%;
+  background-color: #d0573b;
+  border-radius: 10px;
+}
+
+#playAnotherRound {
+  position: fixed;
+  bottom: 5%;
 }
 
 #quitGame {
