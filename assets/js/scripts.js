@@ -86,6 +86,8 @@ letterInput.addEventListener("keypress", function (event) {
 document.getElementById("backButton").addEventListener("click", function () {
   hideOrDisplay(gameArea);
   hideOrDisplay(startGameSection); 
+  messageGame.innerHTML = "";
+ 
 });   
   
 
@@ -122,7 +124,7 @@ function handleGuess() {
     // Add the letter to the guessed letters array
     guessedLetters.push(letter);
     if (letter.length !== 1 || !/^[A-Z]$/.test(letter)) {
-      message.innerHTML = "<p>Please enter a single uppercase letter.</p>";
+      messageGame.innerHTML = "<p>Please enter a single uppercase letter.</p>";
     } else if (hiddenName.includes(letter) && !guessedName.includes(letter)) {
       for (let i = 0; i < hiddenName.length; i++) {
         if (hiddenName[i] === letter) {
@@ -182,7 +184,8 @@ function updateProgressBar() {
   progressBar.value = progress;
 }
 
-playAnotherRound.addEventListener("click", function () {
+
+  function startNewRound (){
   hiddenName = getRandomName().toUpperCase();
   guessedName = createGuessedNameArray(hiddenName);
   guessedLetters = []; // Clear the guessed letters
@@ -192,23 +195,16 @@ playAnotherRound.addEventListener("click", function () {
   hideOrDisplay(endGameSection);
   hideOrDisplay(gameArea);
   message.innerHTML = "";
+  messageGame.innerHTML = "";
   document.body.style.backgroundImage = ""; // Reset the background image
-  message.innerHTML = ""; // Clear the message
   submitLetter.disabled = false;
+  progressBar.value = 0
+  }
+
+  playAnotherRound.addEventListener("click", startNewRound);
+  
   
 
-  
-
-  // Reset the progress bar
-  let progressBar = document.getElementById("progressBar");
-  progressBar.value = 0;
-
-  // Clear the guessed letters array
-  guessedLetters = [];
-
-  // Reset the background image
-document.body.style.backgroundImage = "none"; 
-});
 
 document.getElementById("quitGame").addEventListener("click", function () {
   hideOrDisplay(endGameSection);
