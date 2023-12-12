@@ -52,12 +52,6 @@ progress::-moz-progress-bar {
   border-radius: 10px; /* Rounded corners */
 }
 
-/* re-size message image */
-#message img {
-  width: 300px;
-  height: auto;
-}
-
 #message p {
   font-size: 1rem;
   background-color: #d0573b;
@@ -67,6 +61,7 @@ progress::-moz-progress-bar {
   right:10%;
   padding: 1rem 1rem 1rem 1rem;
   color: white;
+  border-radius: 10px;
 }
 
 #scoreboard {
@@ -97,10 +92,7 @@ progress::-moz-progress-bar {
   display: none;
 }
 
-#freud {
-  width: 100%;
-  height: auto;
-}
+
 
 #backButton {
   position: absolute;
