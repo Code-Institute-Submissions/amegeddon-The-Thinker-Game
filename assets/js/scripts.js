@@ -135,9 +135,6 @@ function handleGuess() {
         displayRandomQuote();
         backgroundImage();
         document.body.style.backgroundImage ="url('assets/images/eureka.webp')";
-        //document.body.style.backgroundSize = "cover"; // Cover the entire page
-        //document.body.style.backgroundRepeat = "no-repeat"; // Don't repeat the image
-        //document.body.style.backgroundPosition = "center"; // Center the image
         hideOrDisplay(gameArea);
         hideOrDisplay(endGameSection);
         submitLetter.disabled = true;
