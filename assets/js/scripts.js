@@ -72,19 +72,11 @@ letterInput.addEventListener("keypress", function (event) {
   startNewRound();
   alert(`Correct Guesses: ${correctGuessCount}`);
   hideOrDisplay(startGameSection); 
-  //hideOrDisplay(endGameSection);
- // document.body.style.backgroundImage = ""; // Reset the background image
- // message.innerHTML = ""; 
- // hiddenName = getRandomName().toUpperCase();
- // guessedName = createGuessedNameArray(hiddenName);
- // guessedLetters = [];
-  //wordDisplay.textContent = guessedName.join(" ");
-  //attemptsLeft = 0;
-  //attemptsLeftDisplay.textContent = attemptsLeft;
 });
 
 // back button Event listener
 document.getElementById("backButton").addEventListener("click", function () {
+  startNewRound();
   hideOrDisplay(gameArea);
   hideOrDisplay(startGameSection); 
   messageGame.innerHTML = "";
@@ -175,13 +167,11 @@ function displayRandomQuote() {
   message.innerHTML += `<p>${randomQuote}</p>`;
 }
 
-function updateProgressBar() {
+ function updateProgressBar() {
   // Calculate the progress based on the number of correctly guessed letters
   let correctGuesses = guessedName.filter((letter) => letter !== "_").length;
   let totalLetters = guessedName.length;
   let progress = (correctGuesses / totalLetters) * 100;
-
-  // Update the progress bar
   let progressBar = document.getElementById("progressBar");
   progressBar.value = progress;
 }
@@ -207,10 +197,6 @@ function updateProgressBar() {
   hideOrDisplay(gameArea);
 }); 
 
-
-
-  // Update and display correct guess count on the scoreboard
-  updateScoreboard();
 
 // Function to update and display correct guess count on the scoreboard
 function updateScoreboard() {
