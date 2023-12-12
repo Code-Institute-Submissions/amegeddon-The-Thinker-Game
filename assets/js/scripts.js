@@ -69,17 +69,18 @@ letterInput.addEventListener("keypress", function (event) {
 
 // quit button Event listener
   document.getElementById("quitGame").addEventListener("click", function () {
+  startNewRound();
   alert(`Correct Guesses: ${correctGuessCount}`);
   hideOrDisplay(startGameSection); 
-  hideOrDisplay(startGameSection); //needs to be repeated or doesnt show startgamesection
-  document.body.style.backgroundImage = ""; // Reset the background image
-  message.innerHTML = ""; 
-  hiddenName = getRandomName().toUpperCase();
-  guessedName = createGuessedNameArray(hiddenName);
-  guessedLetters = [];
-  wordDisplay.textContent = guessedName.join(" ");
-  attemptsLeft = 0;
-  attemptsLeftDisplay.textContent = attemptsLeft;
+  //hideOrDisplay(startGameSection); //needs to be repeated or doesnt show startgamesection
+ // document.body.style.backgroundImage = ""; // Reset the background image
+ // message.innerHTML = ""; 
+ // hiddenName = getRandomName().toUpperCase();
+ // guessedName = createGuessedNameArray(hiddenName);
+ // guessedLetters = [];
+  //wordDisplay.textContent = guessedName.join(" ");
+  //attemptsLeft = 0;
+  //attemptsLeftDisplay.textContent = attemptsLeft;
 });
 
 // back button Event listener
@@ -87,6 +88,7 @@ document.getElementById("backButton").addEventListener("click", function () {
   hideOrDisplay(gameArea);
   hideOrDisplay(startGameSection); 
   messageGame.innerHTML = "";
+  progressBar.value = 0;
  
 });   
   
@@ -192,8 +194,6 @@ function updateProgressBar() {
   wordDisplay.textContent = guessedName.join(" ");
   attemptsLeft = initialAttempts;
   attemptsLeftDisplay.textContent = attemptsLeft;
-  hideOrDisplay(endGameSection);
-  hideOrDisplay(gameArea);
   message.innerHTML = "";
   messageGame.innerHTML = "";
   document.body.style.backgroundImage = ""; // Reset the background image
@@ -201,7 +201,12 @@ function updateProgressBar() {
   progressBar.value = 0
   }
 
-  playAnotherRound.addEventListener("click", startNewRound);
+  playAnotherRound.addEventListener("click", function () {
+  startNewRound();
+  hideOrDisplay(endGameSection);
+  hideOrDisplay(gameArea);
+}); 
+
   
   
 
@@ -211,6 +216,7 @@ document.getElementById("quitGame").addEventListener("click", function () {
   hideOrDisplay(startGameSection);
   document.body.style.backgroundImage = ""; // Reset the background image
   message.innerHTML = "";
+  progressBar.value = 0;
   
   // Increment correctGuessCount when quitting - this can be deleted as being perfromed above 
   if (!guessedName.includes("_")) {
