@@ -42,17 +42,15 @@
   <div class="row">
     <div class="col-12 px-5 text-center pt-3">
       <div id="exitButton">
-        <!-- You can customize the back logo or use an arrow character -->
         <button id="backButton"><i class="fas fa-undo-alt"></i> Back</button>
       </div>
-      <p id="wordDisplay" class="text-center"></p>
-      <p class="text-center activeGame">Enter a letter:</p>
-      <input type="text" id="letterInput" class="offset-1 activeGame">
+      <p id="wordDisplay" class="text-center mb-5"></p>
+      <p class="text-center mt-3 activeGame fw-bold">Enter a letter:</p>
+      <input type="text" id="letterInput" class="mt-0 activeGame">
       <button id="submitLetter" class="text-center">Submit Letter</button>
-      <p class="text-center activeGame">Your progess:</p>
-      <progress id="progressBar" value="0" max="100"></progress>
+      <p class="text-center mt-3 mb-1 activeGame">Your progess:</p>
+      <progress class="mt-0" id="progressBar" value="0" max="100"></progress>
       <p class="text-center">Attempts left: <span id="attemptsLeft">6</span></p>
-      <!-- quit button doesnt work here, needs unique button maybe) -->
       <br>
       <br>
       <img src = "assets/images/philosopher.webp" class="img-fluid" id="philosopher">
