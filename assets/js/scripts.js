@@ -30,6 +30,7 @@ const playAnotherRound = document.getElementById("playAnotherRound");
 const progressBar = document.getElementById("progressBar");
 const quitButton = document.getElementById("quit");
 let message = document.getElementById("message");
+let messageGame = document.getElementById("messageGame");
 let attemptsLeftDisplay = document.getElementById("attemptsLeft");
 let guessedName = createGuessedNameArray(hiddenName);
 // guessedLetters is an array that will hold the letters the user has guessed.
@@ -116,7 +117,7 @@ function handleGuess() {
   const letter = letterInput.value.toUpperCase();
   // Check if the letter has already been guessed
   if (guessedLetters.includes(letter)) {
-    message.innerHTML = `<p>You've already guessed the letter '${letter}'. Try a different one.</p>`;
+    messageGame.innerHTML = `<p>You've already guessed the letter '${letter}'. Try a different one.</p>`;
   } else {
     // Add the letter to the guessed letters array
     guessedLetters.push(letter);
