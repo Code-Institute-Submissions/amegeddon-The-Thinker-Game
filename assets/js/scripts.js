@@ -39,13 +39,19 @@ let guessedLetters = [];
 let initialAttempts; // The number of attempts the user starts with 
 let startButtons = document.querySelectorAll(".btn-diff");
 let correctGuessCount = 0;
+let correctGuesses = guessedName.filter((letter) => letter !== "_").length;
+let totalLetters = guessedName.length;
+let progress = (correctGuesses / totalLetters) * 100;
+let progressBar = document.getElementById("progressBar");
 
+// Function to hide or display the three game stages
 function hideOrDisplay(element) {
   element.classList.contains('hide')
     ? element.classList.remove('hide')
     : element.classList.add('hide');
 }
 
+// Event listener for the level difficulty selection
 for (let button of startButtons) {
   button.addEventListener("click", (event) => {
     initialAttempts = parseInt(event.target.value); // Set the initial number of attempts
@@ -59,9 +65,10 @@ for (let button of startButtons) {
 // Displays the hidden name as underscores
 wordDisplay.textContent = guessedName.join(" ");
 
-// Event listeners Clicking the "Submit Letter" button or pressing Enter in the letter input field triggers the handleGuess function.
+// Submit letter button Event listener
 submitLetter.addEventListener("click", handleGuess);
-// Event listeners Clicking the "Play Another Round" button triggers the handleGuess function.
+
+// Enter keypress Event listener
 letterInput.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     handleGuess();
@@ -165,17 +172,13 @@ function displayRandomQuote() {
 }
 
 
-
+// Function that Calculates progress based on the number of correctly guessed letters
  function updateProgressBar() {
-  // Calculate the progress based on the number of correctly guessed letters
-  let correctGuesses = guessedName.filter((letter) => letter !== "_").length;
-  let totalLetters = guessedName.length;
-  let progress = (correctGuesses / totalLetters) * 100;
-  let progressBar = document.getElementById("progressBar");
   progressBar.value = progress;
 }
 
 
+  // Function that starts a new round by resetting the game
   function startNewRound (){
   hiddenName = getRandomName().toUpperCase();
   guessedName = createGuessedNameArray(hiddenName);
@@ -191,6 +194,7 @@ function displayRandomQuote() {
   title.style.display = "block";
   }
 
+  // Event listener for the play another round button
   playAnotherRound.addEventListener("click", function () {
   startNewRound();
   hideOrDisplay(endGameSection);
@@ -204,6 +208,7 @@ function updateScoreboard() {
   scoreboardElement.textContent = `Correct Guesses: ${correctGuessCount}`;
 }
 
+// Function to set the background image
 function backgroundImage () {
   document.body.style.backgroundSize = "cover"; // Cover the entire page
   document.body.style.backgroundRepeat = "no-repeat"; // Don't repeat the image
