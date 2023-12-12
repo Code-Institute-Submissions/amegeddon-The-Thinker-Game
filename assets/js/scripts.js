@@ -129,9 +129,9 @@ function handleGuess() {
       wordDisplay.textContent = guessedName.join(" ");
       updateProgressBar(); // Call the function to update the progress bar
       if (!guessedName.includes("_")) {
-          correctGuessCount++;
-          updateScoreboard(); // Update the scoreboard when a correct guess is made
-          message.innerHTML = `<p>Congratulations O Wise One! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below: </p>`;
+        correctGuessCount++;
+        updateScoreboard(); // Update the scoreboard when a correct guess is made
+        message.innerHTML = `<p>Congratulations! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below: </p>`;
         displayRandomQuote();
         document.body.style.backgroundImage ="url('assets/images/eureka.webp')";
         document.body.style.backgroundSize = "cover"; // Cover the entire page
@@ -152,7 +152,7 @@ function handleGuess() {
         document.body.style.backgroundSize = "cover"; // Cover the entire page
         document.body.style.backgroundRepeat = "no-repeat"; // Don't repeat the image
         document.body.style.backgroundPosition = "center"; // Center the image
-        message.innerHTML = `<p>Close but no Cigar .... You've run out of attempts. However, as the Greatest of Freudian's once said "From error to error, one discovers the entire truth...and this guessing game really is quite delightful”- Sigmund Freud</p>`;
+        message.innerHTML = `<p>Close but no Cigar ..... However, as the Greatest of Freudian's once said "From error to error, one discovers the entire truth...and this guessing game really is quite delightful”- Sigmund Freud</p>`;
         hideOrDisplay(gameArea);
         hideOrDisplay(endGameSection);
         document.getElementById("endGameSection").classList.remove("hide");
