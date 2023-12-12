@@ -72,7 +72,7 @@ letterInput.addEventListener("keypress", function (event) {
   startNewRound();
   alert(`Correct Guesses: ${correctGuessCount}`);
   hideOrDisplay(startGameSection); 
-  //hideOrDisplay(startGameSection); //needs to be repeated or doesnt show startgamesection
+  //hideOrDisplay(endGameSection);
  // document.body.style.backgroundImage = ""; // Reset the background image
  // message.innerHTML = ""; 
  // hiddenName = getRandomName().toUpperCase();
@@ -207,33 +207,10 @@ function updateProgressBar() {
   hideOrDisplay(gameArea);
 }); 
 
-  
-  
 
-
-document.getElementById("quitGame").addEventListener("click", function () {
-  hideOrDisplay(endGameSection);
-  hideOrDisplay(startGameSection);
-  document.body.style.backgroundImage = ""; // Reset the background image
-  message.innerHTML = "";
-  progressBar.value = 0;
-  
-  // Increment correctGuessCount when quitting - this can be deleted as being perfromed above 
-  if (!guessedName.includes("_")) {
-    correctGuessCount++;
-  }
-
-  // Reset game state
-  hiddenName = getRandomName().toUpperCase();
-  guessedName = createGuessedNameArray(hiddenName);
-  guessedLetters = [];
-  wordDisplay.textContent = guessedName.join(" ");
-  attemptsLeft = 0;
-  attemptsLeftDisplay.textContent = attemptsLeft;
 
   // Update and display correct guess count on the scoreboard
   updateScoreboard();
-});
 
 // Function to update and display correct guess count on the scoreboard
 function updateScoreboard() {
