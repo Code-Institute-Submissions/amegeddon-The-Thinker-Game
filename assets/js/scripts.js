@@ -29,6 +29,7 @@ const submitLetter = document.getElementById("submitLetter");
 const playAnotherRound = document.getElementById("playAnotherRound");
 const progressBar = document.getElementById("progressBar");
 const quitButton = document.getElementById("quit");
+const title = document.getElementById("title");
 let message = document.getElementById("message");
 let messageGame = document.getElementById("messageGame");
 let attemptsLeftDisplay = document.getElementById("attemptsLeft");
@@ -140,6 +141,8 @@ function handleGuess() {
         hideOrDisplay(endGameSection);
         submitLetter.disabled = true;
         playAnotherRound.style.display = "block";
+        title.style.display = "none";
+        
       }
     } else {
       attemptsLeft--;
@@ -153,7 +156,7 @@ function handleGuess() {
         hideOrDisplay(gameArea);
         hideOrDisplay(endGameSection);
         document.getElementById("endGameSection").classList.remove("hide");
-
+        title.style.display = "none";
       }
     }
   }
@@ -189,6 +192,7 @@ function displayRandomQuote() {
   document.body.style.backgroundImage = ""; // Reset the background image
   submitLetter.disabled = false;
   progressBar.value = 0
+  title.style.display = "block";
   }
 
   playAnotherRound.addEventListener("click", function () {
