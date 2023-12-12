@@ -133,10 +133,11 @@ function handleGuess() {
         updateScoreboard(); // Update the scoreboard when a correct guess is made
         message.innerHTML = `<p>Congratulations! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below: </p>`;
         displayRandomQuote();
+        backgroundImage();
         document.body.style.backgroundImage ="url('assets/images/eureka.webp')";
-        document.body.style.backgroundSize = "cover"; // Cover the entire page
-        document.body.style.backgroundRepeat = "no-repeat"; // Don't repeat the image
-        document.body.style.backgroundPosition = "center"; // Center the image
+        //document.body.style.backgroundSize = "cover"; // Cover the entire page
+        //document.body.style.backgroundRepeat = "no-repeat"; // Don't repeat the image
+        //document.body.style.backgroundPosition = "center"; // Center the image
         hideOrDisplay(gameArea);
         hideOrDisplay(endGameSection);
         submitLetter.disabled = true;
@@ -148,15 +149,14 @@ function handleGuess() {
       attemptsLeft--;
       attemptsLeftDisplay.textContent = attemptsLeft;
       if (attemptsLeft === 0) {
+        backgroundImage();
         document.body.style.backgroundImage ="url('assets/images/freud.jpeg')";
-        document.body.style.backgroundSize = "cover"; // Cover the entire page
-        document.body.style.backgroundRepeat = "no-repeat"; // Don't repeat the image
-        document.body.style.backgroundPosition = "center"; // Center the image
         message.innerHTML = `<p>Close but no Cigar ..... However, as the Greatest of Freudian's once said "From error to error, one discovers the entire truth...and this guessing game really is quite delightful”- Sigmund Freud</p>`;
         hideOrDisplay(gameArea);
         hideOrDisplay(endGameSection);
         document.getElementById("endGameSection").classList.remove("hide");
         title.style.display = "none";
+        quote.style.display = "none";
       }
     }
   }
@@ -209,4 +209,10 @@ function displayRandomQuote() {
 function updateScoreboard() {
   const scoreboardElement = document.getElementById("scoreboard");
   scoreboardElement.textContent = `Correct Guesses: ${correctGuessCount}`;
+}
+
+function backgroundImage () {
+  document.body.style.backgroundSize = "cover"; // Cover the entire page
+  document.body.style.backgroundRepeat = "no-repeat"; // Don't repeat the image
+  document.body.style.backgroundPosition = "center"; // Center the image
 }
