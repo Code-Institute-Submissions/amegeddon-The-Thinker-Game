@@ -80,9 +80,6 @@ document.getElementById("backButton").addEventListener("click", function () {
   startNewRound();
   hideOrDisplay(gameArea);
   hideOrDisplay(startGameSection); 
-  messageGame.innerHTML = "";
-  progressBar.value = 0;
- 
 });   
   
 
@@ -151,7 +148,6 @@ function handleGuess() {
         message.innerHTML = `<p>Close but no Cigar ..... However, as the Greatest of Freudian's once said "From error to error, one discovers the entire truth...and this guessing game really is quite delightful”- Sigmund Freud</p>`;
         hideOrDisplay(gameArea);
         hideOrDisplay(endGameSection);
-        document.getElementById("endGameSection").classList.remove("hide");
         title.style.display = "none";
         quote.style.display = "none";
       }
