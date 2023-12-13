@@ -149,7 +149,7 @@ function handleGuess() {
         playAnotherRound.style.display = "block";
         title.style.display = "none";
         quote.style.display = "block";
-        document.getElementById("noCigar").classList.add("hide");
+        
 }
       
     } else {
@@ -166,8 +166,9 @@ function handleGuess() {
       }
     }
   }
+  // resetting the letterinput on every guess 
   letterInput.value = "";
-  letterInput.focus();
+  //letterInput.focus(); // i dont think this is neeeded 
 }
 
 // Displays a random quote from the quotes array
