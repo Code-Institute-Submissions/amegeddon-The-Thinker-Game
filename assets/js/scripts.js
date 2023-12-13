@@ -30,6 +30,7 @@ const playAnotherRound = document.getElementById("playAnotherRound");
 const progressBar = document.getElementById("progressBar");
 const quitButton = document.getElementById("quit");
 const title = document.getElementById("title");
+const quote = document.getElementById("quote");
 let message = document.getElementById("message");
 let messageGame = document.getElementById("messageGame");
 let attemptsLeftDisplay = document.getElementById("attemptsLeft");
@@ -154,7 +155,7 @@ function handleGuess() {
       if (attemptsLeft === 0) {
         backgroundImage();
         document.body.style.backgroundImage ="url('assets/images/freud.jpeg')";
-        message.innerHTML = `<p>Close but no Cigar ..... However, as the Greatest of Freudian's once said "From error to error, one discovers the entire truth...and this guessing game really is quite delightful”- Sigmund Freud</p>`;
+        noCigar.innerHTML = `<p>Close but no Cigar ..... However, as the Greatest of Freudian's once said "From error to error, one discovers the entire truth...and this guessing game really is quite delightful”- Sigmund Freud</p>`;
         hideOrDisplay(gameArea);
         hideOrDisplay(endGameSection);
         title.style.display = "none";
