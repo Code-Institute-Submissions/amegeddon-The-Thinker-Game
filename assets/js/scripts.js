@@ -59,6 +59,7 @@ for (let button of startButtons) {
     attemptsLeftDisplay.textContent = attemptsLeft;
     hideOrDisplay(startGameSection);
     hideOrDisplay(gameArea);
+    letterInput.focus();
   });
 }
 
@@ -200,6 +201,7 @@ function displayRandomQuote() {
   startNewRound();
   hideOrDisplay(endGameSection);
   hideOrDisplay(gameArea);
+  letterInput.focus();
 }); 
 
 
