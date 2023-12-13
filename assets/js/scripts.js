@@ -40,9 +40,6 @@ let guessedLetters = [];
 let initialAttempts; // The number of attempts the user starts with
 let startButtons = document.querySelectorAll(".btn-diff");
 let correctGuessCount = 0;
-let correctGuesses = guessedName.filter((letter) => letter !== "_").length;
-let totalLetters = guessedName.length;
-let progress = (correctGuesses / totalLetters) * 100;
 
 // Function to hide or display the three game stages
 function hideOrDisplay(element) {
@@ -130,6 +127,7 @@ function handleGuess() {
       for (let i = 0; i < hiddenName.length; i++) {
         if (hiddenName[i] === letter) {
           guessedName[i] = letter;
+          updateProgressBar(); // Call the function to update the progress bar
         }
       }
       wordDisplay.textContent = guessedName.join(" ");
@@ -182,6 +180,9 @@ function displayRandomQuote() {
 
 // Function that Calculates progress based on the number of correctly guessed letters
 function updateProgressBar() {
+  let correctGuesses = guessedName.filter((letter) => letter !== "_").length;
+  let totalLetters = guessedName.length;
+  let progress = (correctGuesses / totalLetters) * 100;
   progressBar.value = progress;
 }
 
