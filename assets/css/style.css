@@ -54,13 +54,12 @@ progress::-moz-progress-bar {
 
 #message p {
   font-size: 1rem;
-  background-color: #d0573b;
+  background-color: #e5d6c2;
   position: fixed;
   top: 9%;
   left: 10%;
   right:10%;
   padding: 1rem 1rem 1rem 1rem;*/
-  color: white;
   border-radius: 10px;
 }
 
@@ -75,7 +74,7 @@ progress::-moz-progress-bar {
   bottom: 10%;
   left: 10%;
   right: 10%;
-  background-color: #d0573b;
+  background-color: #e5d6c2;
   border-radius: 10px;
   font-size: 1rem(!important);
 }
