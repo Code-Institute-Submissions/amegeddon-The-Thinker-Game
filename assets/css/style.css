@@ -4,21 +4,21 @@ body {
 
 h1 {
   display: inline-block;
-  border: 3px solid #d0573b;
   border-radius: 10px;
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin-top: 0.5rem;
   text-align: center;
-  background-color: #d0573b;
+  background-color: #e5d6c2;
+  
 }
 
 h2 {
-  background-color: #d0573b;
+  background-color: #e5d6c2;
   border-radius: 10px;
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin-top: 8px;
   text-align: center;
-  font-size: 1.75rem;
+  font-size: ;
 }
 
 p {
@@ -27,7 +27,7 @@ p {
 
 #enterLetter {
   font-size: 1.5rem;
-  background-color: #d0573b;
+  background-color: #e5d6c2;
   border-radius: 10px;
 
 }
