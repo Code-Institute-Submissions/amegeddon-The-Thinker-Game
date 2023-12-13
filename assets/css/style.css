@@ -3,32 +3,37 @@ body {
 }
 
 h1 {
+  font-family: 'Poiret One', sans-serif;
+  font-weight: bolder;
   display: inline-block;
   border-radius: 10px;
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin-top: 0.5rem;
   text-align: center;
   background-color: #e5d6c2;
+  font-size: 3rem;
   
 }
 
 h2 {
+  font-family: 'Poiret One', sans-serif;
+  font-weight: bolder;
   background-color: #e5d6c2;
   border-radius: 10px;
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin-top: 8px;
   text-align: center;
-  font-size: ;
+  font-size: 2rem;
 }
 
-p {
-  font-size: 18px;
-}
+
 
 #enterLetter {
   font-size: 1.5rem;
   background-color: #e5d6c2;
   border-radius: 10px;
+  font-family: 'lato', sans-serif;
+  
 
 }
 
@@ -52,14 +57,19 @@ progress::-moz-progress-bar {
   border-radius: 10px; /* Rounded corners */
 }
 
+p {
+  font-family: 'Lato', sans-serif;
+}
+
 #message p {
   font-size: 1rem;
+  font-family: 'Lato', sans-serif;
   background-color: #e5d6c2;
   position: fixed;
   top: 9%;
   left: 10%;
   right:10%;
-  padding: 1rem 1rem 1rem 1rem;*/
+  padding: 1rem 1rem 1rem 1rem;
   border-radius: 10px;
 }
 
@@ -67,21 +77,35 @@ progress::-moz-progress-bar {
   position:fixed;
   top: 2%;
   right: 10%;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
 
 #quote {
+  font-family: 'Lato', sans-serif;
   position: fixed;
   bottom: 10%;
   left: 10%;
   right: 10%;
   background-color: #e5d6c2;
   border-radius: 10px;
-  font-size: 1rem(!important);
+  font-size: 1rem;
+}
+
+#noCigar {
+  position: fixed;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+  background-color: #e5d6c2;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
 }
 
 #playAnotherRound {
   position: fixed;
-  bottom: 5%;
+  bottom: 6%;
 }
 
 #quitGame {
