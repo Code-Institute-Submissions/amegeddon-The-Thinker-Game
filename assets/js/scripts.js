@@ -37,26 +37,25 @@ let attemptsLeftDisplay = document.getElementById("attemptsLeft");
 let guessedName = createGuessedNameArray(hiddenName);
 // guessedLetters is an array that will hold the letters the user has guessed.
 let guessedLetters = [];
-let initialAttempts; // The number of attempts the user starts with 
+let initialAttempts; // The number of attempts the user starts with
 let startButtons = document.querySelectorAll(".btn-diff");
 let correctGuessCount = 0;
 let correctGuesses = guessedName.filter((letter) => letter !== "_").length;
 let totalLetters = guessedName.length;
 let progress = (correctGuesses / totalLetters) * 100;
 
-
 // Function to hide or display the three game stages
 function hideOrDisplay(element) {
-  element.classList.contains('hide')
-    ? element.classList.remove('hide')
-    : element.classList.add('hide');
+  element.classList.contains("hide")
+    ? element.classList.remove("hide")
+    : element.classList.add("hide");
 }
 
 // Event listener for the level difficulty selection
 for (let button of startButtons) {
   button.addEventListener("click", (event) => {
     initialAttempts = parseInt(event.target.value); // Set the initial number of attempts
-    attemptsLeft = initialAttempts; 
+    attemptsLeft = initialAttempts;
     attemptsLeftDisplay.textContent = attemptsLeft;
     hideOrDisplay(startGameSection);
     hideOrDisplay(gameArea);
@@ -78,10 +77,12 @@ letterInput.addEventListener("keypress", function (event) {
 });
 
 // quit button Event listener
-  document.getElementById("quitGame").addEventListener("click", function () {
+document.getElementById("quitGame").addEventListener("click", function () {
+  console.log("Quit button clicked");
+  
+  correctGuessCount = 0;
   startNewRound();
-  alert(`Correct Guesses: ${correctGuessCount}`);
-  hideOrDisplay(startGameSection); 
+  hideOrDisplay(startGameSection);
   hideOrDisplay(endGameSection);
 });
 
@@ -89,10 +90,8 @@ letterInput.addEventListener("keypress", function (event) {
 document.getElementById("backButton").addEventListener("click", function () {
   startNewRound();
   hideOrDisplay(gameArea);
-  hideOrDisplay(startGameSection); 
-});   
-  
-
+  hideOrDisplay(startGameSection);
+});
 
 // Random name generator
 function getRandomName() {
@@ -140,21 +139,25 @@ function handleGuess() {
         updateScoreboard(); // Update the scoreboard when a correct guess is made
         message.innerHTML = `<p>Congratulations! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below: </p>`;
         displayRandomQuote();
+        messageGame.innerHTML = `<p>Would you like to play another round?</p>`; 
         backgroundImage();
-        document.body.style.backgroundImage ="url('assets/images/eureka.webp')";
+        document.body.style.backgroundImage =
+          "url('assets/images/eureka.webp')";
         hideOrDisplay(gameArea);
         hideOrDisplay(endGameSection);
         submitLetter.disabled = true;
         playAnotherRound.style.display = "block";
         title.style.display = "none";
-        
-      }
+        quote.style.display = "block";
+        document.getElementById("noCigar").classList.add("hide");
+}
+      
     } else {
       attemptsLeft--;
       attemptsLeftDisplay.textContent = attemptsLeft;
       if (attemptsLeft === 0) {
         backgroundImage();
-        document.body.style.backgroundImage ="url('assets/images/freud.jpeg')";
+        document.body.style.backgroundImage = "url('assets/images/freud.jpeg')";
         noCigar.innerHTML = `<p>Close but no Cigar ..... However, as the Greatest of Freudian's once said "From error to error, one discovers the entire truth...and this guessing game really is quite delightful”- Sigmund Freud</p>`;
         hideOrDisplay(gameArea);
         hideOrDisplay(endGameSection);
@@ -169,20 +172,19 @@ function handleGuess() {
 
 // Displays a random quote from the quotes array
 function displayRandomQuote() {
-    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-    const quoteElement = document.getElementById("quote");
-    quoteElement.innerHTML = `<p>${randomQuote}</p>`;
+  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  const quoteElement = document.getElementById("quote");
+  quoteElement.innerHTML = `<p>${randomQuote}</p>`;
 }
 
-
 // Function that Calculates progress based on the number of correctly guessed letters
- function updateProgressBar() {
+function updateProgressBar() {
   progressBar.value = progress;
 }
 
-
-  // Function that starts a new round by resetting the game
-  function startNewRound (){
+// Function that starts a new round by resetting the game
+function startNewRound() {
+  updateScoreboard();
   hiddenName = getRandomName().toUpperCase();
   guessedName = createGuessedNameArray(hiddenName);
   guessedLetters = []; // Clear the guessed letters
@@ -193,18 +195,17 @@ function displayRandomQuote() {
   messageGame.innerHTML = "";
   document.body.style.backgroundImage = ""; // Reset the background image
   submitLetter.disabled = false;
-  progressBar.value = 0
+  progressBar.value = 0;
   title.style.display = "block";
-  }
+}
 
-  // Event listener for the play another round button
-  playAnotherRound.addEventListener("click", function () {
+// Event listener for the play another round button
+playAnotherRound.addEventListener("click", function () {
   startNewRound();
   hideOrDisplay(endGameSection);
   hideOrDisplay(gameArea);
   letterInput.focus();
-}); 
-
+});
 
 // Function to update and display correct guess count on the scoreboard
 function updateScoreboard() {
@@ -213,7 +214,7 @@ function updateScoreboard() {
 }
 
 // Function to set the background image
-function backgroundImage () {
+function backgroundImage() {
   document.body.style.backgroundSize = "cover"; // Cover the entire page
   document.body.style.backgroundRepeat = "no-repeat"; // Don't repeat the image
   document.body.style.backgroundPosition = "center"; // Center the image
