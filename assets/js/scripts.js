@@ -148,7 +148,9 @@ function handleGuess() {
         submitLetter.disabled = true;
         playAnotherRound.style.display = "block";
         title.style.display = "none";
-        quote.style.display = "block";
+        noCigar.style.display = "none";
+        document.getElementById("quote").classList.remove("hide");
+        ;
         
 }
       
@@ -162,7 +164,7 @@ function handleGuess() {
         hideOrDisplay(gameArea);
         hideOrDisplay(endGameSection);
         title.style.display = "none";
-        quote.style.display = "none";
+        noCigar.style.display = "block";
       }
     }
   }
