@@ -101,7 +101,6 @@ p {
   background-color: #e5d6c2;
   border-radius: 10px;
   font-size: 1rem;
-  font-family: 'Lato', sans-serif;
 }
 
 #playAnotherRound {
@@ -116,7 +115,7 @@ p {
 }
 
 #wordDisplay {
-  font-size: 30px;
+  font-size: (16px, 4vw, 30px);
   letter-spacing: 0.6rem;
   white-space: pre;
   margin-top: 1rem;
@@ -133,3 +132,104 @@ p {
   left: 2rem;
   top: 2rem;
 }
+
+/* ....... small mobiles eg.galaxy fold .......*/
+@media only screen and (min-width: 260px) and (max-width: 320px) {
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 40px;
+    }
+  h2 {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    }
+  .buttonLevels {
+    display:block;
+    margin-bottom: 10px;
+    }
+  .buttonContainerDifficulty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+  #wordDisplay {
+    white-space: pre-wrap;
+    word-wrap: break-word; 
+    max-width: 100%; 
+    overflow-wrap: break-word;
+    letter-spacing: 1.5px; 
+    max-width: 100%; 
+    margin: 0 0 35px 0;  
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+    }
+  #enterLetter {
+    font-size: 20px;
+    }
+   }
+  #submitLetter{
+    margin-top: 18px;
+   } 
+   #backButton {
+    top: 5px;
+    left: 5px;
+    font-size: 15px;
+  }
+  #quitGame {
+    top: 5px;
+    left: 5px;
+    font-size: 15px;
+  }
+  #scoreboard {
+   top: 5px;
+   right: 5px;
+   font-size: 15px;
+  }
+  #noCigar {
+    margin-bottom: 0;
+    font-size: 15px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+  #playAnotherRound {
+    bottom: 15px; 
+    font-size: 15px;
+  }
+  #message p {
+    font-size: 15px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+  #quote {
+    font-size: 15px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    bottom: 40px;
+  }
+  #intro {
+    padding-top: 8px;
+  }
+} 
+
+/* ....... mobile .......*/
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .h1{
+    font-size: 1.5rem;
+    }
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  
+
+/* ....... tablet .......*/
+@media only screen and (min-width: 768px) {
+ 
+
+/*........ desktop .........*/
+@media only screen and (min-width: 1024px) {
+ 
+
+  /*........ larger screens .........*/
+@media only screen and (min-width: 1280px) {
+ 
