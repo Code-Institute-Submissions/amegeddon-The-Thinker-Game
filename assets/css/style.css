@@ -295,9 +295,69 @@ p {
   }  
   
 
+/* ...smaller tablet devices... */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+#wordDisplay {
+    white-space: pre-wrap;
+    word-wrap: break-word; 
+    max-width: 100%; 
+    overflow-wrap: break-word;
+    letter-spacing: 1.5px; 
+    max-width: 100%; 
+    margin: 0 0 35px 0;  
+    padding: 0;
+    width: 100%;
+    font-size: 24px;
+    }
+  h1 {
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }  
+ #enterLetter  {
+  margin-top: 40px (!important);
+ } 
+ #noCigar {
+   bottom: 100px;
+   font-size: 18px;
+   padding: 16px 16px 16px 16px;
+ }
+ #message {
+  font-size: 18px;
+ }
+ #quote {
+  bottom: 100px;
+  font-size: 18px;
+  padding: 16px 16px 16px 16px; 
+ }
+#scoreboard {
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+ }
+ #quitGame {
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+ }
+ #playAnotherRound {
+  bottom: 30px;
+  font-size: 20px;
+  margin-top: 15px;
+ }
+ #backButton {
+  top: 5px;
+  left: 5px;
+  font-size: 16px;
+ }
 
 /* ....... tablet .......*/
 @media only screen and (min-width: 768px) {
+
+}
+
+/*........ ipad air .........*/
+@media only screen and (min-width: 820px) {
  
 
 /*........ desktop .........*/
