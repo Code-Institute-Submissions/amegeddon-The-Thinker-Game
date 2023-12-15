@@ -32,13 +32,15 @@
   <div class="row">
     <div col-12 px-5 text-center>
       <div id="difficulty" class=" text-center">
-        <p class="pt-3 ">Tired of endless Socratic dialogue!?<br> Caught in the unresolvable tension between being and nothingness!<br> Don't despair!<br> Instead, make a cuppa and play the Thinker Game!</p>
+        <p class="pt-md-3" id="intro">Tired of endless Socratic dialogue!?<br> Caught in the unresolvable tension between being and nothingness!<br> Don't despair!<br> Instead, make a cuppa and play the Thinker Game!</p>
         <p class="my-1">Guess the hidden name of one of history's greatest Philosophical thinkers, one letter at a time:</p>
         <h2 class="px-2 text-center mt-3 mb-3"> Select difficulty</h2>
-          <button type="button" class="px-3 mt-2 btn-diff btn btn-primary"  id="startGame" value="8">Easy</button>
-          <button type="button" class="px-3 mx-2 mt-2 btn-diff btn btn-primary" id="startGame"  value="6">Medium</button>
-          <button type="button" class="px-3 mt-2 btn-diff btn btn-primary" id="startGame"  value="4">Hard</button>
+       <div class="buttonContainerDifficulty " >    
+        <button type="button" class="buttonLevels px-3 mt-2 btn-diff btn btn-primary"  id="startGame" value="8">Easy</button>
+          <button type="button" class="buttonLevels px-3 mx-2 mt-2 btn-diff btn btn-primary" id="startGame"  value="6">Medium</button>
+          <button type="button" class="buttonLevels px-3 mt-2 btn-diff btn btn-primary" id="startGame"  value="4">Hard</button>
           <img src="assets/images/philosopher1.webp" class="img-fluid mt-4" id="philosopher1">
+        </div>
       </div>
     </div>
   </div>  
@@ -47,11 +49,13 @@
 <!--Game Section-->
 <section class="container-fluid col-12 hide " id="game">
   <div class="row">
-    <div class="col-12 px-5 text-center pt-3">
+    <div class="col-12 px-md-5 text-center pt-3">
       <div id="exitButton">
         <button id="backButton"><i class="fas fa-undo-alt"></i> Back</button>
       </div>
-      <p id="wordDisplay" class="text-center mb-5"></p>
+       <div>
+        <p id="wordDisplay" class="text-center mb-md-5"></p>
+       </div>
       <p id="enterLetter" class="text-center mt-3 activeGame fw-bold">Enter a letter:</p>
       <input type="text" id="letterInput" class="mt-0 activeGame">
       <button id="submitLetter" class="text-center">Submit Letter</button>
