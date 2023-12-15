@@ -141,7 +141,7 @@ p {
   h1 {
     font-size: 1.5rem;
     font-weight: bolder;
-    margin-top: 40px;
+    margin-top: 58px;
     }
   h2 {
     font-size: 1.25rem;
@@ -164,7 +164,7 @@ p {
     overflow-wrap: break-word;
     letter-spacing: 1.5px; 
     max-width: 100%; 
-    margin: 0 0 35px 0;  
+    margin:20px 0 60px 0;  
     padding: 0;
     width: 100%;
     font-size: 16px;
@@ -173,8 +173,11 @@ p {
     font-size: 20px;
     }
   #submitLetter {
-    margin-top: 18px;
+    margin-top: 24px;
    } 
+  #yourProgress {
+    margin-top: 24px; 
+  }
    #backButton {
     top: 5px;
     left: 5px;
@@ -198,6 +201,7 @@ p {
   #playAnotherRound {
     bottom: 15px; 
     font-size: 15px;
+    margin-top: 15px;
   }
   #message p {
     font-size: 15px;
@@ -206,7 +210,7 @@ p {
   #quote {
     font-size: 15px;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    bottom: 40px;
+    bottom: 75px;
   }
   #intro {
     padding-top: 8px;
