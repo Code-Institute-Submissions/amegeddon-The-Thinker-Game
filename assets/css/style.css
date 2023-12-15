@@ -26,6 +26,9 @@ h2 {
   font-size: 2rem;
 }
 
+p {
+  margin: 0;
+}
 
 
 #enterLetter {
@@ -225,7 +228,7 @@ p {
   #backButton {
     top: 5px;
     left: 5px;
-    font-size: 15px;
+    font-size: 16px;
   } 
   #wordDisplay {
     white-space: pre-wrap;
@@ -241,6 +244,7 @@ p {
     }
   #enterLetter {
     font-size: 28px;
+    margin-bottom: 20px;
     }
   #submitLetter {
     margin-top: 18px;
@@ -248,11 +252,44 @@ p {
   #attemptsLeft {
     margin-bottom: 0;
   } 
-
-
-
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #scoreboard {
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+   }
+   #noCigar {
+     margin-bottom: 0;
+     font-size: 16px;
+     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+   }
+   #playAnotherRound {
+     bottom: 16px; 
+     font-size: 15px;
+   }
+   #message p {
+     font-size: 16px;
+     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+   }
+   #quote p{
+     font-size: 16px;
+     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+     bottom: 55px;
+     margin-bottom: 0;
+     
+   }
+   #quitGame {
+    top: 10px;
+    left:10px;
+    font-size: 16px;
+   }
+   #scoreboard {
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+   }
+  }  
   
+
 
 /* ....... tablet .......*/
 @media only screen and (min-width: 768px) {
