@@ -169,8 +169,7 @@ p {
   #enterLetter {
     font-size: 20px;
     }
-   }
-  #submitLetter{
+  #submitLetter {
     margin-top: 18px;
    } 
    #backButton {
@@ -213,9 +212,42 @@ p {
 
 /* ....... mobile .......*/
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  .h1{
-    font-size: 1.5rem;
+  h1 {
+    font-size: 2rem;
+    margin-top: 38px;
     }
+  #intro {
+    margin-top: 12px;
+  }  
+  h2 {
+    font-size: 1.65rem;
+  }
+  #backButton {
+    top: 5px;
+    left: 5px;
+    font-size: 15px;
+  } 
+  #wordDisplay {
+    white-space: pre-wrap;
+    word-wrap: break-word; 
+    max-width: 100%; 
+    overflow-wrap: break-word;
+    letter-spacing: 1.5px; 
+    max-width: 100%; 
+    margin: 0 0 35px 0;  
+    padding: 0;
+    width: 100%;
+    font-size: 18px;
+    }
+  #enterLetter {
+    font-size: 28px;
+    }
+  #submitLetter {
+    margin-top: 18px;
+   } 
+  #attemptsLeft {
+    margin-bottom: 0;
+  } 
 
 
 
