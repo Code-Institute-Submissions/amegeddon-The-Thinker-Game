@@ -75,6 +75,7 @@ p {
   right:10%;
   padding: 1rem 1rem 1rem 1rem;
   border-radius: 10px;
+  text-align: center;
 }
 
 #scoreboard {
@@ -220,7 +221,7 @@ p {
 /* ....... mobile .......*/
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   h1 {
-    font-size: 2rem;
+    font-size: 2em;
     margin-top:50px;
     }
   #intro {
@@ -350,9 +351,41 @@ p {
   left: 5px;
   font-size: 16px;
  }
+}
 
 /* ....... tablet .......*/
 @media only screen and (min-width: 768px) {
+ #scoreboard {
+  right: 27px;
+  font-size: 18px;
+ }
+ #quitGame {
+  font-size: 18px;
+ }
+ #playAnotherRound {
+  bottom: 45px;
+  font-size: 18px;
+  margin-top: 15px;
+ }
+ #backButton {
+  top: 5px;
+  left: 5px;
+  font-size: 16px;
+ }
+ #noCigar {
+  bottom: 110px;
+  font-size: 18px;
+ }
+ #backButton {
+  font-size: 18px;
+ }
+ #quote {
+  font-size: 18px;
+  bottom: 125px;
+ }
+ #message p {
+  font-size: 18px;
+ }
 
 }
 
