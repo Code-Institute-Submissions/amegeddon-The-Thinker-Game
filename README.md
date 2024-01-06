@@ -98,15 +98,37 @@
 
 ### Colour Scheme
 
--
--
+- Consistency was maintained in the color scheme across all screens, with the primary background color being #daa520. This choice was made as the vibrant orange was a good compliment to the images used, creating a cohesive and aesthetically pleasing visual experience.
+- The background color for the heading, #e5d6c2, was deliberately selected for its ability to complement the vibrant orange whilst also maintaining a good contrast with the black text color for readability.
 
 ### Fonts
 
+- Google Fonts were  integrated into the website, with Lato as the primary font, accompanied by a sans-serif fallback for optimal readability across all screens. To inject a stylish but playful touch, Poiret One with its art deco easthetic was selected for the game title and headings, this font pairs nicely with Lato. 
+
 ### Structure
 
-- The game consist of the following:
-  -
+- The website structure has been designed for user-friendliness, emphasizing easy learning and navigation. Key components of the game include:
+ 
+  1.  Home Page / Start Screen: 
+      - Features game title and instructions for guidance.
+      - Game difficulty button select, allowing users to select their preferred difficulty level.
+
+  2.  Main Game Screen:
+
+      - Reveals a hidden name with underscores for each letter.
+      - Highlights the number of remaining guesses in the round.
+      - Clear representation of advancement throughout the gaming experience through the use of a progress bar
+      - Scoreboard showing current score 
+
+
+
+
+
+
+
+
+
+
   -
   -
   -
