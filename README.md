@@ -43,59 +43,56 @@
 
 ## Project Goals
 
--
+- Develop an intuitive and user-friendly philosophy themed word guessing game for an engaging user experience. 
 -
 -
 
 ### User Goals
+- Enjoy a game with straightforward rules that is easy to use and engaging.
+- Challenge the users knowledge of Philosophical thinkers
 
 ### Site Owner Goals
 
--
--
--
--
+- Develop an entertaining and engaging game.
+- Implement simple navigation throughout the website.
+- Craft a visually appealing design for enhanced user experience.
+- Ensure a fully responsive and accessible website for a seamless user interaction.
+
 
 ## User Experience
 
 ### Target Audience
 
--
--
+- The game is for anyone who enjoys guessing games 
+- And for those with an interest in philosophy and philosophers in particular
 
 ### User Requirements and Expectations
 
--
--
--
--
--
--
--
+- Clear game instructions
+- Straightforward navigation 
+- Responsive design for all device types 
+- Reliable game functions that work as expected
+- Visually appealing design 
+- Accessibility 
 
 ## User Stories
 
 ### Site User
 
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
-11.
+1. Comprehensible Game Instuctions: instructions that are easy to grasp, ensuring a straightforward understanding of how to play the game.Adaptable Difficulty Levels: A feature allowing me to choose from various difficulty levels, tailoring the game's challenge to my preference.
+2. Adaptable Difficulty Levels: A feature allowing me to choose from various difficulty levels, tailoring the game's challenge to my preference.
+3. Dual Interaction Methods: The flexibility to engage with the game using both mouse clicks and keyboard inputs, providing a choice that suits my preferred playing style.
+4. Progress Tracking: A visual representation of my progress alongside the remaining number of attempts in each round, ensuring a clear understanding of my progress.
+5. Result Display: After successfully guessing a word, I would like to see a message of congratulations alongside a philosophical quote, adding a sense of achievement to the gameplay.
+5. After incorrectly guessing the word, I would like to immediately know what the correct answer was.  
+
 
 ### Site Owner
 
-12.
-13.
-14.
-15.
-16.
+6. Clear Game Understanding: Ensuring users easily comprehend the game mechanics for a seamless and enjoyable experience.
+7. Self-Challenge Capability: Providing users with the opportunity to change the difficulty setting and enhance their skills while playing.
+8. Full Responsiveness: Designing the game to adapt effortlessly to various screen sizes and devices, ensuring accessibility for all users.
+
 
 ## Design
 
