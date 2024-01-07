@@ -179,7 +179,7 @@ The website has just the one webpage and utilises a hide or Display function to 
 - User stories covered: 1, 2, 8, 9 
 
 <details><summary>See feature</summary>
-<img src="assets/images/startscreen.png">
+<img src="docs/startscreen.png">
 </details>
 
 ### Game screen
@@ -193,7 +193,7 @@ The website has just the one webpage and utilises a hide or Display function to 
 - User stories covered: 3, 4, 7
 
 <details><summary>See feature</summary>
-<img src="assets/images/main game section.png">
+<img src="docs/main game section.png">
 </details>
 
 ### Correct Guess Screen
@@ -208,7 +208,7 @@ The website has just the one webpage and utilises a hide or Display function to 
 - User stories covered: 5, 11, 8, 7
 
 <details><summary>See feature</summary>
-<img src="assets/images/correct answer screen.png">
+<img src="docs/correct answer screen.png">
 </details>
 
 ### Wrong Guess Screen
@@ -222,7 +222,7 @@ The website has just the one webpage and utilises a hide or Display function to 
 - User stories covered: 6, 11, 9, 7
 
 <details><summary>See feature</summary>
-<img src="assets/images/incorrect answer screen.png">
+<img src="docs/incorrect answer screen.png">
 </details>
 
 ### 404 error page
