@@ -93,6 +93,7 @@
 9. Self-Challenge Capability: Providing users with the opportunity to change the difficulty setting and enhance their skills while playing.
 10. Full Responsiveness: Designing the game to adapt effortlessly to various screen sizes and devices, ensuring accessibility for all users.
 11. To create a visually captivating game with a well-thought-out and aesthetically pleasing design.
+12. The user to be directed to a custom 404 error page upon entering a non-existent URL, eliminating the need to rely on the browser's back button.
 
 
 ## Design
@@ -229,7 +230,8 @@ The website has just the one webpage and utilises a hide or Display function to 
 
 - A 404 error page is presented when users enter a non-existent URL.
 - Users are redirected to the main page with the option to continue playing via the "Let's Play the Game" button.
-- User stories covered: 15
+
+- User stories covered: 12
 
 <details><summary>See feature</summary>
 <img src="docs/404 error page.png">
