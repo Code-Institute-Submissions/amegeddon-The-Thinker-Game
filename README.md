@@ -179,7 +179,7 @@ The website has just the one webpage and utilises a hide or Display function to 
 - User stories covered: 1, 2, 8, 9 
 
 <details><summary>See feature</summary>
-<img src="docs/">
+<img src="assets/images/startscreen.png">
 </details>
 
 ### Game screen
@@ -193,7 +193,7 @@ The website has just the one webpage and utilises a hide or Display function to 
 - User stories covered: 3, 4, 7
 
 <details><summary>See feature</summary>
-<img src="">
+<img src="assets/images/main game section.png">
 </details>
 
 ### Correct Guess Screen
@@ -208,20 +208,21 @@ The website has just the one webpage and utilises a hide or Display function to 
 - User stories covered: 5, 11, 8, 7
 
 <details><summary>See feature</summary>
-<img src="docs/">
+<img src="assets/images/correct answer screen.png">
 </details>
 
 ### Wrong Guess Screen
 
-  - Commiserations message
-  - Image of Freud smoking a cigar
-  - Button to play another round
-  - current user score
-  - quit button
-- User stories covered: 8
+- A commiserations message is conveyed to the user, sharing the correct answer they missed in the guessing game.
+- an image of Freud smoking a cigar as a background accompaniment to the message, enriching the game's aesthetics for a more immersive experience.
+- Incorporation of a "Play Another Round" button for seamless navigation and continuous gameplay.
+- Displays the user's current score prominently for immediate reference.
+- Integration of a "Quit" button for users to exit the game at their discretion.
+
+- User stories covered: 6, 11, 9, 7
 
 <details><summary>See feature</summary>
-<img src="docs/">
+<img src="assets/images/incorrect answer screen.png">
 </details>
 
 ### 404 error page
