@@ -168,7 +168,7 @@
 
 ## Features
 
-The website has just the one webpage and utilises a hide or Display function to toggle between the three game sections: 1. Home page/Start Screen 2. Main Game Screen 3. End Screen. The game incorporates the following features:
+The website has just the one webpage and utilises a hide or Display function to toggle between the three game sections: Home page/Start Screen, Main Game Screen and End Screen. The game incorporates the following features:
 
 ### Home screen/Start Screen
 
@@ -232,7 +232,7 @@ The website has just the one webpage and utilises a hide or Display function to 
 - User stories covered: 15
 
 <details><summary>See feature</summary>
-<img src="docs/">
+<img src="docs/404 error page.png">
 </details>
 
 ## Validation
