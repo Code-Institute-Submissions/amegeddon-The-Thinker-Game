@@ -118,21 +118,20 @@
       - Reveals a hidden name with underscores for each letter.
       - Highlights the number of remaining guesses in the round.
       - Clear representation of advancement throughout the gaming experience through the use of a progress bar
-      - Scoreboard showing current score 
+      - Scoreboard showing current score. 
+      - A "Back" button is included for users to easily return to the home page/start sceren at their convenience.
 
+  3. Correct guess screen: 
+      - Reveals congratulations message alongside a philosophical quote. 
+      - Features background image of euripides in the bath shouting eureka. 
+      - Displays scoreboard showing total number of correct guesses.
+      - This screen also features convenient options with a "Play Another Round" button and a "Quit" button for seamless navigation and user control.
 
-
-
-
-
-
-
-
-
-  -
-  -
-  -
-  -
+   4. Incorrect guess screen:   
+      - Reveals incorrect message alongside correct answer to enahance user's learning experience.
+      - Features background image of Freud 
+      - Displays scoreboard showing total number of correct guesses.
+      - Like the correct guess screen there are the options to "Play another round" or "quit" and return to the start screen. 
 
 ### Wireframes
 
@@ -156,14 +155,14 @@
 
 ### Frameworks, Libraries & Tools
 
-- [Am I Responsive](http://ami.responsivedesign.is/)
 - [Bootstrap v5.1.3](https://getbootstrap.com/)
-- [Font Awesome](https://fontawesome.com/)
-- [Adobe Stock Images]
 - [Git](https://git-scm.com/)
-- [GitHub](https://github.com/) was used as a remote repository to store project code
-- [Google Fonts](https://fonts.google.com/)
+- [GitHub](https://github.com/) was used as a remote repository to store project code and host the webpage 
 - [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools)
+- [Am I Responsive](http://ami.responsivedesign.is/)
+- [Adobe Stock Images]
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
 - [WC3 Validator](https://validator.w3.org/), [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/), [JShint](https://jshint.com/), [Wave Validator](https://wave.webaim.org/), [Lighthouse](https://developers.google.com/web/tools/lighthouse/) and [Am I Responsive](http://ami.responsivedesign.is/) were all used to validate the website
 
 ## Features
