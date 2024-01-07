@@ -44,8 +44,6 @@
 ## Project Goals
 
 - Develop an intuitive and user-friendly philosophy themed word guessing game for an engaging user experience. 
--
--
 
 ### User Goals
 - Enjoy a game with straightforward rules that is easy to use and engaging.
@@ -79,19 +77,22 @@
 
 ### Site User
 
-1. Comprehensible Game Instuctions: instructions that are easy to grasp, ensuring a straightforward understanding of how to play the game.Adaptable Difficulty Levels: A feature allowing me to choose from various difficulty levels, tailoring the game's challenge to my preference.
+1. Comprehensible Game Instuctions: instructions that are easy to grasp, ensuring a straightforward understanding of how to play the game.
 2. Adaptable Difficulty Levels: A feature allowing me to choose from various difficulty levels, tailoring the game's challenge to my preference.
 3. Dual Interaction Methods: The flexibility to engage with the game using both mouse clicks and keyboard inputs, providing a choice that suits my preferred playing style.
 4. Progress Tracking: A visual representation of my progress alongside the remaining number of attempts in each round, ensuring a clear understanding of my progress.
 5. Result Display: After successfully guessing a word, I would like to see a message of congratulations alongside a philosophical quote, adding a sense of achievement to the gameplay.
-5. After incorrectly guessing the word, I would like to immediately know what the correct answer was.  
+6. After incorrectly guessing the word, I would like to immediately know what the correct answer was. 
+7. A scoreboard to track the frequency of correct answers, providing a clear record of successful guesses. 
+
 
 
 ### Site Owner
 
-6. Clear Game Understanding: Ensuring users easily comprehend the game mechanics for a seamless and enjoyable experience.
-7. Self-Challenge Capability: Providing users with the opportunity to change the difficulty setting and enhance their skills while playing.
-8. Full Responsiveness: Designing the game to adapt effortlessly to various screen sizes and devices, ensuring accessibility for all users.
+8. Clear Game Understanding and navigation: Ensuring users easily comprehend the game mechanics for a seamless and enjoyable experience.
+9. Self-Challenge Capability: Providing users with the opportunity to change the difficulty setting and enhance their skills while playing.
+10. Full Responsiveness: Designing the game to adapt effortlessly to various screen sizes and devices, ensuring accessibility for all users.
+11. To create a visually captivating game with a well-thought-out and aesthetically pleasing design.
 
 
 ## Design
@@ -167,16 +168,15 @@
 
 ## Features
 
-The website has just the one webpage and utilises a hide or Display function to toggle between the three game sections: 1. Start Game 2. Game Area 3. End Game. The game incorporates the following features:
+The website has just the one webpage and utilises a hide or Display function to toggle between the three game sections: 1. Home page/Start Screen 2. Main Game Screen 3. End Screen. The game incorporates the following features:
 
-### Home screen
+### Home screen/Start Screen
 
-#### Title
+- Game title 
+- Game instructions
+- Three difficulty level buttons (easy, medium, and hard) enabling users to choose their preferred level of challenge.
 
-### Difficulty level screen
-
-- User can choose from three different difficulty levels; easy, medium and hard.
-- User stories covered: 3, 13
+- User stories covered: 1, 2, 8, 9 
 
 <details><summary>See feature</summary>
 <img src="docs/">
@@ -184,14 +184,13 @@ The website has just the one webpage and utilises a hide or Display function to 
 
 ### Game screen
 
-- The below elements are displayed on the screen:
-  - Selected difficulty level of the game
-  - Number of guesses left in the round
-  - Category of the phrase to be guessed
-  - Progress bar that shows the user visually how close they are to guessing the hidden thinker.
-  - Underscores for each letter of the hidden name.
-  -
-- User stories covered: 4, 5, 6
+- Underscores for each letter of the hidden phrase
+- Input area for letters that can be submitted through either mouse click or the enter button, enhancing the game's pace for a faster and more fluid playing experience. 
+- Remaining guess attempts in the current round.
+- Visual progress bar indicating the proximity of the user to correctly guessing the concealed thinker.
+- Current user score 
+
+- User stories covered: 3, 4, 7
 
 <details><summary>See feature</summary>
 <img src="">
@@ -199,14 +198,14 @@ The website has just the one webpage and utilises a hide or Display function to 
 
 ### Correct Guess Screen
 
-- The below elements are displayed on the screen:
-  - Congratulations message to the user
-  - Image of Archimides in the bath shouting Eureka
-  - Wisdom Winnings in the form of a philosophical quote.
-  - Button to play another round
-  - current user score
-  - quit button
-- User stories covered: 7
+- A congratulatory message is relayed to the user, affirming that their guess was accurate, and they have successfully identified the hidden thinker.
+- Includes an image of Archimedes in the bath, exclaiming "Eureka, to infuse the game with a fun and captivating ambiance.
+- Rewards players with "Wisdom Winnings" in the form of a profound philosophical quote to instill a sense of achievement and the feeling of winning a prize.
+- Incorporation of a "Play Another Round" button for seamless navigation and continuous gameplay.
+- Displays the user's current score prominently for immediate reference.
+- Integration of a "Quit" button for users to exit the game at their discretion.
+
+- User stories covered: 5, 11, 8, 7
 
 <details><summary>See feature</summary>
 <img src="docs/">
@@ -214,7 +213,6 @@ The website has just the one webpage and utilises a hide or Display function to 
 
 ### Wrong Guess Screen
 
-- The below elements are displayed on the screen:
   - Commiserations message
   - Image of Freud smoking a cigar
   - Button to play another round
