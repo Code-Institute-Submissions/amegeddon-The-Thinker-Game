@@ -227,8 +227,8 @@ The website has just the one webpage and utilises a hide or Display function to 
 
 ### 404 error page
 
-- A 404 error page has been created which is displayed if the user enters a url that does not exist.
-- Returns user to mainpage via .... button
+- A 404 error page is presented when users enter a non-existent URL.
+- Users are redirected to the main page with the option to continue playing via the "Let's Play the Game" button.
 - User stories covered: 15
 
 <details><summary>See feature</summary>
