@@ -316,7 +316,7 @@ p {
     margin-top: 40px;
   }  
  #enterLetter  {
-  margin-top: 40px (!important);
+  margin-top: 40px;
  } 
  #noCigar {
    bottom: 100px;
@@ -391,12 +391,14 @@ p {
 
 /*........ ipad air .........*/
 @media only screen and (min-width: 820px) {
+}
  
 
 /*........ desktop .........*/
 @media only screen and (min-width: 1024px) {
+}
  
 
   /*........ larger screens .........*/
 @media only screen and (min-width: 1280px) {
- 
+}
