@@ -241,14 +241,14 @@ The website has just the one webpage and utilises a hide or Display function to 
 
 ### HTML Validation
 
-The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
+The website's HTML was validated using the W3C Markup Validation Service, with all pages passing without errors.
 
-<details><summary>Home</summary>
-<img src="doc/">
+<details><summary>index.html</summary>
+<img src="docs/w3html.png">
 </details>
 
 <details><summary>404 error page</summary>
-<img src="docs/">
+<img src="docs/404 error page.png">
 </details>
 
 ### CSS Validation
@@ -257,10 +257,10 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 When validating all website,
 
 <details><summary>All site</summary>
-<img src="docs/">
+<img src="docs/w3c_css.png">
 </details>
 <details><summary>Style.css</summary>
-<img src="docs/">
+<img src="docs/w3cStyles.css.png">
 <img src="docs/">
 </details>
 

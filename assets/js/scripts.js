@@ -39,8 +39,7 @@ let noCigar = document.getElementById("noCigar");
 
 // Function to hide or display the three game stages
 function hideOrDisplay(element) {
-  element.classList.contains("hide")
-    ? element.classList.remove("hide")
+  element.classList.contains("hide") ? element.classList.remove("hide")
     : element.classList.add("hide");
 }
 // Event listener for the level difficulty selection
