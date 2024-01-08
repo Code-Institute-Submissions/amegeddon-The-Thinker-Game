@@ -273,7 +273,7 @@ JavaScript files were validated using the JSHint JS Validation Service, revealin
 
 ### Accessibility
 
-The WAVE WebAIM accessibility evaluation tool was utilized to ensure compliance with accessibility standards. No errors were identified, affirming the website's accessibility. An error was identified, suggesting that the hidden word might be mistakenly perceived as a header. To enhance accessibility, an ARIA role of "text" and an ARIA level of "0" were implemented, ensuring that the hidden word is explicitly recognized as non-header content. However, the evaulation tool contiunes to flag the error.
+The WAVE WebAIM accessibility evaluation tool was utilized to ensure compliance with accessibility standards. No errors were identified, affirming the website's accessibility. An alert was identified, suggesting that the hidden word might be mistakenly perceived as a header. To enhance accessibility, an ARIA role of "text" and an ARIA level of "0" were implemented, ensuring that the hidden word is explicitly recognized as non-header content. However, the evaulation tool contiunes to flag the error.
 
 <details><summary>index.html</summary><img src="docs/wave.png">
 <details><summary>404 error page</summary><img src="docs/wave404.png">
@@ -281,7 +281,7 @@ The WAVE WebAIM accessibility evaluation tool was utilized to ensure compliance 
 
 ### Performance
 
-Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website.
+Google Lighthouse within Google Chrome Developer Tools served as the performance testing tool for the website, providing insights into various aspects such as performance, accessibility, SEO, and best practices.
 
 <details><summary>Home page</summary><img src="docs">
 <details><summary>404 page</summary><img src="docs/">
