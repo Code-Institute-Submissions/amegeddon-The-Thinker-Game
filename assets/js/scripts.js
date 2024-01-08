@@ -136,7 +136,7 @@ function handleGuess() {
         title.style.display = "none";
         noCigar.style.display = "none";
         document.getElementById("quote").classList.remove("hide");
-        ;
+        
         
 }
       
