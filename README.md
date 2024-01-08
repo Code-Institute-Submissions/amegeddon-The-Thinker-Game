@@ -285,7 +285,8 @@ Google Lighthouse within Google Chrome Developer Tools served as the performance
 
 <details><summary>Home page desktop </summary><img src="docs/lighthouse-desktop.png">
 <details><summary>Home page mobile </summary><img src="docs/mobileLighthouse.png">
-<details><summary>404 page</summary><img src="docs/">
+<details><summary>404 page desktop</summary><img src="docs/404mobile.png">
+<details><summary>404 page mobile</summary><img src="docs/desktop404.png">
 </details>
 
 ## Testing
