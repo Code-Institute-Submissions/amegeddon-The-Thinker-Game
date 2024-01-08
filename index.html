@@ -37,7 +37,36 @@
     <div class="col-12 px-5 text-center">
       <div id="difficulty" class=" text-center">
         <p class="pt-md-3" id="intro">Tired of endless Socratic dialogue!?<br> Caught in the unresolvable tension between being and nothingness!<br> Don't despair!<br> Instead, make a cuppa and play the Thinker Game!</p>
-        <p class="my-1">Guess the hidden name of one of history's greatest Philosophical thinkers, one letter at a time:</p>
+        
+        
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gameInstructionsModal">
+          Open Game Instructions
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="gameInstructionsModal" tabindex="-1" aria-labelledby="gameInstructionsModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="gameInstructionsModalLabel">How to Play</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Embark on the intellectual challenge of revealing the hidden Thinker, letter by letter!</p>
+                <p>Keep choosing letters until your attempts run out. But beware!</p>
+                <p>The game difficulty you select might accelerate your journey to the edge of the challenge sooner than you think!</p>
+                <strong>May the odds be ever in your favor!</strong>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="closeInstructions()">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
         <h2 class="px-2 text-center mt-3 mb-3"> Select difficulty</h2>
        <div class="buttonContainerDifficulty startGame" >    
         <button type="button" class="buttonLevels px-3 mt-2 btn-diff btn btn-primary" value="8">Easy</button>
