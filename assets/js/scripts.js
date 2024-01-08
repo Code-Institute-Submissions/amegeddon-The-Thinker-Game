@@ -213,7 +213,7 @@ playAnotherRound.addEventListener("click", function () {
 
 // Function to update and display correct guess count on the scoreboard
 function updateScoreboard() {
-  const scoreboardElement = document.getElementById("scoreboard");
+  const scoreboardElement = document.getElementByClassName("scoreboard");
   scoreboardElement.textContent = `Correct Guesses: ${correctGuessCount}`;
 }
 

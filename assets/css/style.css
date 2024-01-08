@@ -78,10 +78,10 @@ p {
   text-align: center;
 }
 
-#scoreboard {
+.scoreboard {
   position:fixed;
   top: 2%;
-  right: 10%;
+  right: 4%;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
 }
@@ -100,8 +100,8 @@ p {
 #noCigar {
   position: fixed;
   bottom: 10%;
-  left: 10%;
-  right: 10%;
+  left: 2rem;
+  right: 2rem;
   background-color: #e5d6c2;
   border-radius: 10px;
   font-size: 1rem;
