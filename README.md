@@ -266,15 +266,14 @@ When validating all website,
 
 ### JavaScript Validation
 
-JSHint JS Validation Service was used to validate the Javascript files. No significant issues were found.
+JavaScript files were validated using the JSHint JS Validation Service, revealing no significant issues.
 
 <details><summary>game.js</summary>
-<img src="docs/">
+<img src="docs/jsHint.png">
 
 ### Accessibility
 
-The WAVE WebAIM web accessibility evaluation tool was used
-in order to ensure that accessibility standards were met. No accessibility errors were found.
+The WAVE WebAIM accessibility evaluation tool was utilized to ensure compliance with accessibility standards. No errors were identified, affirming the website's accessibility.
 
 <details><summary>Home page</summary><img src="docs/">
 <details><summary>404 page</summary><img src="docs/">
