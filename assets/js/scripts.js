@@ -195,11 +195,18 @@ playAnotherRound.addEventListener("click", function () {
   hideOrDisplay(gameArea);
   letterInput.focus();
 });
+
 // Function to update and display correct guess count on the scoreboard
 function updateScoreboard() {
-  const scoreboardElement = document.getElementById("scoreboard");
-  scoreboardElement.textContent = `Correct Guesses: ${correctGuessCount}`;
+  const scoreboardElements = document.getElementsByClassName("scoreboard");
+
+  for (let i = 0; i < scoreboardElements.length; i++) {
+    scoreboardElements[i].textContent = `Correct Guesses: ${correctGuessCount}`;
+  }
 }
+
+
+
 // Function to set the background image
 function backgroundImage() {
   document.body.style.backgroundSize = "cover"; // Cover the entire page
