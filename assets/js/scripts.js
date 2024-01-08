@@ -142,7 +142,7 @@ function handleGuess() {
       attemptsLeftDisplay.textContent = attemptsLeft;
       if (attemptsLeft === 0) {
         backgroundImage();
-        document.body.style.backgroundImage = "url('assets/images/freud.jpeg')";
+        document.body.style.backgroundImage = "url('assets/images/freud.webp')";
         noCigar.innerHTML = `<p>Close but no Cigar ..... However, as the Greatest of Freudian's once said; "From error to error, one discovers the entire truth and guessing games really are quite delightful”- Sigmund Freud</p>`;
         noCigar.innerHTML = `<p>Close but no Cigar ... the correct Thinker was '${hiddenName}'. However, as the Greatest of Freudian's once said; "From error to error, one discovers the entire truth and guessing games really are quite delightful”- Sigmund Freud</p>`;
         hideOrDisplay(gameArea);
