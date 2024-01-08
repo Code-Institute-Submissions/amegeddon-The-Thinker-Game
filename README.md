@@ -273,7 +273,7 @@ JavaScript files were validated using the JSHint JS Validation Service, revealin
 
 ### Accessibility
 
-The WAVE WebAIM accessibility evaluation tool was utilized to ensure compliance with accessibility standards. No errors were identified, affirming the website's accessibility. An alert was identified, suggesting that the hidden word might be mistakenly perceived as a header. To enhance accessibility, an ARIA role of "text" and an ARIA level of "0" were implemented, ensuring that the hidden word is explicitly recognized as non-header content. However, the evaulation tool contiunes to flag the error.
+The WAVE WebAIM accessibility evaluation tool was utilized to ensure compliance with accessibility standards. No errors were identified, affirming the website's accessibility. An alert was identified, suggesting that the hidden word might be mistakenly perceived as a header. To enhance accessibility, an ARIA role of "text" and an ARIA level of "0" were implemented, ensuring that the hidden word is explicitly recognized as non-header content. However, the evaulation tool contiunes to flag the alert.
 
 <details><summary>index.html</summary><img src="docs/wave.png">
 <details><summary>404 error page</summary><img src="docs/wave404.png">
@@ -281,9 +281,10 @@ The WAVE WebAIM accessibility evaluation tool was utilized to ensure compliance 
 
 ### Performance
 
-Google Lighthouse within Google Chrome Developer Tools served as the performance testing tool for the website, providing insights into various aspects such as performance, accessibility, SEO, and best practices.
+Google Lighthouse within Google Chrome Developer Tools served as the performance testing tool for the website, providing insights into various aspects such as performance, accessibility, SEO, and best practices. The performance scores for desktop mode were consistently excellent across all testing parameters. However, during mobile testing, the performance score registered at 63. In an effort to enhance this score, all image files underwent resizing, compression, and conversion to webp format. Additionally, to further boost performance, the CSS was minified. The combined effect of these two measures resulted in an improved performance score of 84.
 
-<details><summary>Home page</summary><img src="docs">
+<details><summary>Home page desktop </summary><img src="docs/lighthouse-desktop.png">
+<details><summary>Home page mobile </summary><img src="docs/mobileLighthouse.png">
 <details><summary>404 page</summary><img src="docs/">
 </details>
 
