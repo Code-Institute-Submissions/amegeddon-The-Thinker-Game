@@ -54,7 +54,7 @@
 - Develop an entertaining and engaging game.
 - Implement simple navigation throughout the website.
 - Craft a visually appealing design for enhanced user experience.
-- Ensure a fully responsive and accessible website for a seamless user interaction.
+- Ensure a fully responsive and accessible website.
 
 
 ## User Experience
@@ -171,6 +171,7 @@
 
 The website has just the one webpage and utilises a hide or Display function to toggle between the three game sections: Home page/Start Screen, Main Game Screen and End Screen. The game incorporates the following features:
 
+
 ### Home screen/Start Screen
 
 - Game title 
@@ -182,6 +183,7 @@ The website has just the one webpage and utilises a hide or Display function to 
 <details><summary>See feature</summary>
 <img src="docs/startscreen.png">
 </details>
+
 
 ### Game screen
 
@@ -196,6 +198,7 @@ The website has just the one webpage and utilises a hide or Display function to 
 <details><summary>See feature</summary>
 <img src="docs/main game section.png">
 </details>
+
 
 ### Correct Guess Screen
 
@@ -212,6 +215,7 @@ The website has just the one webpage and utilises a hide or Display function to 
 <img src="docs/correct answer screen.png">
 </details>
 
+
 ### Wrong Guess Screen
 
 - A commiserations message is conveyed to the user, sharing the correct answer they missed in the guessing game.
@@ -226,6 +230,7 @@ The website has just the one webpage and utilises a hide or Display function to 
 <img src="docs/incorrect answer screen.png">
 </details>
 
+
 ### 404 error page
 
 - A 404 error page is presented when users enter a non-existent URL.
@@ -236,6 +241,7 @@ The website has just the one webpage and utilises a hide or Display function to 
 <details><summary>See feature</summary>
 <img src="docs/404 error page.png">
 </details>
+
 
 ## Validation
 
@@ -293,11 +299,12 @@ Google Lighthouse within Google Chrome Developer Tools served as the performance
 
 ### Performing tests on various devices
 
-The website was tested using Google Chrome Developer Tools Toggle Device Toolbar to simulate viewports of different devices.
+The website underwent testing with Google Chrome Developer Tools, utilizing the Toggle Device Toolbar to simulate various device viewport sizes.
 
 The website was tested on the following devices:
 
-- Windows Surface pro (laptop screen size)
+- lenovo Ideapad L340 (laptop screen)
+- Windows Surface pro 5 (small laptop screen size)
 - Ipad (tablet screen)
 - Huawei P30 (mobile screen)
 - Apple 10 (mobile screen)
@@ -306,12 +313,12 @@ The website was tested on the following devices:
 ### Browser compatibility
 
 - Testing has been carried out on the following browsers:
-  - Googe Chrome Version .... which version
-  - Firefox Browser .. check version
+  - Googe Chrome Version 120.0.6099.199
+  - Firefox Browser 121.0
 
 ### Testing user stories
 
-1. I want to easily understand the rules of the game
+1. Comprehensible Game Instuctions: instructions that are easy to grasp, ensuring a straightforward understanding of how to play the game.
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
