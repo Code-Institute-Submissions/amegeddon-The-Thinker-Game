@@ -34,11 +34,13 @@ let message = document.getElementById("message");
 let messageGame = document.getElementById("messageGame");
 let attemptsLeftDisplay = document.getElementById("attemptsLeft");
 let guessedName = createGuessedNameArray(hiddenName);
-// guessedLetters is an array that will hold the letters the user has guessed.
 let guessedLetters = [];
-let initialAttempts; // The number of attempts the user starts with
+let initialAttempts; 
 let startButtons = document.querySelectorAll(".btn-diff");
 let correctGuessCount = 0;
+let attemptsLeft;
+let noCigar = document.getElementById("noCigar");
+
 // Function to hide or display the three game stages
 function hideOrDisplay(element) {
   element.classList.contains("hide")
