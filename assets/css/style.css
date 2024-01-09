@@ -83,7 +83,7 @@ p {
 .scoreboard {
   position: fixed;
   top: 2%;
-  right: 4%;
+  right: 2%;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
 }
@@ -124,9 +124,11 @@ p {
 }
 
 #backButton {
-  position: absolute;
-  left: 2rem;
-  top: 2rem;
+  position: fixed;
+  top: 2%;
+  left:2%;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
 
 /* Media Queries */
