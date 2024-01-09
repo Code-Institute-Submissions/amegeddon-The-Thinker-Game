@@ -9,6 +9,18 @@ const names = [
   "Vincent Van Gogh",
   "Marie Curie",
 ];
+
+const hints = [
+  "Physicist known for the theory of relativity",
+  "Spanish painter and sculptor",
+  "English playwright and poet",
+  "Italian polymath",
+  "Ancient Greek philosopher",
+  "Russian novelist and philosopher",
+  "Dutch Post-Impressionist painter",
+  "Polish physicist and chemist",
+];
+
 const quotes = [
   "The only source of knowledge is experience. - Albert Einstein",
   "Every artist was first an amateur. - Ralph Waldo Emerson",
@@ -94,11 +106,35 @@ function createGuessedNameArray(name) {
   }
   return guessedName;
 }
+
+
+// Function that finds and displays hint
+function provideHint() {
+  const hintIndex = names.indexOf(hiddenName);
+  const hintElement = document.getElementById("hint");
+
+  if (hintIndex !== -1 && hintIndex < hints.length) {
+    hintElement.textContent = `Hint: ${hints[hintIndex]}`;
+  }
+}
+
+
+
+
+
+
+
 // Handles the guess and displays the appropriate message
 function handleGuess() {
+  console.log("attemptsLeft:", attemptsLeft); 
   if (attemptsLeft === 0) {
     return;
   }
+  if (attemptsLeft === 2) {
+    console.log('hint function called')
+     provideHint();
+
+   }
   const letter = letterInput.value.toUpperCase();
   // Check if the letter has already been guessed
   if (guessedLetters.includes(letter)) {
@@ -117,6 +153,7 @@ function handleGuess() {
       }
       wordDisplay.textContent = guessedName.join(" ");
       updateProgressBar(); // Call the function to update the progress bar
+      
       if (!guessedName.includes("_")) {
         correctGuessCount++;
         updateScoreboard(); // Update the scoreboard when a correct guess is made
@@ -152,10 +189,14 @@ function handleGuess() {
       }
     }
   }
+ 
+ 
   // resetting the letterinput on every guess 
   letterInput.value = "";
   //letterInput.focus(); // i dont think this is neeeded 
 }
+
+
 // Displays a random quote from the quotes array
 function displayRandomQuote() {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
@@ -202,6 +243,13 @@ function updateScoreboard() {
   }
 }
 
+function closeInstructions() {
+  
+  var modal = document.getElementById("gameInstructionsModal");
+
+  var modalInstance = bootstrap.Modal.getInstance(modal);
+  modalInstance.hide();
+}
 
 
 // Function to set the background image
