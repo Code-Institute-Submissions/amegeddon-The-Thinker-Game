@@ -29,6 +29,12 @@ p {
   margin: 0;
 }
 
+.modal-content {
+  background-color: #363636;
+  color: #daa520; 
+  
+}
+
 #enterLetter {
   font-size: 2rem;
   background-color: #e5d6c2;
