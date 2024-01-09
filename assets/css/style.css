@@ -298,16 +298,6 @@ p {
   font-size: 18px;
   padding: 16px 16px 16px 16px; 
  }
- #quitGame {
-  top: 15px;
-  left: 15px;
-  font-size: 20px;
- }
- #playAnotherRound {
-  bottom: 30px;
-  font-size: 20px;
-  margin-top: 15px;
- }
  #backButton {
   top: 5px;
   left: 5px;
