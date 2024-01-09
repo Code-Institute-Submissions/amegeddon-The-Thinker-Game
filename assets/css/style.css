@@ -92,18 +92,14 @@ p {
 #noCigar {
   position: fixed;
   bottom: 10%;
-  background-color: #e5d6c2;
   font-size: 1rem;
 }
 
-#noCigar {
-  left: 2rem;
-  right: 2rem;
-}
+
 
 #playAnotherRound {
   position: fixed;
-  bottom: 6%;
+  bottom: 4%;
 }
 
 #quitGame {
@@ -324,11 +320,16 @@ p {
     position:fixed;
     top: 1rem;
     right: 1rem;
-
+  }
+  #quote {
+    text-align: center;
   }
 }
  
 
   /*........ larger screens .........*/
 @media only screen and (min-width: 1280px) {
+  #quote {
+    text-align: center;
+  }
 }
