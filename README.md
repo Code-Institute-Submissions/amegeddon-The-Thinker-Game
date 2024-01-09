@@ -382,7 +382,6 @@ The website was tested on the following devices:
 | End Game Screen | When all guess attempts have been used and the hidden thinker has not been identified | The correct answer is displayed | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="docs/correctscreen.png">
 <img src="docs/incorrectScreen.png">
 </details>
 
