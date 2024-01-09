@@ -173,11 +173,6 @@ p {
     left: 5px;
     font-size: 15px;
   }
-  #scoreboard {
-   top: 5px;
-   right: 5px;
-   font-size: 15px;
-  }
   #noCigar {
     margin-bottom: 0;
     font-size: 15px;
@@ -240,11 +235,6 @@ p {
   #attemptsLeft {
     margin-bottom: 0;
   } 
-  #scoreboard {
-    top: 5px;
-    right: 5px;
-    font-size: 16px;
-   }
    #noCigar {
      margin-bottom: 0;
      font-size: 16px;
@@ -269,11 +259,6 @@ p {
    #quitGame {
     top: 10px;
     left:10px;
-    font-size: 16px;
-   }
-   #scoreboard {
-    top: 10px;
-    right: 10px;
     font-size: 16px;
    }
   }  
@@ -313,11 +298,6 @@ p {
   font-size: 18px;
   padding: 16px 16px 16px 16px; 
  }
-#scoreboard {
-  top: 15px;
-  right: 15px;
-  font-size: 20px;
- }
  #quitGame {
   top: 15px;
   left: 15px;
@@ -333,13 +313,13 @@ p {
   left: 5px;
   font-size: 16px;
  }
+ #gameInstructions {
+  margin-bottom: 1rem;
+ }
+ 
 }
 /* ....... tablet .......*/
 @media only screen and (min-width: 768px) {
- #scoreboard {
-  right: 27px;
-  font-size: 18px;
- }
  #quitGame {
   font-size: 18px;
  }
@@ -367,10 +347,20 @@ p {
  #message p {
   font-size: 18px;
  }
+ #gameInstructions {
+  position:fixed;
+  top: 1rem;
+  right: 1rem;
+}
 }
 
 /*........ ipad air .........*/
 @media only screen and (min-width: 820px) {
+  #gameInstructions {
+    position:fixed;
+    top: 1rem;
+    right: 1rem;
+  }
 }
 
 
@@ -381,7 +371,12 @@ p {
     top: 1rem;
     right: 1rem;
   }
+  .scoreboard  {
+    font-size: 18px;
   }
+  }
+
+  
 
   /*........ larger screens .........*/
 @media only screen and (min-width: 1280px) {
