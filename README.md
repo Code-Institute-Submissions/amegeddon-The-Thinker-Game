@@ -322,11 +322,11 @@ The website was tested on the following devices:
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
-| Instructions Icon | Click on the icon | Modal with game instructions pops up | Works as expected |
+| Instructions button| Click on the Game Instructions button | Modal with game instructions pops up. Click on close button to close modal | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-1-a.JPG">
-<img src="docs/user-story-testing/user-story-1-b.JPG">
+<img src="docs/instructionsbutton1.png">
+<img src="docs/instructionbutton2.png">
 </details>
 
 2. I want to enter my name and have it visible on screen while the game is played

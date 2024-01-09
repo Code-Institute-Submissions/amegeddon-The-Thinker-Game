@@ -1,4 +1,4 @@
-// arrays and let variables
+// arrays and variables
 const names = [
   "Albert Einstien",
   "Pablo Picasso",
@@ -108,8 +108,8 @@ function createGuessedNameArray(name) {
 }
 
 
-// Function that finds and displays hint
 function provideHint() {
+  console.log('where is the hint!');
   const hintIndex = names.indexOf(hiddenName);
   const hintElement = document.getElementById("hint");
 
