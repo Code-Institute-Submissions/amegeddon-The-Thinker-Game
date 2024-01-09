@@ -1,38 +1,35 @@
 body {
   background: #daa520;
 }
-
-h1, h2 {
+h1 {
   font-family: 'Poiret One', sans-serif;
   font-weight: bolder;
+  display: inline-block;
   border-radius: 10px;
-  text-align: center;
-}
-
-h1 {
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin-top: 0.5rem;
+  text-align: center;
   background-color: #e5d6c2;
   font-size: 3rem;
-  display: inline-block; 
-  max-width: 100%;
+  
 }
-
 h2 {
+  font-family: 'Poiret One', sans-serif;
+  font-weight: bolder;
   background-color: #e5d6c2;
+  border-radius: 10px;
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin-top: 8px;
+  text-align: center;
   font-size: 2rem;
 }
-
 p {
   margin: 0;
 }
 
 .modal-content {
   background-color: #363636;
-  color: #daa520; 
-  
+  color: #daa520;   
 }
 
 #enterLetter {
@@ -41,8 +38,8 @@ p {
   border-radius: 10px;
   font-family: 'poiret one', sans-serif;
   font-weight: bolder;
+  
 }
-
 progress {
   width: 50%;
   height: 15px;
@@ -51,268 +48,331 @@ progress {
   border: none;
   border-radius: 10px;
 }
-
-progress::-webkit-progress-value,
+/* Style the progress bar value (progress) */
+progress::-webkit-progress-value {
+  background-color: #4caf50; /* Green background */
+  border-radius: 10px; /* Rounded corners */
+}
 progress::-moz-progress-bar {
   background-color: #4caf50; /* Green background */
   border-radius: 10px; /* Rounded corners */
 }
-
 p {
   font-family: 'Lato', sans-serif;
 }
-
-#message p,
-#quote,
-#noCigar {
-  font-family: 'Lato', sans-serif;
-  background-color: #e5d6c2;
-  border-radius: 10px;
-  text-align: center;
-}
-
 #message p {
   font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  background-color: #e5d6c2;
   position: fixed;
   top: 9%;
   left: 10%;
-  right: 10%;
-  padding: 1rem;
+  right:10%;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 10px;
+  text-align: center;
 }
-
 .scoreboard {
-  position: fixed;
+  position:fixed;
   top: 2%;
-  right: 2%;
+  right: 4%;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
 }
-
-#quote,
+#quote {
+  font-family: 'Lato', sans-serif;
+  position: fixed;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+  background-color: #e5d6c2;
+  border-radius: 10px;
+  font-size: 1rem;
+}
 #noCigar {
   position: fixed;
   bottom: 10%;
+  left: 2rem;
+  right: 2rem;
+  background-color: #e5d6c2;
+  border-radius: 10px;
   font-size: 1rem;
 }
-
-
-
 #playAnotherRound {
   position: fixed;
-  bottom: 4%;
+  bottom: 6%;
 }
-
 #quitGame {
   position: fixed;
   top: 2%;
   left: 2%;
 }
-
 #wordDisplay {
   font-size: 25px;
   letter-spacing: 0.6rem;
   white-space: pre;
   margin-top: 1rem;
 }
-
 .hide {
   display: none;
 }
-
 #backButton {
-  position: fixed;
-  top: 2%;
-  left:2%;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
 }
-
-/* Media Queries */
+/* ....... small mobiles eg.galaxy fold .......*/
 @media only screen and (min-width: 260px) and (max-width: 320px) {
   h1 {
     font-size: 1.5rem;
+    font-weight: bolder;
     margin-top: 58px;
-  }
-
+    }
   h2 {
     font-size: 1.25rem;
-  }
-
+    font-weight: bolder;
+    }
   .buttonLevels {
-    display: block;
+    display:block;
     margin-bottom: 10px;
-  }
-
+    }
   .buttonContainerDifficulty {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
+    }
   #wordDisplay {
     white-space: pre-wrap;
-    word-wrap: break-word;
-    max-width: 100%;
+    word-wrap: break-word; 
+    max-width: 100%; 
     overflow-wrap: break-word;
-    letter-spacing: 1.5px;
-    margin: 20px 0 60px 0;
+    letter-spacing: 1.5px; 
+    max-width: 100%; 
+    margin:20px 0 60px 0;  
     padding: 0;
     width: 100%;
     font-size: 16px;
-  }
-
+    }
   #enterLetter {
     font-size: 20px;
-  }
-
+    }
   #submitLetter {
     margin-top: 24px;
-  }
-
+   } 
   #yourProgress {
-    margin-top: 24px;
+    margin-top: 24px; 
   }
-
-  #backButton,
-  #quitGame,
-  #scoreboard,
-  #noCigar,
-  #playAnotherRound,
-  #message p,
-  #quote,
-  #intro {
-    font-size: 15px;
-  }
-
-  #backButton,
-  #quitGame,
-  #scoreboard {
+   #backButton {
     top: 5px;
     left: 5px;
-    right: 5px;
+    font-size: 15px;
   }
-
+  #quitGame {
+    top: 5px;
+    left: 5px;
+    font-size: 15px;
+  }
+  #scoreboard {
+   top: 5px;
+   right: 5px;
+   font-size: 15px;
+  }
   #noCigar {
     margin-bottom: 0;
-    padding: 0.5rem;
+    font-size: 15px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   }
-
   #playAnotherRound {
-    bottom: 15px;
+    bottom: 15px; 
+    font-size: 15px;
     margin-top: 15px;
   }
-
+  #message p {
+    font-size: 15px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
   #quote {
+    font-size: 15px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     bottom: 75px;
   }
-
   #intro {
     padding-top: 8px;
   }
-}
-
+} 
+/* ....... mobile .......*/
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   h1 {
     font-size: 2em;
-    margin-top: 50px;
-  }
-
+    margin-top:50px;
+    }
   #intro {
     margin-top: 12px;
-  }
-
+  }  
   h2 {
     font-size: 1.65rem;
   }
-
   #backButton {
     top: 5px;
     left: 5px;
     font-size: 16px;
-  }
-
+  } 
   #wordDisplay {
     white-space: pre-wrap;
-    word-wrap: break-word;
-    max-width: 100%;
+    word-wrap: break-word; 
+    max-width: 100%; 
     overflow-wrap: break-word;
-    letter-spacing: 1.5px;
-    margin: 0 0 35px 0;
+    letter-spacing: 1.5px; 
+    max-width: 100%; 
+    margin: 0 0 35px 0;  
     padding: 0;
     width: 100%;
     font-size: 18px;
-  }
-
+    }
   #enterLetter {
     font-size: 28px;
     margin-bottom: 20px;
-  }
-
+    }
   #submitLetter {
     margin-top: 18px;
-  }
-
+   } 
   #attemptsLeft {
     margin-bottom: 0;
-  }
-
+  } 
   #scoreboard {
     top: 5px;
     right: 5px;
     font-size: 16px;
-  }
-
-  #noCigar {
-    margin-bottom: 0;
-    padding: 0.5rem;
-  }
-
-  #playAnotherRound {
-    bottom: 16px;
-    margin-top: 25px;
-  }
-
-  #message p,
-  #quote {
-    font-size: 16px;
-    padding: 0.5rem;
-  }
-
-  #quote {
-    bottom: 100px;
-    margin-bottom: 0;
-  }
-
-  #quitGame,
-  #scoreboard {
+   }
+   #noCigar {
+     margin-bottom: 0;
+     font-size: 16px;
+     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+   }
+   #playAnotherRound {
+     bottom: 16px; 
+     font-size: 15px;
+     margin-top: 25px;
+   }
+   #message p {
+     font-size: 16px;
+     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+   }
+   #quote {
+     font-size: 16px;
+     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+     bottom: 100px;
+     margin-bottom: 0;
+     
+   }
+   #quitGame {
     top: 10px;
-    left: 10px;
+    left:10px;
+    font-size: 16px;
+   }
+   #scoreboard {
+    top: 10px;
     right: 10px;
     font-size: 16px;
-  }
-}
-
+   }
+  }  
+  
+/* ...smaller tablet devices... */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  #wordDisplay {
+#wordDisplay {
     white-space: pre-wrap;
-    word-wrap: break-word;
-    max-width: 100%;
+    word-wrap: break-word; 
+    max-width: 100%; 
     overflow-wrap: break-word;
-    letter-spacing: 1.5px;
-    margin: 0 0 35px 0;
+    letter-spacing: 1.5px; 
+    max-width: 100%; 
+    margin: 0 0 35px 0;  
     padding: 0;
     width: 100%;
-    font-size: 24px
-  }
+    font-size: 24px;
+    }
+  h1 {
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }  
+ #enterLetter  {
+  margin-top: 40px (!important);
+  margin-top: 40px;
+ } 
+ #noCigar {
+   bottom: 100px;
+   font-size: 18px;
+   padding: 16px 16px 16px 16px;
+ }
+ #message {
+  font-size: 18px;
+ }
+ #quote {
+  bottom: 100px;
+  font-size: 18px;
+  padding: 16px 16px 16px 16px; 
+ }
+#scoreboard {
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+ }
+ #quitGame {
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+ }
+ #playAnotherRound {
+  bottom: 30px;
+  font-size: 20px;
+  margin-top: 15px;
+ }
+ #backButton {
+  top: 5px;
+  left: 5px;
+  font-size: 16px;
+ }
 }
-
-
+/* ....... tablet .......*/
+@media only screen and (min-width: 768px) {
+ #scoreboard {
+  right: 27px;
+  font-size: 18px;
+ }
+ #quitGame {
+  font-size: 18px;
+ }
+ #playAnotherRound {
+  bottom: 45px;
+  font-size: 18px;
+  margin-top: 15px;
+ }
+ #backButton {
+  top: 5px;
+  left: 5px;
+  font-size: 16px;
+ }
+ #noCigar {
+  bottom: 110px;
+  font-size: 18px;
+ }
+ #backButton {
+  font-size: 18px;
+ }
+ #quote {
+  font-size: 18px;
+  bottom: 125px;
+ }
+ #message p {
+  font-size: 18px;
+ }
+}
 
 /*........ ipad air .........*/
 @media only screen and (min-width: 820px) {
 }
- 
+
 
 /*........ desktop .........*/
 @media only screen and (min-width: 1024px) {
@@ -321,15 +381,13 @@ p {
     top: 1rem;
     right: 1rem;
   }
-  #quote {
-    text-align: center;
   }
-}
- 
 
   /*........ larger screens .........*/
 @media only screen and (min-width: 1280px) {
-  #quote {
-    text-align: center;
-  }
+  #gameInstructions {
+    position:fixed;
+    top: 1rem;
+    right: 1rem;
+}
 }
