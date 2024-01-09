@@ -2,7 +2,7 @@
 
 **Developer: Amy Cook**
 
-[Visit live website](http)
+[Visit live website](https://amegeddon.github.io/The-Thinker-Game)
 
 ![Mockup image](docs/ami-responsivedesign- ADD)
 
@@ -92,8 +92,7 @@
 8. Clear Game Understanding and navigation: Ensuring users easily comprehend the game mechanics for a seamless and enjoyable experience.
 9. Self-Challenge Capability: Providing users with the opportunity to change the difficulty setting and enhance their skills while playing.
 10. Full Responsiveness: Designing the game to adapt effortlessly to various screen sizes and devices, ensuring accessibility for all users.
-11. To create a visually captivating game with a well-thought-out and aesthetically pleasing design.
-12. The user to be directed to a custom 404 error page upon entering a non-existent URL, eliminating the need to rely on the browser's back button.
+11. The user to be directed to a custom 404 error page upon entering a non-existent URL, eliminating the need to rely on the browser's back button.
 
 
 ## Design
@@ -322,180 +321,127 @@ The website was tested on the following devices:
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
-| Instructions button| Click on the Game Instructions button | Modal with game instructions pops up. Click on close button to close modal | Works as expected |
+|Game instructions button| Click on Instructions button | Modal with game instructions pops up. Click on close button to close modal or click game instructions again to close | Works as expected |
 
 <details><summary>Screenshot</summary>
 <img src="docs/instructionsbutton1.png">
 <img src="docs/instructionbutton2.png">
 </details>
 
-2. I want to enter my name and have it visible on screen while the game is played
+2. Adaptable Difficulty Levels: A feature allowing me to choose from various difficulty levels, tailoring the game's challenge to my preference.
 
 | **Feature**    | **Action**                                                           | **Expected Result**                               | **Actual Result** |
 | -------------- | -------------------------------------------------------------------- | ------------------------------------------------- | ----------------- |
-| Username input | Type user name (1-12 characters) and click button or press Enter key | User log in and name displayed in top left corner | Works as expected |
+| Difficulty select buttons  | Select preferred difficulty using the options of easy, medium and difficult buttons| Attempts left will adjust accordingly (easy=8, medium=6 hard=4) | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-2-a.JPG">
-<img src="docs/user-story-testing/user-story-2-b.JPG">
-<img src="docs/user-story-testing/user-story-2-c.JPG">
+<img src="docs/levelselect1.png">
+<img src="docs/level2.png">
+<img src="docs/level3.png">
+<img src="docs/levelselect4.png">
 </details>
 
-3. I want to be able to choose a difficulty level for the game
+3. Dual Interaction Methods: The flexibility to engage with the game using both mouse clicks and keyboard inputs, providing a choice that suits my preferred playing style.
 
 | **Feature**             | **Action**                                                             | **Expected Result**                                                                                     | **Actual Result** |
 | ----------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ----------------- |
-| Difficulty level screen | Click one of the three buttons on the screen to play the relevant game | The chosen game level screen loads. Game level and number of guesses are displayed on top right corner. | Works as expected |
+| Event listener on keyboard enter to submit letter guess   | User can choose between clicking on the "submit letter" button or pressing enter on their keyboard. | Letter is successfully entered by both avenues and cursor returned to the input box for user convienence | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-3-a.JPG">
-<img src="docs/user-story-testing/user-story-3-b.JPG">
-<img src="docs/user-story-testing/user-story-3-c.JPG">
-<img src="docs/user-story-testing/user-story-3-d.JPG">
+<img src="docs/enterpress.png">
+<img src="docs/mouseclick.png">
 </details>
 
-4. I want to have different categories of phrases to guess from
+4. Progress Tracking: A visual representation of my progress alongside the remaining number of attempts in each round, ensuring a clear understanding of my progress.
 
 | **Feature**                           | **Action**                               | **Expected Result**                                                       | **Actual Result** |
 | ------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------- | ----------------- |
-| Difficulty level screen & Game screen | Select the level of desired game to play | The phrase category is displayed on the game screen above the sun picture | Works as expected |
+| Progress bar |The progress bar fills as the user inputs correct letters, visually illustrating their proximity to correctly guessing the philosopher| The progress bar is displayed below the letter submit button and fills according to how many letters are left to guess | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-4-a.JPG">
-<img src="docs/user-story-testing/user-story-4-b.JPG">
+<img src="docs/progress1.png">
+<img src="docs/progress2.png">
+<img src="docs/progress3.png">
+<img src="docs/progress4.png">
 </details>
 
-5. I want to be able to play the game both by clicking the mouse and by using the keyboard
+5. Result Display: After successfully guessing a word, I would like to see a message of congratulations alongside a philosophical quote, adding a sense of achievement to the gameplay.
 
 | **Feature** | **Action**                                                               | **Expected Result**                                                                        | **Actual Result** |
 | ----------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ----------------- |
-| Game screen | Click on the displayed alphabet buttons or press the key on the keyboard | The letter which have already been clicked/pressed changes color and cannot be used again. | Works as expected |
+| End Game screen | Guess the hidden thinker within the given number of attempts | Congratulations screen displays with a picture of Euripides and a philosophical quote | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-5-a.JPG">
-<img src="docs/user-story-testing/user-story-5-b.JPG">
+<img src="docs/correctscreen.png">
 </details>
 
-6. I want to be able to see which letters I have already guessed and the number of guesses I have left in the round
+6.  After incorrectly guessing the word, I would like to immediately know what the correct answer was. 
 
 | **Feature** | **Action**                                                               | **Expected Result**                                                                                              | **Actual Result** |
 | ----------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- | ----------------- |
-| Game screen | Click on the displayed alphabet buttons or press the key on the keyboard | Used letters change color and cannot be used again. Number of remaining guesses is displayed in top right corner | Works as expected |
+| End Game Screen | When all guess attempts have been used and the hidden thinker has not been identified | The correct answer is displayed | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-6-a.JPG">
-<img src="docs/user-story-testing/user-story-6-b.JPG">
+<img src="docs/correctscreen.png">
+<img src="docs/incorrectScreen.png">
 </details>
 
-7. I want to see my result after I guessed the phrase
+7.  A scoreboard to track the frequency of correct answers, providing a clear record of successful guesses. 
 
 | **Feature**          | **Action**                                                                            | **Expected Result**                                             | **Actual Result** |
 | -------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ----------------- |
-| Correct Guess Screen | Guess the hidden phrase within specific number of guesses for the game level selected | The message and number of points scored in the round displayed. | Works as expected |
+| Scoreboard | Correctly guess the hidden thinker | The amount of correct guesses is saved on the scoreboard displayed on both the main game and end game section | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-7.JPG">
+<img src="docs/scoreboard1.png">
+<img src="docs/scoreboard2.png">
 </details>
 
-8. I want to see the phrase I didn’t manage to guess
+8. 8. Clear Game Understanding and navigation: Ensuring users easily comprehend the game mechanics for a seamless and enjoyable experience.
 
 | **Feature**        | **Action**                                                  | **Expected Result**             | **Actual Result** |
 | ------------------ | ----------------------------------------------------------- | ------------------------------- | ----------------- |
-| Wrong Guess Screen | All guesses were used and the hidden phrase was not guessed | The correct phrase is displayed | Works as expected |
+| Simple navigation buttons | 1. User wants to return to the start screen during game play to change difficulty setting 2. Upon end of game user wants to quit/ or play again. | 1. "back" button returns user to start screen 2.  User can choose to either "play again" or "quit" by pressing the relevant button on the end game screen P | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-8.JPG">
+<img src="docs/backbutton1.png">
+<img src="docs/quitbutton.png">
 </details>
 
-9. I want to be able to play the game on desktop, tablet and mobile devices
+9. Self-Challenge Capability: Providing users with the opportunity to change the difficulty setting and enhance their skills while playing.
 
-| **Feature**                                   | **Action**                | **Expected Result**                      | **Actual Result** |
-| --------------------------------------------- | ------------------------- | ---------------------------------------- | ----------------- |
-| Every page has been designed to be responsive | Change device screen size | The site works on different screen sizes | Works as expected |
+| **Feature**    | **Action**                                                           | **Expected Result**                               | **Actual Result** |
+| -------------- | -------------------------------------------------------------------- | ------------------------------------------------- | ----------------- |
+| Difficulty select buttons  | Select preferred difficulty using the options of easy, medium and difficult buttons| Attempts left will adjust accordingly (easy=8, medium=6 hard=4) | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-9-a.JPG">
-<img src="docs/user-story-testing/user-story-9-b.JPG">
-<img src="docs/user-story-testing/user-story-9-c.JPG">
-<img src="docs/user-story-testing/user-story-9-d.JPG">
+<img src="docs/levelselect1.png">
+<img src="docs/level2.png">
+<img src="docs/level3.png">
+<img src="docs/levelselect4.png">
 </details>
 
-10. I want to be able to get in touch with the developer
+10. Full Responsiveness: Designing the game to adapt effortlessly to various screen sizes and devices, ensuring accessibility for all users.
 
 | **Feature**  | **Action**                               | **Expected Result**       | **Actual Result** |
 | ------------ | ---------------------------------------- | ------------------------- | ----------------- |
-| Contact Form | Click on the envelope icon in the footer | Displays the contact form | Works as expected |
+| Responsive design used throughout project | Change device or screen size | Displays correctly without layout issues | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-10-a.JPG">
-<img src="docs/user-story-testing/user-story-10-b.JPG">
+<img src="">
+<img src="">
 </details>
 
-11. I want to be sure that my message has been sent
+11. The user to be directed to a custom 404 error page upon entering a non-existent URL, eliminating the need to rely on the browser's back button.
 
 | **Feature**                      | **Action**                                           | **Expected Result**                        | **Actual Result** |
 | -------------------------------- | ---------------------------------------------------- | ------------------------------------------ | ----------------- |
-| Contact Form confirmation screen | Fill in the contact form and click the submit button | The contact form confirmation is displayed | Works as expected |
+| 404 error page | Page cannnot be found |  Directs user back to the game via 404 error page if they type a url that doesnt exist| Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-11-a.JPG">
-<img src="docs/user-story-testing/user-story-11-b.JPG">
+<img src="docs/404test.png">
 </details>
 
-12. I want user to easily understand the game
-
-| **Feature**       | **Action**                      | **Expected Result**                  | **Actual Result** |
-| ----------------- | ------------------------------- | ------------------------------------ | ----------------- |
-| Instructions Icon | Click on the icon on any screen | Modal with game instructions pops up | Works as expected |
-
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-12-a.JPG">
-<img src="docs/user-story-testing/user-story-12-b.JPG">
-</details>
-
-13. I want the user to be able to challenge themselves
-
-| **Feature**             | **Action**                                                                                                                  | **Expected Result**                             | **Actual Result** |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ----------------- |
-| Difficulty level screen | User selects on of the three available levels of the game which includes the hard version with only a few available guesses | The game level screen loads of the chosen game. | Works as expected |
-
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-13.JPG">
-</details>
-
-14. I want my game to be fully responsive
-
-| **Feature**                                   | **Action**                | **Expected Result**                      | **Actual Result** |
-| --------------------------------------------- | ------------------------- | ---------------------------------------- | ----------------- |
-| Every page has been designed to be responsive | Change device screen size | The site works on different screen sizes | Works as expected |
-
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-14-a.JPG">
-<img src="docs/user-story-testing/user-story-14-b.JPG">
-<img src="docs/user-story-testing/user-story-14-c.JPG">
-<img src="docs/user-story-testing/user-story-14-d.JPG">
-</details>
-
-15. I want the user to come to a 404 error page instead of having to use the browser back button if they enter a url that does not exist
-
-| **Feature**    | **Action**           | **Expected Result**                                                                       | **Actual Result** |
-| -------------- | -------------------- | ----------------------------------------------------------------------------------------- | ----------------- |
-| 404 error page | Page cannot be found | When a user types the wrong address or cannot find a page they are rerouted to a 404 page | Works as expected |
-
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-15.JPG">
-</details>
-
-16. I want user to be able to contact me and provide their feedback
-
-| **Feature**  | **Action**                                                  | **Expected Result**                                              | **Actual Result** |
-| ------------ | ----------------------------------------------------------- | ---------------------------------------------------------------- | ----------------- |
-| Contact Form | User fills in the contact form and clicks the submit button | Developer receives email with user's contact details and message | Works as expected |
-
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-16-a.JPG">
-<img src="docs/user-story-testing/user-story-16-b.JPG">
-</details>
 
 ## Bugs
 
