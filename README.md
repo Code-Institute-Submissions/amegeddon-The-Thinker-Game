@@ -400,7 +400,7 @@ The website was tested on the following devices:
 
 | **Feature**        | **Action**                                                  | **Expected Result**             | **Actual Result** |
 | ------------------ | ----------------------------------------------------------- | ------------------------------- | ----------------- |
-| Simple navigation buttons | 1. User wants to return to the start screen during game play to change difficulty setting 2. Upon end of game user wants to quit/ or play again. | 1. "back" button returns user to start screen 2.  User can choose to either "play again" or "quit" by pressing the relevant button on the end game screen P | Works as expected |
+| Simple navigation buttons | 1. User wants to return to the start screen during game play to change difficulty setting 2. Upon end of game user wants to quit/ or play again. | 1. "back" button returns user to start screen 2.  User can choose to either "play again" or "quit" by pressing the relevant button on the end game screen  | Works as expected |
 
 <details><summary>Screenshot</summary>
 <img src="docs/backbutton1.png">
