@@ -420,14 +420,17 @@ h2 {
 }
 #intro {
   padding-top: 0px;
-  font-size: 18px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 18px;
 }
-.img-fluid {
-  max-height:;
+#philosopher {
+  max-height: 45%;
+
 }
-button {
+}
+
+.btn {
   font-size: 18px;
 }
 p {
