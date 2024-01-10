@@ -426,13 +426,13 @@ p {
  }
  
 }
-/* ....... tablet .......*/
+/* ....... tablet and small laptop.......*/
 @media only screen and (min-width: 768px) {
  #quitGame {
   font-size: 18px;
  }
  #intro {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
  }
  #playAnotherRound {
   bottom: 45px;
@@ -456,7 +456,7 @@ p {
   font-size: 18px;
  }
  .buttonContainerDifficulty{
-  margin-top: 25px ;
+  margin-top: 18px ;
  }
  #quote {
   font-size: 18px;
@@ -471,7 +471,7 @@ p {
   right: 1rem;
 }
 h1{
-  margin-top: 70px;
+  margin-top: 60px;
   margin-bottom: 29px;
 }
 }
@@ -490,7 +490,7 @@ h1{
   h1 {
     margin-bottom: 18px;
     font-size: 33px;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   h2 {
     font-size: 24px;
@@ -521,8 +521,8 @@ h1{
 }
 h1 {
   font-size: 3rem;
-  margin-top: 115px;
-  margin-bottom: 25px;
+  margin-top: 75px;
+  margin-bottom: 15px;
 }
 h2 {
   font-size: 2rem;
@@ -538,6 +538,9 @@ p {
 }
 #wordDisplay {
   margin-bottom: 90px;
+}
+.buttonContainerDifficulty {
+  margin-top: 25px;
 }
 
 }
