@@ -128,11 +128,11 @@ p {
 }
 
 /* ....... small mobiles eg.galaxy fold .......*/
-@media only screen and (min-width: 260px) and (max-width: 320px) {
+@media only screen and (min-width: 260px) and (max-width: 300px) {
   h1 {
     font-size: 1.5rem;
     font-weight: bolder;
-    margin-top: 58px;
+    margin-top: 42px;
     }
   h2 {
     font-size: 1.25rem;
@@ -201,12 +201,17 @@ p {
   #intro {
     padding-top: 8px;
   }
+  .scoreboard {
+    position: fixed;
+    top: 1%;
+    font-size: 16px;
+  }
 } 
 /* ....... mobile .......*/
-@media only screen and (min-width: 321px) and (max-width: 480px) {
+@media only screen and (min-width: 301px) and (max-width: 400px) {
   h1 {
     font-size: 2em;
-    margin-top:40px;
+    margin-top:45px;
     }
   #intro {
     margin-top: 20px;
@@ -226,7 +231,8 @@ p {
     overflow-wrap: break-word;
     letter-spacing: 1.5px; 
     max-width: 100%; 
-    margin: 0 0 35px 0;  
+    margin-top: 70px; 
+    margin-bottom: 70px;
     padding: 0;
     width: 100%;
     font-size: 18px;
@@ -279,12 +285,96 @@ p {
     margin-bottom: 15px;
     margin-top: 15px;
    }
-   #philosopher1{
-    position: fixed;
-    bottom: 0; 
-    left: 0;
-   }
+   .buttonLevels {
+    margin-top: 12px;
+  }
   }  
+
+/* ...larger mobile devices ...*/
+@media only screen and (min-width: 401px) and (max-width: 481px) {
+  h1 {
+    font-size: 2em;
+    margin-top:90px;
+    }
+  #intro {
+    margin-top: 20px;
+  }  
+  h2 {
+    font-size: 1.65rem;
+  }
+  #backButton {
+    top: 5px;
+    left: 5px;
+    font-size: 16px;
+  } 
+  #wordDisplay {
+    white-space: pre-wrap;
+    word-wrap: break-word; 
+    max-width: 100%; 
+    overflow-wrap: break-word;
+    letter-spacing: 1.5px; 
+    max-width: 100%; 
+    margin-top: 90px;
+    margin-bottom: 75px;
+    padding: 0;
+    width: 100%;
+    font-size: 18px;
+    }
+    .buttonContainerDifficulty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      }
+  .buttonLevels {
+    margin-top: 20px;
+  }   
+  #enterLetter {
+    font-size: 28px;
+    margin-bottom: 30px;
+    }
+  #submitLetter {
+    margin-top: 18px;
+   } 
+  #attemptsLeft {
+    margin-bottom: 0;
+  } 
+   #noCigar {
+     margin-bottom: 0;
+     font-size: 16px;
+     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+   }
+   #playAnotherRound {
+     bottom: 16px; 
+     font-size: 15px;
+     margin-top: 25px;
+   }
+   #message p {
+     font-size: 16px;
+     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+   }
+   #quote {
+     font-size: 16px;
+     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+     bottom: 100px;
+     margin-bottom: 0;
+   }
+   #quitGame {
+    top: 10px;
+    left:10px;
+    font-size: 16px;
+   }
+   #gameInstructions {
+    margin-top: 40px;
+    margin-bottom: 40px;
+   }
+   #intro {
+    margin-bottom: 40px;
+    margin-top: 0px;
+   }
+}
+
   
 /* ...smaller tablet devices... */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -335,10 +425,17 @@ p {
  #quitGame {
   font-size: 18px;
  }
+ #intro {
+  margin-bottom: 40px;
+ }
  #playAnotherRound {
   bottom: 45px;
   font-size: 18px;
   margin-top: 15px;
+ }
+ #wordDisplay {
+  margin-top: 0px;
+  margin-bottom: 60px;
  }
  #backButton {
   top: 5px;
@@ -352,6 +449,9 @@ p {
  #backButton {
   font-size: 18px;
  }
+ .buttonContainerDifficulty{
+  margin-top: 25px ;
+ }
  #quote {
   font-size: 18px;
   bottom: 125px;
@@ -364,15 +464,10 @@ p {
   top: 1rem;
   right: 1rem;
 }
+h1{
+  margin-top: 70px;
+  margin-bottom: 29px;
 }
-
-/*........ ipad air .........*/
-@media only screen and (min-width: 820px) {
-  #gameInstructions {
-    position:fixed;
-    top: 1rem;
-    right: 1rem;
-  }
 }
 
 
@@ -420,18 +515,13 @@ h2 {
 }
 #intro {
   padding-top: 0px;
-  font-size: 16px;
+  font-size: ;
   margin-top: 12px;
   margin-bottom: 18px;
 }
 #philosopher {
   max-height: 45%;
 
-}
-}
-
-.btn {
-  font-size: 18px;
 }
 p {
   font-size: 18px;
