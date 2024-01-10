@@ -4,7 +4,7 @@
 
 [Visit live website](https://amegeddon.github.io/The-Thinker-Game)
 
-![Mockup image]()
+![Mockup image](docs/am_i_responsive.png)
 
 ## Table of Content
 
