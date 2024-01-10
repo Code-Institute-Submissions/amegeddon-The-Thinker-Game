@@ -121,6 +121,12 @@ p {
   left: 2rem;
   top: 2rem;
 }
+#philosopher1 {
+  position: fixed;
+  bottom: 0; 
+  left: 0;
+}
+
 /* ....... small mobiles eg.galaxy fold .......*/
 @media only screen and (min-width: 260px) and (max-width: 320px) {
   h1 {
@@ -200,10 +206,10 @@ p {
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   h1 {
     font-size: 2em;
-    margin-top:50px;
+    margin-top:40px;
     }
   #intro {
-    margin-top: 12px;
+    margin-top: 20px;
   }  
   h2 {
     font-size: 1.65rem;
@@ -225,6 +231,12 @@ p {
     width: 100%;
     font-size: 18px;
     }
+    .buttonContainerDifficulty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      }
   #enterLetter {
     font-size: 28px;
     margin-bottom: 20px;
@@ -254,12 +266,23 @@ p {
      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
      bottom: 100px;
      margin-bottom: 0;
-     
    }
    #quitGame {
     top: 10px;
     left:10px;
     font-size: 16px;
+   }
+   #gameInstructions {
+    margin-top: 15px;
+   }
+   #intro {
+    margin-bottom: 15px;
+    margin-top: 15px;
+   }
+   #philosopher1{
+    position: fixed;
+    bottom: 0; 
+    left: 0;
    }
   }  
   
@@ -373,5 +396,14 @@ p {
     position:fixed;
     top: 1rem;
     right: 1rem;
+}
+h1 {
+  margin-bottom: 8px;
+}
+#intro {
+  padding-top: 0px;
+}
+.img-fluid {
+  max-height: 200px;
 }
 }
