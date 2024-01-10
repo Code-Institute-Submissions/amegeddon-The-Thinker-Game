@@ -48,14 +48,14 @@ progress {
   border: none;
   border-radius: 10px;
 }
-/* Style the progress bar value (progress) */
+
 progress::-webkit-progress-value {
-  background-color: #4caf50; /* Green background */
-  border-radius: 10px; /* Rounded corners */
+  background-color: #4caf50; 
+  border-radius: 10px; 
 }
 progress::-moz-progress-bar {
-  background-color: #4caf50; /* Green background */
-  border-radius: 10px; /* Rounded corners */
+  background-color: #4caf50; 
+  border-radius: 10px;
 }
 p {
   font-family: 'Lato', sans-serif;
@@ -121,7 +121,7 @@ p {
   left: 2rem;
   top: 2rem;
 }
-#philosopher1 {
+#philosopher1, #philosopher {
   position: fixed;
   bottom: 0; 
   left: 0;
@@ -386,6 +386,20 @@ p {
   .scoreboard  {
     font-size: 18px;
   }
+  h1 {
+    margin-bottom: 8px;
+    font-size: 33px;
+    margin-top: 8px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  #intro {
+    padding-top: 0px;
+  }
+  #philosopher1 {
+    margin-top: 0px;
+  }
   }
 
   
@@ -398,12 +412,26 @@ p {
     right: 1rem;
 }
 h1 {
-  margin-bottom: 8px;
+  font-size: 3rem;
+  margin-bottom: ;
+}
+h2 {
+  font-size: 2rem;
 }
 #intro {
   padding-top: 0px;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .img-fluid {
-  max-height: 200px;
+  max-height:;
 }
+button {
+  font-size: 18px;
+}
+p {
+  font-size: 18px;
+}
+
 }
