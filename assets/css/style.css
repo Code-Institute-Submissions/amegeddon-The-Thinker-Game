@@ -125,6 +125,7 @@ p {
   position: fixed;
   bottom: 0; 
   left: 0;
+
 }
 
 /* ....... small mobiles eg.galaxy fold .......*/
@@ -521,7 +522,7 @@ h1{
 }
 h1 {
   font-size: 3rem;
-  margin-top: 75px;
+  margin-top: 25px;
   margin-bottom: 15px;
 }
 h2 {
