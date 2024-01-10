@@ -288,6 +288,12 @@ p {
    .buttonLevels {
     margin-top: 12px;
   }
+  #philosopher1 {
+    margin-top: 50px;
+  }
+  .buttonContainerDifficulty{
+    margin-bottom: 100px;
+  }
   }  
 
 /* ...larger mobile devices ...*/
@@ -508,7 +514,8 @@ h1{
 }
 h1 {
   font-size: 3rem;
-  margin-bottom: ;
+  margin-top: 150px;
+  margin-bottom: 50px;
 }
 h2 {
   font-size: 2rem;
@@ -519,15 +526,11 @@ h2 {
   margin-top: 12px;
   margin-bottom: 18px;
 }
-#philosopher {
-  max-height: 45%;
-
-}
 p {
   font-size: 18px;
 }
 #wordDisplay {
-  margin-bottom: 25px;
+  margin-bottom: 90px;
 }
 
 }
