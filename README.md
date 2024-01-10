@@ -427,8 +427,12 @@ The website was tested on the following devices:
 | Responsive design used throughout project | Change device or screen size | Displays correctly without layout issues | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="">
-<img src="">
+<img src="docs/galaxy fold.png">
+<img src="docs/ipad pro.png">
+<img src="docs/iphone SE.png">
+<img src="docs/nesthub.png">
+<img src="docs/samsung s20.png">
+<img src="docs/surfacepro7.png">
 </details>
 
 11. The user to be directed to a custom 404 error page upon entering a non-existent URL, eliminating the need to rely on the browser's back button.
