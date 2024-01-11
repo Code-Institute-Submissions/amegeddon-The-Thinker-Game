@@ -1,11 +1,12 @@
 // arrays and variables
+
 const names = [
   "plato",
   "aristotle",
   "confucius",
   "thomas aquinas",
   "immanuel kant",
-  "john locke",
+ /* "john locke",
   "jean jacques rousseau",
   "albert camus",
   "jean paul sartre",
@@ -93,9 +94,9 @@ const names = [
     "william kingdon clifford",
     "ludwig von mises",
     "karl mannheim",
-    "alfred ayer"
+    "alfred ayer"*/
   ];
-];
+
 
 const hints = [
   "Ancient Greek philosopher, student of Socrates, and founder of the Academy. Famous for his dialogues, including 'The Republic.'",
@@ -103,7 +104,7 @@ const hints = [
   "Chinese philosopher emphasizing ethics, morality, and social harmony. His teachings form the basis of Confucianism.",
   "Medieval theologian integrating Aristotelian philosophy with Christian theology. Wrote 'Summa Theologica.'",
   "German philosopher known for his Critique of Pure Reason. Developed the categorical imperative in ethics.",
-  "Enlightenment thinker advocating for natural rights, social contract, and empiricism. Influential in political philosophy.",
+  /*"Enlightenment thinker advocating for natural rights, social contract, and empiricism. Influential in political philosophy.",
   "Social contract theorist and philosopher of the Enlightenment. Emphasized the idea of the 'noble savage.'",
   "Existentialist and absurdist philosopher, author of 'The Stranger' and 'The Myth of Sisyphus.'",
   "Existentialist philosopher declaring 'Existence precedes essence.' Emphasized radical freedom and responsibility.",
@@ -177,56 +178,48 @@ const hints = [
     "British mathematician and philosopher known for 'The Ethics of Belief.'",
     "Austrian economist and social philosopher. Associated with the Austrian School of Economics.",
     "Sociologist and philosopher known for the concept of 'totalitarianism.'",
-    "Logical positivist and philosopher known for 'Language, Truth, and Logic.'"
+    "Logical positivist and philosopher known for 'Language, Truth, and Logic.'"*/
   ];
   
-  // Combine the original and additional arrays
-  const combinedPhilosophers = philosophers.concat(additionalPhilosophers);
-  const combinedHints = hints.concat(additionalHints);
-  
-  // Example usage:
-  console.log(combinedPhilosophers);
-  console.log(combinedHints);
-  
-
 
 const quotes = [
-  "The only source of knowledge is experience. - Albert Einstein",
-  "Every artist was first an amateur. - Ralph Waldo Emerson",
-  "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. - Ralph Waldo Emerson",
-  "Simplicity is the ultimate sophistication. - Leonardo da Vinci",
-  "All the world's a stage, and all the men and women merely players. - William Shakespeare",
+"The only source of knowledge is experience. - Albert Einstein",
+"Every artist was first an amateur. - Ralph Waldo Emerson",
+"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. - Ralph Waldo Emerson",
+"Simplicity is the ultimate sophistication. - Leonardo da Vinci",
+"All the world's a stage, and all the men and women merely players. - William Shakespeare",
 ];
+
 const startGameSection = document.getElementById("startGameSection");
 const gameArea = document.getElementById("game");
 const endGameSection = document.getElementById("endGameSection");
-let hiddenName = getRandomName().toUpperCase();
 const wordDisplay = document.getElementById("wordDisplay");
 const letterInput = document.getElementById("letterInput");
 const submitLetter = document.getElementById("submitLetter");
 const playAnotherRound = document.getElementById("playAnotherRound");
 const progressBar = document.getElementById("progressBar");
 const title = document.getElementById("title");
-const hintIndex = names.indexOf(hiddenName.toLowerCase());
-
+//const lowerCaseHiddenName = hiddenName.toLowerCase();
+//const hintIndex = names.indexOf(hiddenName.toLowerCase());
+const letter = letterInput.value.toUpperCase();
 const hintElement = document.getElementById("hint");
+const noCigar = document.getElementById("noCigar");
+const startButtons = document.querySelectorAll(".btn-diff");
+const message = document.getElementById("message");
+const attemptsLeftDisplay = document.getElementById("attemptsLeft");
+const messageGame = document.getElementById("messageGame");
 
-let message = document.getElementById("message");
-let messageGame = document.getElementById("messageGame");
-let attemptsLeftDisplay = document.getElementById("attemptsLeft");
+let hiddenName = getRandomName().toUpperCase();
 let guessedName = createGuessedNameArray(hiddenName);
 let guessedLetters = [];
 let initialAttempts; 
-let startButtons = document.querySelectorAll(".btn-diff");
 let correctGuessCount = 0;
 let attemptsLeft;
-let noCigar = document.getElementById("noCigar");
 
-// Function to hide or display the three game stages
-function hideOrDisplay(element) {
-  element.classList.contains("hide") ? element.classList.remove("hide")
-    : element.classList.add("hide");
-}
+
+//............ Event Listenters ...............//
+
+
 // Event listener for the level difficulty selection
 for (let button of startButtons) {
   button.addEventListener("click", (event) => {
@@ -238,36 +231,57 @@ for (let button of startButtons) {
     letterInput.focus();
   });
 }
-// Displays the hidden name as underscores
-wordDisplay.textContent = guessedName.join(" ");
+
 // Submit letter button Event listener
 submitLetter.addEventListener("click", handleGuess);
+
 // Enter keypress Event listener
 letterInput.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     handleGuess();
   }
 });
+
 // quit button Event listener
 document.getElementById("quitGame").addEventListener("click", function () {
-  console.log("Quit button clicked");
-  
   correctGuessCount = 0;
   startNewRound();
   hideOrDisplay(startGameSection);
   hideOrDisplay(endGameSection);
 });
+
 // back button Event listener
 document.getElementById("backButton").addEventListener("click", function () {
   startNewRound();
   hideOrDisplay(gameArea);
   hideOrDisplay(startGameSection);
 });
-// Random name generator
+
+// Event listener for the play another round button
+playAnotherRound.addEventListener("click", function () {
+  startNewRound();
+  hideOrDisplay(endGameSection);
+  hideOrDisplay(gameArea);
+  letterInput.focus();
+});
+
+
+
+//............ Functions ...............//
+
+
+/** Function to hide or display the three game stages */ 
+function hideOrDisplay(element) {
+  element.classList.contains("hide") ? element.classList.remove("hide")
+    : element.classList.add("hide");
+}
+
+/** Random name generator */ 
 function getRandomName() {
   return names[Math.floor(Math.random() * names.length)];
 }
-// Creates an array of underscores and spaces to display the hidden name
+
+/** Creates an array of underscores and spaces to display the hidden name */
 function createGuessedNameArray(name) {
   let guessedName = [];
   for (let i = 0; i < name.length; i++) {
@@ -281,22 +295,37 @@ function createGuessedNameArray(name) {
 }
 
 
+/*function provideHint() {
+
+
+  for (let i = 0; i < names.length; i++) {
+    if (names[i].toLowerCase() === lowerCaseHiddenName) {
+      hintIndex = i;
+      break;
+    }
+  }
+
+  if (hintIndex !== -1 && hintIndex < hints.length) {
+    hintElement.textContent = `Hint: ${hints[hintIndex]}`;
+  }
+  console.log(hiddenName);
+}*/
+
+/** Displays hint when attempts left = 1 */
 function provideHint() {
   console.log('where is the hint!');
+  const hintIndex = names.indexOf(hiddenName);
+  const hintElement = document.getElementById("hint");
+
   if (hintIndex !== -1 && hintIndex < hints.length) {
     hintElement.textContent = `Hint: ${hints[hintIndex]}`;
   }
   console.log(hintIndex, hintElement.textContent, hiddenName);
 }
 
-
-
-
-
-
-
-// Handles the guess and displays the appropriate message
+/** Handles the guess and displays the appropiate message */
 function handleGuess() {
+  
   console.log("attemptsLeft:", attemptsLeft); 
   if (attemptsLeft === 0) {
     return;
@@ -304,14 +333,12 @@ function handleGuess() {
   if (attemptsLeft === 2) {
     console.log('hint function called')
      provideHint();
-
    }
-  const letter = letterInput.value.toUpperCase();
-  // Check if the letter has already been guessed
+   
   if (guessedLetters.includes(letter)) {
     messageGame.innerHTML = `<p>You've already guessed the letter '${letter}'. Try a different one.</p>`;
   } else {
-    // Add the letter to the guessed letters array
+    
     guessedLetters.push(letter);
     if (letter.length !== 1 || !/^[A-Z]$/.test(letter)) {
       messageGame.innerHTML = "<p>Please enter a single uppercase letter.</p>";
@@ -319,18 +346,18 @@ function handleGuess() {
       for (let i = 0; i < hiddenName.length; i++) {
         if (hiddenName[i] === letter) {
           guessedName[i] = letter;
-          updateProgressBar(); // Call the function to update the progress bar
+          updateProgressBar(); 
         }
       }
       wordDisplay.textContent = guessedName.join(" ");
-      updateProgressBar(); // Call the function to update the progress bar
+      updateProgressBar(); 
       
       if (!guessedName.includes("_")) {
         correctGuessCount++;
-        updateScoreboard(); // Update the scoreboard when a correct guess is made
-        message.innerHTML = `<p>Congratulations! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below: </p>`;
+        updateScoreboard(); 
+        message.innerHTML = `Congratulations! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below:`;
         displayRandomQuote();
-        messageGame.innerHTML = `<p>Would you like to play another round?</p>`; 
+        messageGame.innerHTML = `Would you like to play another round?`; 
         backgroundImage();
         document.body.style.backgroundImage =
           "url('assets/images/eureka.webp')";
@@ -351,8 +378,8 @@ function handleGuess() {
       if (attemptsLeft === 0) {
         backgroundImage();
         document.body.style.backgroundImage = "url('assets/images/freud.webp')";
-        noCigar.innerHTML = `<p>Close but no Cigar ..... However, as the Greatest of Freudian's once said; "From error to error, one discovers the entire truth and guessing games really are quite delightful”- Sigmund Freud</p>`;
-        noCigar.innerHTML = `<p>Close but no Cigar ... the correct Thinker was '${hiddenName}'. However, as the Greatest of Freudian's once said; "From error to error, one discovers the entire truth and guessing games really are quite delightful”- Sigmund Freud</p>`;
+        noCigar.innerHTML = `Close but no Cigar ..... However, as the Greatest of Freudian's once said; "From error to error, one discovers the entire truth and guessing games really are quite delightful”- Sigmund Freud`;
+        noCigar.innerHTML = `<p>Close but no Cigar ... the correct Thinker was '${hiddenName}'. However, as the Greatest of Freudian's once said; "From error to error, one discovers the entire truth and guessing games really are quite delightful”- Sigmund Freud`;
         hideOrDisplay(gameArea);
         hideOrDisplay(endGameSection);
         title.style.display = "none";
@@ -361,28 +388,27 @@ function handleGuess() {
     }
   }
  
- 
-  // resetting the letterinput on every guess 
   letterInput.value = "";
   //letterInput.focus(); // i dont think this is neeeded 
 }
 
-
-// Displays a random quote from the quotes array
+/** Displays a random quote from the quotes array */
 function displayRandomQuote() {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   const quoteElement = document.getElementById("quote");
   quoteElement.innerHTML = `<p>${randomQuote}</p>`;
 }
-// Function that Calculates progress based on the number of correctly guessed letters
+/**Function that Calculates progress based on the number of correctly guessed letters*/ 
 function updateProgressBar() {
   let correctGuesses = guessedName.filter((letter) => letter !== "_").length;
   let totalLetters = guessedName.length;
   let progress = (correctGuesses / totalLetters) * 100;
   progressBar.value = progress;
 }
-// Function that starts a new round by resetting the game
+
+/**Function that starts a new round by resetting the game */
 function startNewRound() {
+  let hintIndex = names.indexOf(hiddenName.toLowerCase()); 
   updateScoreboard();
   hiddenName = getRandomName().toUpperCase();
   guessedName = createGuessedNameArray(hiddenName);
@@ -398,15 +424,8 @@ function startNewRound() {
   progressBar.value = 0;
   title.style.display = "block";
 }
-// Event listener for the play another round button
-playAnotherRound.addEventListener("click", function () {
-  startNewRound();
-  hideOrDisplay(endGameSection);
-  hideOrDisplay(gameArea);
-  letterInput.focus();
-});
 
-// Function to update and display correct guess count on the scoreboard
+/** Function to update and display correct guess count on the scoreboard*/
 function updateScoreboard() {
   const scoreboardElements = document.getElementsByClassName("scoreboard");
 
@@ -415,6 +434,7 @@ function updateScoreboard() {
   }
 }
 
+/** Closes modal  */
 function closeInstructions() {
   
   var modal = document.getElementById("gameInstructionsModal");
@@ -423,10 +443,12 @@ function closeInstructions() {
   modalInstance.hide();
 }
 
-
-// Function to set the background image
+/** Function to set the background image */
 function backgroundImage() {
   document.body.style.backgroundSize = "cover"; // Cover the entire page
   document.body.style.backgroundRepeat = "no-repeat"; // Don't repeat the image
   document.body.style.backgroundPosition = "center"; // Center the image
 }
+
+/** Initial call needed to set game correctly on first play */
+startNewRound();
