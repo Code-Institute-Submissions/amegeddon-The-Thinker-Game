@@ -325,7 +325,7 @@ function provideHint() {
 
 /** Handles the guess and displays the appropiate message */
 function handleGuess() {
-  //console.log("attemptsLeft:", attemptsLeft); 
+   
   if (attemptsLeft === 0) {
     return;
   }
@@ -333,12 +333,13 @@ function handleGuess() {
     console.log('hint function called')
      provideHint();
    }
-  //const letter = letterInput.value.toUpperCase();
-  // Check if the letter has already been guessed
+  
+   const letter = letterInput.value.toUpperCase();
+  
   if (guessedLetters.includes(letter)) {
     messageGame.innerHTML = `<p>You've already guessed the letter '${letter}'. Try a different one.</p>`;
   } else {
-    // Add the letter to the guessed letters array
+    
     guessedLetters.push(letter);
     if (letter.length !== 1 || !/^[A-Z]$/.test(letter)) {
       messageGame.innerHTML = "<p>Please enter a single uppercase letter.</p>";
@@ -346,18 +347,18 @@ function handleGuess() {
       for (let i = 0; i < hiddenName.length; i++) {
         if (hiddenName[i] === letter) {
           guessedName[i] = letter;
-          updateProgressBar(); // Call the function to update the progress bar
+          updateProgressBar(); 
         }
       }
       wordDisplay.textContent = guessedName.join(" ");
-      updateProgressBar(); // Call the function to update the progress bar
+      updateProgressBar(); 
       
       if (!guessedName.includes("_")) {
         correctGuessCount++;
-        updateScoreboard(); // Update the scoreboard when a correct guess is made
-        message.innerHTML = `<p>Congratulations! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below: </p>`;
+        updateScoreboard(); 
+        message.innerHTML = `<p>Congratulations! You've guessed our Great Thinker and greatness is yours! Please find your wisdom winnings below:`;
         displayRandomQuote();
-        messageGame.innerHTML = `<p>Would you like to play another round?</p>`; 
+        messageGame.innerHTML = `Would you like to play another round?`; 
         backgroundImage();
         document.body.style.backgroundImage =
           "url('assets/images/eureka.webp')";
@@ -367,9 +368,7 @@ function handleGuess() {
         playAnotherRound.style.display = "block";
         title.style.display = "none";
         noCigar.style.display = "none";
-        document.getElementById("quote").classList.remove("hide");
-        
-        
+        document.getElementById("quote").classList.remove("hide"); 
 }
       
     } else {
@@ -378,8 +377,8 @@ function handleGuess() {
       if (attemptsLeft === 0) {
         backgroundImage();
         document.body.style.backgroundImage = "url('assets/images/freud.webp')";
-        noCigar.innerHTML = `<p>Close but no Cigar ..... However, as the Greatest of Freudian's once said; "From error to error, one discovers the entire truth and guessing games really are quite delightful”- Sigmund Freud</p>`;
-        noCigar.innerHTML = `<p>Close but no Cigar ... the correct Thinker was '${hiddenName}'. However, as the Greatest of Freudian's once said; "From error to error, one discovers the entire truth and guessing games really are quite delightful”- Sigmund Freud</p>`;
+        noCigar.innerHTML = `Close but no Cigar ..... However, as the Greatest of Freudian's once said; "From error to error, one discovers the entire truth and guessing games really are quite delightful”- Sigmund Freud`;
+        noCigar.innerHTML = `Close but no Cigar ... the correct Thinker was '${hiddenName}'. However, as the Greatest of Freudian's once said; "From error to error, one discovers the entire truth and guessing games really are quite delightful”- Sigmund Freud`;
         hideOrDisplay(gameArea);
         hideOrDisplay(endGameSection);
         title.style.display = "none";
@@ -388,11 +387,9 @@ function handleGuess() {
     }
   }
  
- 
-  // resetting the letterinput on every guess 
   letterInput.value = "";
-  //letterInput.focus(); // i dont think this is neeeded 
 }
+
 /** Displays a random quote from the quotes array */
 function displayRandomQuote() {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
