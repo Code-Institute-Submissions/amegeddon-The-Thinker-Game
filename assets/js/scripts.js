@@ -1,25 +1,174 @@
 // arrays and variables
 const names = [
-  "Albert Einstien",
-  "Pablo Picasso",
-  "William Shakespeare",
-  "Leonardo Da Vinci",
   "Plato",
-  "Fyodor Dostoevsky",
-  "Vincent Van Gogh",
-  "Marie Curie",
+  "Aristotle",
+  "Confucius",
+  "Thomas Aquinas",
+  "Immanuel Kant",
+  "John Locke",
+  "Jean-Jacques Rousseau",
+  "Albert Camus",
+  "Jean-Paul Sartre",
+  "Martin Heidegger",
+  "Ludwig Wittgenstein",
+  "Epicurus",
+  "Gilbert Ryle",
+  "Alain de Botton",
+  "Diogenes",
+  "Thales",
+  "Epicurus",
+  "Zeno",
+  "Pyrrho",
+  "Rudolf Carnap",
+  "Willard Quine",
+  "A.J. Ayer",
+  "Karl Popper",
+  "David Hume",
+  "Thomas Hobbes",
+  "Niccolò Machiavelli",
+  "Laozi",
+  "Sun Tzu",
+  "Gottfried Leibniz",
+  "Baruch Spinoza",
+  "St. Thomas Aquinas",
+  "Edmund Husserl",
+  "Karl Marx",
+  "Charles Darwin",
+  "Sigmund Freud",
+  "Carl Jung",
+  "Gilbert Ryle",
+  "Ludwig Wittgenstein",
+  "Epicurus",
+  "Diogenes",
+  "Zeno of Citium",
+  "Pyrrho",
+  "Rudolf Carnap",
+  "Willard Quine",
+  "A.J. Ayer",
+  "Karl Popper",
+  "David Hume",
+  "Thomas Hobbes",
+  "Niccolò Machiavelli",
+  "Laozi",
+  "Sun Tzu",
+  "Gottfried Leibniz",
+  "Baruch Spinoza",
+  "Edmund Husserl",
+  "Karl Marx",
+  "Charles Darwin",
+  "Sigmund Freud",
+  "Carl Jung",
+  "Simone Weil",
+  "Johann Fichte",
+  "Jean-Paul Sartre",
+  "Friedrich Engels",
+  "Max Weber",
+  "George Orwell",
+  "Wilhelm Reich",
+  "Albert Einstein",
+  "Blaise Pascal",
+  "Arthur Schopenhauer",
+  "Confucius",
+  "Friedrich Nietzsche",
+  "Avicenna",
+  "Auguste Comte",
+  "Franz Kafka",
+  "Henry James",
+  "John Dewey",
+  "Max Weber",
+  "Simone Weil",
+  "Johann Gottlieb Fichte",
+  "Jean-Paul Sartre",
+  "Friedrich Engels",
+  "Max Weber",
+  "George Orwell",
+  "Wilhelm Reich",
+  "Albert Einstein",
+  "Blaise Pascal",
+  "Arthur Schopenhauer",
+  "Confucius",
+  "Friedrich Nietzsche",
+  "Avicenna",
+  "Auguste Comte",
+  "Franz Kafka",
+  "Henry James",
+  "John Dewey",
+  "Ludwig Feuerbach",
+  "Michel Foucault",
+  "Friedrich Hayek",
+  "Alfred North Whitehead",
+  "Bertrand Russell",
+  "John Stuart Mill"
 ];
 
+// Example usage:
+console.log(philosophers);
+
+
 const hints = [
-  "Physicist known for the theory of relativity",
-  "Spanish painter and sculptor",
-  "English playwright and poet",
-  "Italian polymath",
-  "Ancient Greek philosopher",
-  "Russian novelist and philosopher",
-  "Dutch Post-Impressionist painter",
-  "Polish physicist and chemist",
+  "Ancient Greek philosopher, student of Socrates, and founder of the Academy. Famous for his dialogues, including 'The Republic.'",
+  "Tutor to Alexander the Great, known for his contributions to ethics, metaphysics, and natural philosophy. Founded the Lyceum.",
+  "Chinese philosopher emphasizing ethics, morality, and social harmony. His teachings form the basis of Confucianism.",
+  "Medieval theologian integrating Aristotelian philosophy with Christian theology. Wrote 'Summa Theologica.'",
+  "German philosopher known for his Critique of Pure Reason. Developed the categorical imperative in ethics.",
+  "Enlightenment thinker advocating for natural rights, social contract, and empiricism. Influential in political philosophy.",
+  "Social contract theorist and philosopher of the Enlightenment. Emphasized the idea of the 'noble savage.'",
+  "Existentialist and absurdist philosopher, author of 'The Stranger' and 'The Myth of Sisyphus.'",
+  "Existentialist philosopher declaring 'Existence precedes essence.' Emphasized radical freedom and responsibility.",
+  "German philosopher associated with existential phenomenology. Known for his complex writings on ontology.",
+  "Philosopher of language with two influential phases. Wrote 'Tractatus Logico-Philosophicus' and 'Philosophical Investigations.'",
+  "Ancient Greek philosopher advocating for a life of tranquility through the pursuit of pleasure and avoidance of pain.",
+  "Analytical philosopher known for his critique of Cartesian dualism and the concept of 'category mistake.'",
+  "Contemporary philosopher focusing on popularizing philosophical ideas in everyday life.",
+  "Ancient Greek cynic philosopher who embraced a simple lifestyle and famously carried a lantern in daylight.",
+  "Pre-Socratic philosopher credited with seeking naturalistic explanations for the cosmos and predicting a solar eclipse.",
+  "Founder of Stoicism, promoting virtue as the highest good and teaching resilience in the face of adversity.",
+  "Ancient Greek skeptic who advocated for suspending judgment and finding tranquility in perpetual doubt.",
+  "Logical positivist known for contributions to the philosophy of language and the verification principle.",
+  "American philosopher challenging the analytic-synthetic distinction and advocating for naturalized epistemology.",
+  "Logical positivist known for 'Language, Truth, and Logic' and the verification principle.",
+  "Philosopher of science emphasizing falsifiability and known for the concept of the 'open society.'",
+  "Scottish empiricist and skeptic known for 'A Treatise of Human Nature' and critique of causation.",
+  "Political philosopher advocating for social contract theory and a strong central authority.",
+  "Political theorist known for 'The Prince,' emphasizing practical political strategies and realism.",
+  "Ancient Chinese philosopher and founder of Daoism, author of the 'Tao Te Ching.'",
+  "Ancient Chinese military strategist and philosopher known for 'The Art of War.'",
+  "German polymath and philosopher known for optimism, calculus, and the idea of monads.",
+  "Dutch philosopher advocating for pantheism and known for 'Ethics' and the idea of substance.",
+  "Medieval theologian integrating Aristotelian philosophy with Christian theology. Wrote 'Summa Theologica.'",
+  "Phenomenologist known for his method of bracketing and founding the philosophical movement of phenomenology.",
+  "Historical materialist and co-author of 'The Communist Manifesto,' advocating for class struggle.",
+  "Naturalist and biologist famous for 'On the Origin of Species,' introducing the theory of evolution.",
+  "Founder of psychoanalysis, exploring the unconscious mind and the Oedipus complex.",
+  "Swiss psychiatrist and psychoanalyst known for archetypes, collective unconscious, and analytical psychology.",
+  "French philosopher and mystic with contributions to political philosophy and Christian mysticism.",
+  "German idealist philosopher known for subjective idealism and the concept of the 'I.'",
+  "Existentialist philosopher declaring 'Existence precedes essence' and advocating for radical freedom.",
+  "Collaborator of Karl Marx and co-author of 'The Communist Manifesto,' emphasizing historical materialism.",
+  "Sociologist and philosopher known for his work on the Protestant Ethic, bureaucracy, and social action.",
+  "Author and political thinker known for '1984' and 'Animal Farm,' criticizing totalitarianism.",
+  "Psychoanalyst and philosopher known for ideas on sexuality, orgone energy, and character armor.",
+  "Physicist and philosopher known for the theory of relativity, pacifism, and humanism.",
+  "Mathematician, physicist, and philosopher known for Pascal's Wager and contributions to probability theory.",
+  "German philosopher known for pessimism, the will to live, and the concept of the 'will.'",
+  "Ancient Chinese philosopher emphasizing ethics, family values, and social harmony.",
+  "Philosopher known for the 'will to power,' eternal recurrence, and critiques of morality.",
+  "Islamic philosopher and polymath known for 'The Book of Healing' and contributions to medicine.",
+  "French positivist philosopher and sociologist, founder of sociology, and advocate of positivism.",
+  "Author and existentialist known for surreal and symbolic works like 'The Metamorphosis.'",
+  "American novelist with psychological insight, known for works like 'The Turn of the Screw.'",
+  "Pragmatist philosopher and educational reformer known for instrumentalism and experiential learning.",
+  "Philosopher known for his critique of religion, influencing Karl Marx.",
+  "Postmodern philosopher exploring power, knowledge, and the relationship between society and individuals.",
+  "Austrian economist and philosopher known for his defense of classical liberalism and free-market capitalism.",
+  "Mathematician and philosopher, co-author of 'Principia Mathematica,' and proponent of process philosophy.",
+  "Analytic philosopher known for logical atomism, pacifism, and 'A History of Western Philosophy.'",
+  "Utilitarian philosopher advocating for individual liberties and women's rights."
 ];
+
+// Example usage:
+console.log(hints);
+
 
 const quotes = [
   "The only source of knowledge is experience. - Albert Einstein",
@@ -38,6 +187,10 @@ const submitLetter = document.getElementById("submitLetter");
 const playAnotherRound = document.getElementById("playAnotherRound");
 const progressBar = document.getElementById("progressBar");
 const title = document.getElementById("title");
+const hintIndex = names.indexOf(hiddenName.toLowerCase());
+
+const hintElement = document.getElementById("hint");
+
 let message = document.getElementById("message");
 let messageGame = document.getElementById("messageGame");
 let attemptsLeftDisplay = document.getElementById("attemptsLeft");
@@ -110,12 +263,10 @@ function createGuessedNameArray(name) {
 
 function provideHint() {
   console.log('where is the hint!');
-  const hintIndex = names.indexOf(hiddenName);
-  const hintElement = document.getElementById("hint");
-
   if (hintIndex !== -1 && hintIndex < hints.length) {
     hintElement.textContent = `Hint: ${hints[hintIndex]}`;
   }
+  console.log(hintIndex, hintElement.textContent, hiddenName);
 }
 
 

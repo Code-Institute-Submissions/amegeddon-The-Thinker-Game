@@ -116,6 +116,11 @@ p {
 .hide {
   display: none;
 }
+
+#hint {
+  font-weight: bold;
+  margin-top: 5px;
+}
 #backButton {
   position: absolute;
   left: 2rem;
