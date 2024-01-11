@@ -1,14 +1,14 @@
 // arrays and variables
-const philosophers = [
+const names = [
   "plato",
   "aristotle",
   "confucius",
   "thomas aquinas",
   "immanuel kant",
   "john locke",
-  "jean-jacques rousseau",
+  "jean jacques rousseau",
   "albert camus",
-  "jean-paul sartre",
+  "jean paul sartre",
   "martin heidegger",
   "ludwig wittgenstein",
   "epicurus",
@@ -16,7 +16,6 @@ const philosophers = [
   "alain de botton",
   "diogenes",
   "thales",
-  "epicurus",
   "zeno",
   "pyrrho",
   "rudolf carnap",
@@ -36,31 +35,8 @@ const philosophers = [
   "charles darwin",
   "sigmund freud",
   "carl jung",
-  "gilbert ryle",
-  "ludwig wittgenstein",
-  "epicurus",
-  "diogenes",
-  "zeno of citium",
-  "pyrrho",
-  "rudolf carnap",
-  "willard quine",
-  "aj ayer",
-  "karl popper",
-  "david hume",
-  "thomas hobbes",
-  "niccolò machiavelli",
-  "laozi",
-  "sun tzu",
-  "gottfried leibniz",
-  "baruch spinoza",
-  "edmund husserl",
-  "karl marx",
-  "charles darwin",
-  "sigmund freud",
-  "carl jung",
   "simone weil",
   "johann fichte",
-  "jean-paul sartre",
   "friedrich engels",
   "max weber",
   "george orwell",
@@ -68,25 +44,6 @@ const philosophers = [
   "albert einstein",
   "blaise pascal",
   "arthur schopenhauer",
-  "confucius",
-  "friedrich nietzsche",
-  "avicenna",
-  "auguste comte",
-  "franz kafka",
-  "henry james",
-  "john dewey",
-  "max weber",
-  "simone weil",
-  "johann gottlieb fichte",
-  "jean-paul sartre",
-  "friedrich engels",
-  "max weber",
-  "george orwell",
-  "wilhelm reich",
-  "albert einstein",
-  "blaise pascal",
-  "arthur schopenhauer",
-  "confucius",
   "friedrich nietzsche",
   "avicenna",
   "auguste comte",
@@ -99,8 +56,46 @@ const philosophers = [
   "alfred north whitehead",
   "bertrand russell",
   "john stuart mill"
+  "thomas nagel",
+    "simone de beauvoir",
+    "aristophanes",
+    "al-farabi",
+    "john rawls",
+    "simone de beauvoir",
+    "emil cioran",
+    "claude levi-strauss",
+    "john searle",
+    "georg wilhelm friedrich hegel",
+    "alasdair macintyre",
+    "herbert marcuse",
+    "jürgen habermas",
+    "william james",
+    "martha nussbaum",
+    "karl jaspers",
+    "alexis de tocqueville",
+    "albert schweitzer",
+    "søren kierkegaard",
+    "mary wollstonecraft",
+    "thomas kuhn",
+    "edmund burke",
+    "edmund burke",
+    "w.e.b. du bois",
+    "robert nozick",
+    "william of ockham",
+    "karl jaspers",
+    "edmund gettier",
+    "george berkeley",
+    "otto neurath",
+    "henri bergson",
+    "ernst mach",
+    "peter singer",
+    "george edward moore",
+    "william kingdon clifford",
+    "ludwig von mises",
+    "karl mannheim",
+    "alfred ayer"
+  ];
 ];
-
 
 const hints = [
   "Ancient Greek philosopher, student of Socrates, and founder of the Academy. Famous for his dialogues, including 'The Republic.'",
@@ -143,27 +138,56 @@ const hints = [
   "Existentialist philosopher declaring 'Existence precedes essence' and advocating for radical freedom.",
   "Collaborator of Karl Marx and co-author of 'The Communist Manifesto,' emphasizing historical materialism.",
   "Sociologist and philosopher known for his work on the Protestant Ethic, bureaucracy, and social action.",
-  "Author and political thinker known for '1984' and 'Animal Farm,' criticizing totalitarianism.",
-  "Psychoanalyst and philosopher known for ideas on sexuality, orgone energy, and character armor.",
-  "Physicist and philosopher known for the theory of relativity, pacifism, and humanism.",
-  "Mathematician, physicist, and philosopher known for Pascal's Wager and contributions to probability theory.",
-  "German philosopher known for pessimism, the will to live, and the concept of the 'will.'",
-  "Ancient Chinese philosopher emphasizing ethics, family values, and social harmony.",
-  "Philosopher known for the 'will to power,' eternal recurrence, and critiques of morality.",
-  "Islamic philosopher and polymath known for 'The Book of Healing' and contributions to medicine.",
-  "French positivist philosopher and sociologist, founder of sociology, and advocate of positivism.",
-  "Author and existentialist known for surreal and symbolic works like 'The Metamorphosis.'",
-  "American novelist with psychological insight, known for works like 'The Turn of the Screw.'",
-  "Pragmatist philosopher and educational reformer known for instrumentalism and experiential learning.",
-  "Philosopher known for his critique of religion, influencing Karl Marx.",
-  "Postmodern philosopher exploring power, knowledge, and the relationship between society and individuals.",
-  "Austrian economist and philosopher known for his defense of classical liberalism and free-market capitalism.",
-  "Mathematician and philosopher, co-author of 'Principia Mathematica,' and proponent of process philosophy.",
-  "Analytic philosopher known for logical atomism, pacifism, and 'A History of Western Philosophy.'",
-  "Utilitarian philosopher advocating for individual liberties and women's rights."
-];
-
-
+  "Author and political thinker known for '1984'. 
+  "Contemporary philosopher known for 'What Is It Like to Be a Bat?' and 'The View from Nowhere.'",
+    "Existentialist philosopher, feminist, and author of 'The Second Sex.' Partner of Jean-Paul Sartre.",
+    "Ancient Greek comic playwright known for works like 'Lysistrata.'",
+    "Islamic philosopher, jurist, and scientist. Contributed to political philosophy and metaphysics.",
+    "Political philosopher known for 'A Theory of Justice,' developing the concept of the original position.",
+    "Existentialist philosopher, feminist, and author of 'The Second Sex.' Partner of Jean-Paul Sartre.",
+    "Romanian philosopher known for his pessimistic views, including 'The Trouble with Being Born.'",
+    "Anthropologist and structuralist philosopher known for 'The Elementary Structures of Kinship.'",
+    "Analytical philosopher and critic of artificial intelligence. Notable for 'Chinese Room' argument.",
+    "German idealist philosopher known for dialectical method and 'The Phenomenology of Spirit.'",
+    "Ethical philosopher and critic of modernity. Author of 'After Virtue' and 'Whose Justice? Which Rationality?'",
+    "Frankfurt School theorist and critical theorist known for 'One-Dimensional Man.'",
+    "Contemporary philosopher and critical theorist associated with discourse ethics.",
+    "Pragmatist philosopher and psychologist. Known for 'The Varieties of Religious Experience.'",
+    "Philosopher and classicist known for her work in ethics, political philosophy, and emotions.",
+    "Existentialist philosopher and psychiatrist. Developed the concept of 'existential psychotherapy.'",
+    "Existentialist philosopher and playwright. Influential in the development of existentialist thought.",
+    "Political theorist known for 'Democracy in America' and analysis of the American political system.",
+    "Philosopher, theologian, and medical missionary. Won the Nobel Peace Prize for his humanitarian work.",
+    "Danish philosopher known for his existentialist writings, including 'Fear and Trembling.'",
+    "Early feminist philosopher and author of 'A Vindication of the Rights of Woman.'",
+    "Philosopher of science known for 'The Structure of Scientific Revolutions.'",
+    "Irish statesman, political theorist, and philosopher. Influential in conservative political thought.",
+    "Irish statesman, political theorist, and philosopher. Influential in conservative political thought.",
+    "African-American sociologist, historian, and civil rights activist. Co-founder of the NAACP.",
+    "Political philosopher and libertarian. Known for 'Anarchy, State, and Utopia.'",
+    "Medieval philosopher known for 'Occam's Razor' and nominalism.",
+    "Existentialist philosopher and psychiatrist. Developed the concept of 'existential psychotherapy.'",
+    "Philosopher known for the Gettier problem, challenging the traditional definition of knowledge.",
+    "Idealist philosopher known for his theory of subjective idealism and 'esse est percipi.'",
+    "Logical positivist and philosopher of science. Co-founder of the Vienna Circle.",
+    "French philosopher known for his duration theory and critique of scientific mechanism.",
+    "Austrian philosopher and physicist. Influential in the Vienna Circle and logical positivism.",
+    "Utilitarian philosopher and ethicist. Advocated for animal rights and effective altruism.",
+    "Analytical philosopher known for 'Principia Ethica' and the concept of the 'naturalistic fallacy.'",
+    "British mathematician and philosopher known for 'The Ethics of Belief.'",
+    "Austrian economist and social philosopher. Associated with the Austrian School of Economics.",
+    "Sociologist and philosopher known for the concept of 'totalitarianism.'",
+    "Logical positivist and philosopher known for 'Language, Truth, and Logic.'"
+  ];
+  
+  // Combine the original and additional arrays
+  const combinedPhilosophers = philosophers.concat(additionalPhilosophers);
+  const combinedHints = hints.concat(additionalHints);
+  
+  // Example usage:
+  console.log(combinedPhilosophers);
+  console.log(combinedHints);
+  
 
 
 const quotes = [
@@ -363,6 +387,7 @@ function startNewRound() {
   hiddenName = getRandomName().toUpperCase();
   guessedName = createGuessedNameArray(hiddenName);
   guessedLetters = []; // Clear the guessed letters
+  hintElement.textContent = "";
   wordDisplay.textContent = guessedName.join(" ");
   attemptsLeft = initialAttempts;
   attemptsLeftDisplay.textContent = attemptsLeft;
