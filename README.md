@@ -454,7 +454,7 @@ The website was tested on the following devices:
 |                   |
 |                                                                  |                             |
 |                                                       |               |
-|                                                  |                         |
+|   After tidying code game stopped functioning as expected. Letters that were in the guessed name were not being displayed.                                               |  I had moved the const letters variable into the global list of variables. The letter was not being converted to uppercase and therefore was not validating as true. Placing the letters variable back into the handleGuess function corrected the bug.                       |
 |                                                               |                                                   |
 |                                                                       |  |
 |   |                              |
