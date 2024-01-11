@@ -199,10 +199,11 @@ const submitLetter = document.getElementById("submitLetter");
 const playAnotherRound = document.getElementById("playAnotherRound");
 const progressBar = document.getElementById("progressBar");
 const title = document.getElementById("title");
-//const lowerCaseHiddenName = hiddenName.toLowerCase();
+//const lowerCaseHiddenName = hiddenName.toLowerCase(); // tries different option for provideHint function
 //const hintIndex = names.indexOf(hiddenName.toLowerCase());
-let letter = letterInput.value.toUpperCase();
+
 const hintElement = document.getElementById("hint");
+let letter = letterInput.value.toUpperCase();
 const noCigar = document.getElementById("noCigar");
 const startButtons = document.querySelectorAll(".btn-diff");
 const message = document.getElementById("message");
@@ -314,8 +315,8 @@ function createGuessedNameArray(name) {
 /** Displays hint when attempts left = 1 */
 function provideHint() {
   console.log('where is the hint!');
-  const hintIndex = names.indexOf(hiddenName);
-  const hintElement = document.getElementById("hint");
+  const hintIndex = names.indexOf(hiddenName.toLowerCase());
+
 
   if (hintIndex !== -1 && hintIndex < hints.length) {
     hintElement.textContent = `Hint: ${hints[hintIndex]}`;
@@ -334,7 +335,7 @@ function handleGuess() {
      provideHint();
    }
   
-   const letter = letterInput.value.toUpperCase();
+   const letter = letterInput.value.toUpperCase(); // Needs to be called here
   
   if (guessedLetters.includes(letter)) {
     messageGame.innerHTML = `<p>You've already guessed the letter '${letter}'. Try a different one.</p>`;
