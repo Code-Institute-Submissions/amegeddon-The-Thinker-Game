@@ -450,8 +450,7 @@ The website was tested on the following devices:
 
 | Bug                                                                                                                                         | Fix                                                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-|   |    |
-|                   |
+| Horizontal scroll on end game screen  | Misisng class "container fluid" from end game screen div   | ProvideHint function failing to display hint | Console log debugging revealed that hintIndex was not returning as true, reason being that the original names array was in lowercase and the hiddenName was being changed to uppercase. issue resolved by adding "to.lowercase" to hiddenName in hintIndex variable.                |
 |                                                                  |                             |
 |                                                       |               |
 |   After tidying code game stopped functioning as expected. Letters that were in the guessed name were not being displayed.                                               |  I had moved the const letters variable into the global list of variables. The letter was not being converted to uppercase and therefore was not validating as true. Placing the letters variable back into the handleGuess function corrected the bug.                       |
