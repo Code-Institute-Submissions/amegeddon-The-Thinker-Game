@@ -550,3 +550,51 @@ p {
 }
 
 }
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+h1 {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#enterLetter {
+  font-size: 20px;
+}
+h2 {
+  font-size: 20px;
+}
+#philosopher1 {
+  max-height: 18%;
+  left: 28%; 
+}
+#philosopher {
+  display: none; 
+}
+#enterLetter {
+  margin: 0 0 0 0 ;
+}
+#wordDisplay {
+  margin-bottom: 25px;
+}
+#gameInstructions {
+  margin-bottom: 10px;
+}
+#hint {
+  margin-bottom: 10px;
+}
+#message p{
+  top: 138px;
+  margin-bottom: 20px;
+}
+#quote {
+  font-size: 16px;
+  bottom: 60px;
+}
+#noCigar {
+  bottom: 80px;
+  font-size: 16px;
+}
+#yourProgress p {
+  margin-top: 10px;
+}
+} 
