@@ -199,11 +199,7 @@ const submitLetter = document.getElementById("submitLetter");
 const playAnotherRound = document.getElementById("playAnotherRound");
 const progressBar = document.getElementById("progressBar");
 const title = document.getElementById("title");
-//const lowerCaseHiddenName = hiddenName.toLowerCase(); // tries different option for provideHint function
-//const hintIndex = names.indexOf(hiddenName.toLowerCase());
-
 const hintElement = document.getElementById("hint");
-let letter = letterInput.value.toUpperCase();
 const noCigar = document.getElementById("noCigar");
 const startButtons = document.querySelectorAll(".btn-diff");
 const message = document.getElementById("message");
@@ -212,10 +208,12 @@ const messageGame = document.getElementById("messageGame");
 
 let hiddenName = getRandomName().toUpperCase();
 let guessedName = createGuessedNameArray(hiddenName);
+let letter = letterInput.value.toUpperCase();
 let guessedLetters = [];
 let initialAttempts; 
 let correctGuessCount = 0;
 let attemptsLeft;
+let modal = document.getElementById("gameInstructionsModal");
 
 
 //............ Event Listenters ...............//
@@ -435,10 +433,8 @@ function updateScoreboard() {
 
 /** Closes modal  */
 function closeInstructions() {
-  
-  var modal = document.getElementById("gameInstructionsModal");
 
-  var modalInstance = bootstrap.Modal.getInstance(modal);
+  let modalInstance = bootstrap.Modal.getInstance(modal);
   modalInstance.hide();
 }
 
