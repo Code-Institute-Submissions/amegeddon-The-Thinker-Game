@@ -478,9 +478,6 @@ h1{
     top: 1rem;
     right: 1rem;
   }
-  .scoreboard  {
-    font-size: 18px;
-  }
   h1 {
     margin-bottom: 68px;
     font-size: 43px;
@@ -532,14 +529,9 @@ h2 {
   margin-top: 8px;
   margin-bottom: 40x;
 }
-p {
-  font-size: 18px;
-}
-
 .buttonContainerDifficulty {
   margin-top: 25px;
 }
-
 }
 
 
@@ -580,7 +572,6 @@ h2 {
   top: 138px;
 }
 #quote {
-  font-size: 16px;
   bottom: 60px;
 }
 #noCigar {
