@@ -254,7 +254,7 @@ function handleGuess() {
     
     guessedLetters.push(letter);
     if (letter.length !== 1 || !/^[A-Z]$/.test(letter)) {
-      messageGame.innerHTML = "<p>Please enter a single uppercase letter.</p>";
+      messageGame.innerHTML = "<p>Please enter a single letter.</p>";
     } else if (hiddenName.includes(letter) && !guessedName.includes(letter)) {
       for (let i = 0; i < hiddenName.length; i++) {
         if (hiddenName[i] === letter) {
