@@ -381,6 +381,58 @@ p {
     margin-top: 0px;
    }
 }
+
+/*........ Mobile devices in landscape orientation .........*/
+@media screen and (max-width: 1000px) and (orientation: landscape) and (max-height: 500px) {
+  .gameheading h1 {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  #enterLetter {
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #philosopher1 {
+    max-height: 18%;
+    left: 50%; 
+    transform: translateX(-50%);
+  }
+  #philosopher {
+    display: none; 
+  }
+  #wordDisplay {
+    margin-bottom: 25px;
+    margin-top: 0px;
+  }
+  #gameInstructions {
+    margin-bottom: 10px;
+  }
+  #hint {
+    margin-bottom: 10px;
+  }
+  .message p{
+    top: 138px;
+  }
+  #quote {
+    font-size: 16px;
+    bottom: 60px;
+  }
+  #noCigar {
+    bottom: 80px;
+    font-size: 16px;
+  }
+  #yourProgress p {
+    margin-top: 10px;
+  }
+  button#PlayAnotherRound  {
+    bottom: 20px;
+  }
+  } 
   
 /* ...smaller tablet devices... */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -427,8 +479,8 @@ p {
  #gameInstructions {
   margin-bottom: 1rem;
  }
+ }
  
-}
 /* ....... tablet and small laptop.......*/
 @media only screen and (min-width: 768px) {
  #intro {
@@ -442,10 +494,6 @@ p {
   margin-top: 0px;
   margin-bottom: 60px;
  }
- #quitGame, #playAnotherRound, #backButton, .buttonContainerDifficulty,
-  #quote, #message p, #gameInstructions, h1, #noCigar {
-    font-size: 18px;
-  }
  #backButton {
   top: 5px;
   left: 5px;
@@ -467,6 +515,10 @@ p {
 h1{
   margin-top: 60px;
   margin-bottom: 29px;
+  font-size: 2rem;
+}
+#message p{
+  top: 50px;
 }
 }
 
@@ -508,7 +560,7 @@ h1{
 
   
 
-  /*........ larger screens .........*/
+/*........ larger screens .........*/
 @media only screen and (min-width: 1280px) {
   #gameInstructions {
     position:fixed;
@@ -534,54 +586,3 @@ h2 {
 }
 }
 
-
-
-@media screen and (max-width: 1000px) and (orientation: landscape) {
-h1 {
-  font-size: 25px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-}
-#enterLetter {
-  font-size: 20px;
-  margin-bottom: 8px;
-  margin-top: 8px;
-}
-h2 {
-  font-size: 20px;
-}
-#philosopher1 {
-  max-height: 18%;
-  left: 50%; 
-  transform: translateX(-50%);
-}
-#philosopher {
-  display: none; 
-}
-#wordDisplay {
-  margin-bottom: 25px;
-  margin-top: 0px;
-}
-#gameInstructions {
-  margin-bottom: 10px;
-}
-#hint {
-  margin-bottom: 10px;
-}
-#message p{
-  top: 138px;
-}
-#quote {
-  bottom: 60px;
-}
-#noCigar {
-  bottom: 80px;
-  font-size: 16px;
-}
-#yourProgress p {
-  margin-top: 10px;
-}
-button#PlayAnotherRound  {
-  bottom: 20px;
-}
-} 

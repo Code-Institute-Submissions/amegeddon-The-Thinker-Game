@@ -454,8 +454,8 @@ The website was tested on the following devices:
 | Message displayed when correct answer found was clashing with the quote message that is also displayed.                                                                  |                             | Added a unique id to the quote. 
 | On mobile devices in landscape orientation game is dominated by image and unplayable       |  Added media query targeting devices in landscape orientation.              |
 |   After tidying code game stopped functioning as expected. Letters that were in the guessed name were not being displayed.                                               |  I had moved the const letters variable into the global list of variables. The letter was not being converted to uppercase and therefore was not validating as true. Placing the letters variable back into the handleGuess function corrected the bug.                       |
-| Failing html validator as section tag used without heading  | Changed to div elements instead                                                    |
-|                                                                       |  |
+| Failing html validator as section tag used without heading  | Changed to div elements instead                                                    |Mobile landscape media query clashing with tablet media query   
+| Moving the media query from bottom of style sheet to below mobile queries helped. Targeting problematic elements with more specific css using classes such as .heading for the game title did solve a lot of the problems. However the issue of the image on the main game section not displaying on tablet still remains. This was removed from mobile landscape query as it interfered                                                                    |  |
 |   |                              |
 |             |                             |
 
