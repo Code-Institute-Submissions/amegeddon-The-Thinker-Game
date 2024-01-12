@@ -413,7 +413,7 @@ p {
     }
   h1 {
     margin-bottom: 30px;
-    margin-top: 40px;
+    margin-top: 55px;
   }  
  #enterLetter  {
   margin-top: 40px;
@@ -422,6 +422,9 @@ p {
    bottom: 100px;
    font-size: 18px;
    padding: 16px 16px 16px 16px;
+ }
+ #hint {
+  margin-bottom: 30px; 
  }
  #message {
   font-size: 18px;
@@ -503,12 +506,13 @@ h1{
     font-size: 18px;
   }
   h1 {
-    margin-bottom: 18px;
-    font-size: 33px;
-    margin-top: 40px;
+    margin-bottom: 68px;
+    font-size: 43px;
+    margin-top: 47px;
   }
   h2 {
     font-size: 24px;
+    margin-bottom: 20px;
   }
   #intro {
     padding-top: 0px;
@@ -518,10 +522,14 @@ h1{
     margin-top: 15px;
   }
   #wordDisplay {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   #philosopher {
     margin-top: 200px;
+  }
+  #hint {
+    margin-bottom: 30px; 
+    margin-top: 10px;
   }
   }
 
@@ -537,7 +545,7 @@ h1{
 h1 {
   font-size: 3rem;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 h2 {
   font-size: 2rem;
@@ -551,9 +559,7 @@ h2 {
 p {
   font-size: 18px;
 }
-#wordDisplay {
-  margin-bottom: 20px;
-}
+
 .buttonContainerDifficulty {
   margin-top: 25px;
 }
