@@ -551,30 +551,33 @@ p {
 
 }
 
+
+
 @media screen and (max-width: 1000px) and (orientation: landscape) {
 h1 {
   font-size: 25px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 #enterLetter {
   font-size: 20px;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 h2 {
   font-size: 20px;
 }
 #philosopher1 {
   max-height: 18%;
-  left: 28%; 
+  left: 50%; 
+  transform: translateX(-50%);
 }
 #philosopher {
   display: none; 
 }
-#enterLetter {
-  margin: 0 0 0 0 ;
-}
 #wordDisplay {
   margin-bottom: 25px;
+  margin-top: 0px;
 }
 #gameInstructions {
   margin-bottom: 10px;
@@ -584,7 +587,10 @@ h2 {
 }
 #message p{
   top: 138px;
-  margin-bottom: 20px;
+  margin-bottom: 40x;
+}
+#messageGame {
+  
 }
 #quote {
   font-size: 16px;
