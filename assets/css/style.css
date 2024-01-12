@@ -138,7 +138,7 @@ p {
   h1 {
     font-size: 1.5rem;
     font-weight: bolder;
-    margin-top: 42px;
+    margin-top: 52px;
     }
   h2 {
     font-size: 1.25rem;
@@ -238,7 +238,7 @@ p {
     letter-spacing: 1.5px; 
     max-width: 100%; 
     margin-top: 70px; 
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     padding: 0;
     width: 100%;
     font-size: 18px;
@@ -265,7 +265,7 @@ p {
      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
    }
    #playAnotherRound {
-     bottom: 16px; 
+     bottom: 16px; 0
      font-size: 15px;
      margin-top: 25px;
    }
@@ -300,6 +300,12 @@ p {
   .buttonContainerDifficulty{
     margin-bottom: 100px;
   }
+  #messageGame {
+    margin-top: 200px;
+  }
+  #hint {
+    margin-bottom: 20px;
+  }
   }  
 
 /* ...larger mobile devices ...*/
@@ -326,8 +332,8 @@ p {
     overflow-wrap: break-word;
     letter-spacing: 1.5px; 
     max-width: 100%; 
-    margin-top: 90px;
-    margin-bottom: 75px;
+    margin-top: 70px;
+    margin-bottom: 55px;
     padding: 0;
     width: 100%;
     font-size: 18px;
@@ -346,9 +352,12 @@ p {
     font-size: 28px;
     margin-bottom: 30px;
     }
-  #submitLetter {
-    margin-top: 18px;
-   } 
+  #hint { 
+    margin-bottom: 30px;
+  }
+  #messageGame p {
+    margin-top: 30px ;
+  }
   #attemptsLeft {
     margin-bottom: 0;
   } 
@@ -441,7 +450,7 @@ p {
   margin-bottom: 30px;
  }
  #playAnotherRound {
-  bottom: 45px;
+  bottom: 25px;
   font-size: 18px;
   margin-top: 15px;
  }
@@ -528,7 +537,7 @@ h1{
 h1 {
   font-size: 3rem;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 h2 {
   font-size: 2rem;
@@ -587,10 +596,6 @@ h2 {
 }
 #message p{
   top: 138px;
-  margin-bottom: 40x;
-}
-#messageGame {
-  
 }
 #quote {
   font-size: 16px;
@@ -602,5 +607,8 @@ h2 {
 }
 #yourProgress p {
   margin-top: 10px;
+}
+button#PlayAnotherRound  {
+  bottom: 20px;
 }
 } 
