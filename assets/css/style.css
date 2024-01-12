@@ -205,7 +205,6 @@ p {
   }
 }
 
-} 
 /* ....... mobile .......*/
 @media only screen and (min-width: 301px) and (max-width: 400px) {
   h1 {
@@ -230,18 +229,21 @@ p {
     overflow-wrap: break-word;
     letter-spacing: 1.5px; 
     max-width: 100%; 
-    margin-top: 70px; 
-    margin-bottom: 50px;
+    margin: 70px 0 50px 0;
     padding: 0;
     width: 100%;
     font-size: 18px;
     }
-    .buttonContainerDifficulty {
+  .buttonContainerDifficulty {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       }
+  #message p, #quote, #quitGame, #gameInstructions, .buttonLevels, #hint {
+        font-size: 16px;
+        padding: 0.5rem;
+      }    
   #enterLetter {
     font-size: 28px;
     margin-bottom: 20px;
@@ -254,20 +256,16 @@ p {
   } 
    #noCigar {
      margin-bottom: 0;
-     font-size: 16px;
      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
    }
    #playAnotherRound {
-     bottom: 16px; 0
-     font-size: 15px;
+     bottom: 16px; 
      margin-top: 25px;
    }
    #message p {
-     font-size: 16px;
      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
    }
    #quote {
-     font-size: 16px;
      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
      bottom: 100px;
      margin-bottom: 0;
@@ -316,7 +314,6 @@ p {
   #backButton {
     top: 5px;
     left: 5px;
-    font-size: 16px;
   } 
   #wordDisplay {
     white-space: pre-wrap;
@@ -356,7 +353,6 @@ p {
   } 
    #noCigar {
      margin-bottom: 0;
-     font-size: 16px;
      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
    }
    #playAnotherRound {
@@ -365,11 +361,9 @@ p {
      margin-top: 25px;
    }
    #message p {
-     font-size: 16px;
      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
    }
    #quote {
-     font-size: 16px;
      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
      bottom: 100px;
      margin-bottom: 0;
@@ -377,7 +371,6 @@ p {
    #quitGame {
     top: 10px;
     left:10px;
-    font-size: 16px;
    }
    #gameInstructions {
     margin-top: 40px;
