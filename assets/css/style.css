@@ -381,7 +381,6 @@ p {
     margin-top: 0px;
    }
 }
-
   
 /* ...smaller tablet devices... */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -432,42 +431,33 @@ p {
 }
 /* ....... tablet and small laptop.......*/
 @media only screen and (min-width: 768px) {
- #quitGame {
-  font-size: 18px;
- }
  #intro {
   margin-bottom: 30px;
  }
  #playAnotherRound {
   bottom: 25px;
-  font-size: 18px;
   margin-top: 15px;
  }
  #wordDisplay {
   margin-top: 0px;
   margin-bottom: 60px;
  }
+ #quitGame, #playAnotherRound, #backButton, .buttonContainerDifficulty,
+  #quote, #message p, #gameInstructions, h1, #noCigar {
+    font-size: 18px;
+  }
  #backButton {
   top: 5px;
   left: 5px;
-  font-size: 16px;
  }
  #noCigar {
   bottom: 110px;
-  font-size: 18px;
- }
- #backButton {
-  font-size: 18px;
  }
  .buttonContainerDifficulty{
   margin-top: 18px ;
  }
  #quote {
-  font-size: 18px;
   bottom: 125px;
- }
- #message p {
-  font-size: 18px;
  }
  #gameInstructions {
   position:fixed;
