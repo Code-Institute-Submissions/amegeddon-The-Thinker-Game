@@ -6,7 +6,7 @@ const names = [
   "confucius",
   "thomas aquinas",
   "immanuel kant",
- /* "john locke",
+  /* "john locke",
   "jean jacques rousseau",
   "albert camus",
   "jean paul sartre",
@@ -30,7 +30,7 @@ const names = [
   "sun tzu",
   "gottfried leibniz",
   "baruch spinoza",
-  "st. thomas aquinas",
+  "thomas aquinas",
   "edmund husserl",
   "karl marx",
   "charles darwin",
@@ -56,47 +56,47 @@ const names = [
   "friedrich hayek",
   "alfred north whitehead",
   "bertrand russell",
-  "john stuart mill"
+  "john stuart mill",
   "thomas nagel",
-    "simone de beauvoir",
-    "aristophanes",
-    "al-farabi",
-    "john rawls",
-    "simone de beauvoir",
-    "emil cioran",
-    "claude levi-strauss",
-    "john searle",
-    "georg wilhelm friedrich hegel",
-    "alasdair macintyre",
-    "herbert marcuse",
-    "jürgen habermas",
-    "william james",
-    "martha nussbaum",
-    "karl jaspers",
-    "alexis de tocqueville",
-    "albert schweitzer",
-    "søren kierkegaard",
-    "mary wollstonecraft",
-    "thomas kuhn",
-    "edmund burke",
-    "edmund burke",
-    "w.e.b. du bois",
-    "robert nozick",
-    "william of ockham",
-    "karl jaspers",
-    "edmund gettier",
-    "george berkeley",
-    "otto neurath",
-    "henri bergson",
-    "ernst mach",
-    "peter singer",
-    "george edward moore",
-    "william kingdon clifford",
-    "ludwig von mises",
-    "karl mannheim",
-    "alfred ayer"*/
-  ];
+  "simone de beauvoir",
+  "aristophanes",
+  "al farabi",
+  "john rawls",
+  "simone de beauvoir",
+  "emil cioran",
+  "claude levi strauss",
+  "john searle",
+  "georg wilhelm friedrich hegel",
+  "alasdair macintyre",
+  "herbert marcuse",
+  "jurgen habermas",
+  "william james",
+  "martha nussbaum",
+  "karl jaspers",
+  "alexis de tocqueville",
+  "albert schweitzer",
+  "soren kierkegaard",
+  "mary wollstonecraft",
+  "thomas kuhn",
+  "edmund burke",
+  "robert nozick",
+  "william of ockham",
+  "karl jaspers",
+  "edmund gettier",
+  "george berkeley",
+  "otto neurath",
+  "henri bergson",
+  "ernst mach",
+  "peter singer",
+  "george edward moore",
+  "william kingdon clifford",
+  "ludwig von mises",
+  "karl mannheim",
+  "alfred ayer"*/
+];
+  
 
+  
 
 const hints = [
   "Ancient Greek philosopher, student of Socrates, and founder of the Academy. Famous for his dialogues, including 'The Republic.'",
@@ -104,81 +104,9 @@ const hints = [
   "Chinese philosopher emphasizing ethics, morality, and social harmony. His teachings form the basis of Confucianism.",
   "Medieval theologian integrating Aristotelian philosophy with Christian theology. Wrote 'Summa Theologica.'",
   "German philosopher known for his Critique of Pure Reason. Developed the categorical imperative in ethics.",
-  /*"Enlightenment thinker advocating for natural rights, social contract, and empiricism. Influential in political philosophy.",
+  "Enlightenment thinker advocating for natural rights, social contract, and empiricism. Influential in political philosophy.",
   "Social contract theorist and philosopher of the Enlightenment. Emphasized the idea of the 'noble savage.'",
-  "Existentialist and absurdist philosopher, author of 'The Stranger' and 'The Myth of Sisyphus.'",
-  "Existentialist philosopher declaring 'Existence precedes essence.' Emphasized radical freedom and responsibility.",
-  "German philosopher associated with existential phenomenology. Known for his complex writings on ontology.",
-  "Philosopher of language with two influential phases. Wrote 'Tractatus Logico-Philosophicus' and 'Philosophical Investigations.'",
-  "Ancient Greek philosopher advocating for a life of tranquility through the pursuit of pleasure and avoidance of pain.",
-  "Analytical philosopher known for his critique of Cartesian dualism and the concept of 'category mistake.'",
-  "Contemporary philosopher focusing on popularizing philosophical ideas in everyday life.",
-  "Ancient Greek cynic philosopher who embraced a simple lifestyle and famously carried a lantern in daylight.",
-  "Pre-Socratic philosopher credited with seeking naturalistic explanations for the cosmos and predicting a solar eclipse.",
-  "Founder of Stoicism, promoting virtue as the highest good and teaching resilience in the face of adversity.",
-  "Ancient Greek skeptic who advocated for suspending judgment and finding tranquility in perpetual doubt.",
-  "Logical positivist known for contributions to the philosophy of language and the verification principle.",
-  "American philosopher challenging the analytic-synthetic distinction and advocating for naturalized epistemology.",
-  "Logical positivist known for 'Language, Truth, and Logic' and the verification principle.",
-  "Philosopher of science emphasizing falsifiability and known for the concept of the 'open society.'",
-  "Scottish empiricist and skeptic known for 'A Treatise of Human Nature' and critique of causation.",
-  "Political philosopher advocating for social contract theory and a strong central authority.",
-  "Political theorist known for 'The Prince,' emphasizing practical political strategies and realism.",
-  "Ancient Chinese philosopher and founder of Daoism, author of the 'Tao Te Ching.'",
-  "Ancient Chinese military strategist and philosopher known for 'The Art of War.'",
-  "German polymath and philosopher known for optimism, calculus, and the idea of monads.",
-  "Dutch philosopher advocating for pantheism and known for 'Ethics' and the idea of substance.",
-  "Medieval theologian integrating Aristotelian philosophy with Christian theology. Wrote 'Summa Theologica.'",
-  "Phenomenologist known for his method of bracketing and founding the philosophical movement of phenomenology.",
-  "Historical materialist and co-author of 'The Communist Manifesto,' advocating for class struggle.",
-  "Naturalist and biologist famous for 'On the Origin of Species,' introducing the theory of evolution.",
-  "Founder of psychoanalysis, exploring the unconscious mind and the Oedipus complex.",
-  "Swiss psychiatrist and psychoanalyst known for archetypes, collective unconscious, and analytical psychology.",
-  "French philosopher and mystic with contributions to political philosophy and Christian mysticism.",
-  "German idealist philosopher known for subjective idealism and the concept of the 'I.'",
-  "Existentialist philosopher declaring 'Existence precedes essence' and advocating for radical freedom.",
-  "Collaborator of Karl Marx and co-author of 'The Communist Manifesto,' emphasizing historical materialism.",
-  "Sociologist and philosopher known for his work on the Protestant Ethic, bureaucracy, and social action.",
-  "Author and political thinker known for '1984'. 
-  "Contemporary philosopher known for 'What Is It Like to Be a Bat?' and 'The View from Nowhere.'",
-    "Existentialist philosopher, feminist, and author of 'The Second Sex.' Partner of Jean-Paul Sartre.",
-    "Ancient Greek comic playwright known for works like 'Lysistrata.'",
-    "Islamic philosopher, jurist, and scientist. Contributed to political philosophy and metaphysics.",
-    "Political philosopher known for 'A Theory of Justice,' developing the concept of the original position.",
-    "Existentialist philosopher, feminist, and author of 'The Second Sex.' Partner of Jean-Paul Sartre.",
-    "Romanian philosopher known for his pessimistic views, including 'The Trouble with Being Born.'",
-    "Anthropologist and structuralist philosopher known for 'The Elementary Structures of Kinship.'",
-    "Analytical philosopher and critic of artificial intelligence. Notable for 'Chinese Room' argument.",
-    "German idealist philosopher known for dialectical method and 'The Phenomenology of Spirit.'",
-    "Ethical philosopher and critic of modernity. Author of 'After Virtue' and 'Whose Justice? Which Rationality?'",
-    "Frankfurt School theorist and critical theorist known for 'One-Dimensional Man.'",
-    "Contemporary philosopher and critical theorist associated with discourse ethics.",
-    "Pragmatist philosopher and psychologist. Known for 'The Varieties of Religious Experience.'",
-    "Philosopher and classicist known for her work in ethics, political philosophy, and emotions.",
-    "Existentialist philosopher and psychiatrist. Developed the concept of 'existential psychotherapy.'",
-    "Existentialist philosopher and playwright. Influential in the development of existentialist thought.",
-    "Political theorist known for 'Democracy in America' and analysis of the American political system.",
-    "Philosopher, theologian, and medical missionary. Won the Nobel Peace Prize for his humanitarian work.",
-    "Danish philosopher known for his existentialist writings, including 'Fear and Trembling.'",
-    "Early feminist philosopher and author of 'A Vindication of the Rights of Woman.'",
-    "Philosopher of science known for 'The Structure of Scientific Revolutions.'",
-    "Irish statesman, political theorist, and philosopher. Influential in conservative political thought.",
-    "Irish statesman, political theorist, and philosopher. Influential in conservative political thought.",
-    "African-American sociologist, historian, and civil rights activist. Co-founder of the NAACP.",
-    "Political philosopher and libertarian. Known for 'Anarchy, State, and Utopia.'",
-    "Medieval philosopher known for 'Occam's Razor' and nominalism.",
-    "Existentialist philosopher and psychiatrist. Developed the concept of 'existential psychotherapy.'",
-    "Philosopher known for the Gettier problem, challenging the traditional definition of knowledge.",
-    "Idealist philosopher known for his theory of subjective idealism and 'esse est percipi.'",
-    "Logical positivist and philosopher of science. Co-founder of the Vienna Circle.",
-    "French philosopher known for his duration theory and critique of scientific mechanism.",
-    "Austrian philosopher and physicist. Influential in the Vienna Circle and logical positivism.",
-    "Utilitarian philosopher and ethicist. Advocated for animal rights and effective altruism.",
-    "Analytical philosopher known for 'Principia Ethica' and the concept of the 'naturalistic fallacy.'",
-    "British mathematician and philosopher known for 'The Ethics of Belief.'",
-    "Austrian economist and social philosopher. Associated with the Austrian School of Economics.",
-    "Sociologist and philosopher known for the concept of 'totalitarianism.'",
-    "Logical positivist and philosopher known for 'Language, Truth, and Logic.'"*/
+  
   ];
   
 
@@ -262,6 +190,8 @@ playAnotherRound.addEventListener("click", function () {
   hideOrDisplay(endGameSection);
   hideOrDisplay(gameArea);
   letterInput.focus();
+  document.getElementById("quote").innerHTML = ""; // Clear the quote message
+
 });
 
 
@@ -292,23 +222,6 @@ function createGuessedNameArray(name) {
   }
   return guessedName;
 }
-
-
-/*function provideHint() {
-
-
-  for (let i = 0; i < names.length; i++) {
-    if (names[i].toLowerCase() === lowerCaseHiddenName) {
-      hintIndex = i;
-      break;
-    }
-  }
-
-  if (hintIndex !== -1 && hintIndex < hints.length) {
-    hintElement.textContent = `Hint: ${hints[hintIndex]}`;
-  }
-  console.log(hiddenName);
-}*/
 
 /** Displays hint when attempts left = 1 */
 function provideHint() {
