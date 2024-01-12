@@ -556,24 +556,29 @@ h1{
     margin-bottom: 30px; 
     margin-top: 10px;
   }
+  p {
+    font-size: 18px; 
   }
 
   
 
 /*........ larger screens .........*/
 @media only screen and (min-width: 1280px) {
-  #gameInstructions {
+#gameInstructions {
     position:fixed;
     top: 1rem;
     right: 1rem;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 4.5rem;
   margin-top: 20px;
   margin-bottom: 60px;
 }
-h2 {
-  font-size: 2rem;
+h2, #enterLetter {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem ;
 }
 #intro {
   padding-top: 0px;
