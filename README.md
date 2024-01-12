@@ -451,10 +451,10 @@ The website was tested on the following devices:
 | Bug                                                                                                                                         | Fix                                                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | Horizontal scroll on end game screen  | Misisng class "container fluid" from end game screen div   | ProvideHint function failing to display hint | Console log debugging revealed that hintIndex was not returning as true, reason being that the original names array was in lowercase and the hiddenName was being changed to uppercase. issue resolved by adding "to.lowercase" to hiddenName in hintIndex variable.                |
-|                                                                  |                             |
-|                                                       |               |
+| Message displayed when correct answer found was clashing with the quote message that is also displayed.                                                                  |                             | Added a unique id to the quote. 
+| On mobile devices in landscape orientation game is dominated by image and unplayable       |  Added media query targeting devices in landscape orientation.              |
 |   After tidying code game stopped functioning as expected. Letters that were in the guessed name were not being displayed.                                               |  I had moved the const letters variable into the global list of variables. The letter was not being converted to uppercase and therefore was not validating as true. Placing the letters variable back into the handleGuess function corrected the bug.                       |
-|                                                               |                                                   |
+| Failing html validator as section tag used without heading  | Changed to div elements instead                                                    |
 |                                                                       |  |
 |   |                              |
 |             |                             |
