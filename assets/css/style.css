@@ -560,6 +560,7 @@ h1{
     font-size: 18px; 
   }
 
+
   
 
 /*........ larger screens .........*/
@@ -570,26 +571,28 @@ h1{
     right: 1rem;
 }
 h1 {
-  font-size: 3.5rem;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  font-size: 3rem;
+  margin-top: 20px;
+  margin-bottom: 27px;
 }
 h2, #enterLetter {
-  font-size: 2.5rem;
-}
-h3 {
-  font-size: 2rem ;
+  font-size: 2rem;
 }
 #intro {
   padding-top: 0px;
   margin-top: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 #wordDisplay { 
   margin-bottom: 25px;
 }
 .buttonContainerDifficulty {
-  margin-top: 25px;
+  margin-top: 15px;
+}
+#philosopher1 {
+  max-height: 38%;
+  left: 50%; 
+  transform: translateX(-50%);
 }
 }
 
