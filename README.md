@@ -453,7 +453,7 @@ ProvideHint function failing to display hint | Console log debugging revealed th
 | Failing html validator as section tag used without heading  | Changed to div elements instead                                                    |
 Mobile landscape media query clashing with tablet media query  |     Moving the media query from bottom of style sheet to below mobile queries helped. Targeting problematic elements with more specific css using classes such as .heading for the game title did solve some of the issues, but left some unsolvable ones.  Adding max height 500px to the mobile orientation landscape media query stopped the clash with the tablet media query and resolved the issue.                              | 404 page scoring 95 on best practice lighthouse testing | Console logging an error from js script, removed script tag from 404 html to resolve problem. 
 | Parse error in css file   |  Css validator highlighted a parse error at line 597, unclosed media query on line 510 causing the problem. Closing it resolved the issue.                           
-|             |                             |
+| Empty H3 element containing wordDisplay returning a warning on html validator           | Added a non breaking space as content inside the heading element so as to give it content that does not impact on the visual representation of the wordDisplay.                             |
 
 ## Deployment
 
@@ -495,7 +495,7 @@ The website was deployed using GitHub Pages by following these steps:
 
 - [Instructions Modal](https://getbootstrap.com/docs/5.1/components/modal) was built using the Bootstrap v5.1.3 documentation
 - https://codepen.io/cathydutton/pen/JjpxMm was used for guidance only in putting together the basic guessing game.
- 
+
 
 ## Acknowledgements
 
