@@ -335,7 +335,7 @@ The website was tested on the following devices:
 <img src="docs/levelselect1.png">
 <img src="docs/level2.png">
 <img src="docs/level3.png">
-<img src="docs/levelselect4.png">
+<img src="docs/level4.png">
 </details>
 
 3. A hint function that displays on the final attempt at guessing the hidden thinker. 
