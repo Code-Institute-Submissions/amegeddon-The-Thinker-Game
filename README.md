@@ -413,7 +413,7 @@ The website was tested on the following devices:
 <img src="docs/levelselect1.png">
 <img src="docs/level2.png">
 <img src="docs/level3.png">
-<img src="docs/levelselect4.png">
+<img src="docs/level4.png">
 </details>
 
 10. Full Responsiveness: Designing the game to adapt effortlessly to various screen sizes and devices, ensuring accessibility for all users.
