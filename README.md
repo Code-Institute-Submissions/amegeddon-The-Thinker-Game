@@ -137,7 +137,7 @@
 ### Wireframes
 
 <details><summary>Laptop & desktop</summary>
-<img src="docs/desktopwireframe">
+<img src="docs/desktopwireframe.jpg">
 </details>
 <details><summary>Mobile</summary>
 <img src="docs/mobilewireframes">
