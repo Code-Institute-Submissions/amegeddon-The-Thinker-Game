@@ -426,9 +426,10 @@ The website was tested on the following devices:
 <img src="docs/galaxy fold.png">
 <img src="docs/ipad pro.png">
 <img src="docs/iphone SE.png">
-<img src="docs/iphone_se_landscape">
+<img src="docs/iphone_se_landscape.png">
+<img src="docs/iphone12_landscape.png">
 <img src="docs/nesthub.png">
-<img src="docs/samsung s20.png">
+<img src="docs/surfaceduo.png">
 <img src="docs/surfacepro7.png">
 </details>
 
