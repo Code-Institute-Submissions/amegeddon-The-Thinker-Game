@@ -136,14 +136,11 @@
 
 ### Wireframes
 
-<details><summary>Big screens - laptop & desktop</summary>
-<img src="">
+<details><summary>Laptop & desktop</summary>
+<img src="docs/desktopwireframes.jpg">
 </details>
-<details><summary>Medium screens - tablets</summary>
-<img src="">
-</details>
-<details><summary>Small screens - mobile</summary>
-<img src="">
+<details><summary>Mobile</summary>
+<img src="docs/mobilewireframes.jpg">
 </details>
 
 ## Technologies Used
