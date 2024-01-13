@@ -79,7 +79,7 @@
 
 1. Comprehensible Game Instuctions: instructions that are easy to grasp, ensuring a straightforward understanding of how to play the game.
 2. Adaptable Difficulty Levels: A feature allowing me to choose from various difficulty levels, tailoring the game's challenge to my preference.
-3. Dual Interaction Methods: The flexibility to engage with the game using both mouse clicks and keyboard inputs, providing a choice that suits my preferred playing style.
+3. A hint function that displays on the final attempt at guessing the hidden thinker. 
 4. Progress Tracking: A visual representation of my progress alongside the remaining number of attempts in each round, ensuring a clear understanding of my progress.
 5. Result Display: After successfully guessing a word, I would like to see a message of congratulations alongside a philosophical quote, adding a sense of achievement to the gameplay.
 6. After incorrectly guessing the word, I would like to immediately know what the correct answer was. 
@@ -338,11 +338,11 @@ The website was tested on the following devices:
 <img src="docs/levelselect4.png">
 </details>
 
-3. Dual Interaction Methods: The flexibility to engage with the game using both mouse clicks and keyboard inputs, providing a choice that suits my preferred playing style.
+3. A hint function that displays on the final attempt at guessing the hidden thinker. 
 
 | **Feature**             | **Action**                                                             | **Expected Result**                                                                                     | **Actual Result** |
 | ----------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ----------------- |
-| Event listener on keyboard enter to submit letter guess   | User can choose between clicking on the "submit letter" button or pressing enter on their keyboard. | Letter is successfully entered by both avenues and cursor returned to the input box for user convienence | Works as expected |
+| Provide hint function  | When attempts left equals one a hint is provided that gives a clue as to the hidden thinks identity | Hint is correctly displayed at last attempt | Works as expected |
 
 <details><summary>Screenshot</summary>
 <img src="docs/enterpress.png">
