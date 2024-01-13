@@ -195,7 +195,7 @@ The website has just the one webpage and utilises a hide or Display function to 
 - User stories covered: 3, 4, 7
 
 <details><summary>See feature</summary>
-<img src="docs/main game section.png">
+<img src="docs/main game screen.png">
 </details>
 
 
@@ -253,7 +253,7 @@ The website's HTML was validated using the W3C Markup Validation Service, with a
 </details>
 
 <details><summary>404 error page</summary>
-<img src="docs/404 error page.png">
+<img src="docs/404validator.png">
 </details>
 
 ### CSS Validation
