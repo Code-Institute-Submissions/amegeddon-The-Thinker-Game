@@ -495,7 +495,8 @@ The website was deployed using GitHub Pages by following these steps:
 
 ### Code
 
-- 
+- [Instructions Modal](https://getbootstrap.com/docs/5.1/components/modal) was built using the Bootstrap v5.1.3 documentation
+- https://codepen.io/cathydutton/pen/JjpxMm was used for guidance only in putting together the basic guessing game. 
 
 ## Acknowledgements
 
@@ -504,4 +505,4 @@ Thanks in plentiful supply for everyone who has put up with me cursing javascrip
 - to my mentor Richard for reminding me at every mentor meeting that Javascript is brilliant
 - and to everyone else that I have hounded into playing the game and giving me feedback
 - finally, thanks to the slack community for their encouragement and advice. 
-- and not forgetting the tutor team who have been able to point me in the right direction when a game bug looked impossibly unsolvable.
+
