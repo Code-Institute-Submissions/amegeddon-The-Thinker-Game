@@ -381,58 +381,6 @@ p {
     margin-top: 0px;
    }
 }
-
-/*........ Mobile devices in landscape orientation .........*/
-@media screen and (max-width: 1000px) and (orientation: landscape) and (max-height: 500px) {
-  .gameheading h1 {
-    font-size: 25px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-  }
-  #enterLetter {
-    font-size: 20px;
-    margin-bottom: 8px;
-    margin-top: 8px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  #philosopher1 {
-    max-height: 18%;
-    left: 50%; 
-    transform: translateX(-50%);
-  }
-  #philosopher {
-    display: none; 
-  }
-  #wordDisplay {
-    margin-bottom: 25px;
-    margin-top: 0px;
-  }
-  #gameInstructions {
-    margin-bottom: 10px;
-  }
-  #hint {
-    margin-bottom: 10px;
-  }
-  .message p{
-    top: 138px;
-  }
-  #quote {
-    font-size: 16px;
-    bottom: 60px;
-  }
-  #noCigar {
-    bottom: 80px;
-    font-size: 16px;
-  }
-  #yourProgress p {
-    margin-top: 10px;
-  }
-  button#PlayAnotherRound  {
-    bottom: 20px;
-  }
-  } 
   
 /* ...smaller tablet devices... */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -559,9 +507,7 @@ h1{
   p {
     font-size: 18px; 
   }
-
-
-  
+} 
 
 /*........ larger screens .........*/
 @media only screen and (min-width: 1280px) {
@@ -596,3 +542,54 @@ h2, #enterLetter {
 }
 }
 
+/* ........ Mobile devices in landscape orientation .........*/
+@media screen and (max-width: 1000px) and (orientation: landscape) and (max-height: 500px) {
+  .gameheading h1 {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  #enterLetter {
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #philosopher1 {
+    max-height: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #philosopher {
+    display: none;
+  }
+  #wordDisplay {
+    margin-bottom: 25px;
+    margin-top: 0px;
+  }
+  #gameInstructions {
+    margin-bottom: 10px;
+  }
+  #hint {
+    margin-bottom: 10px;
+  }
+  .message p {
+    top: 138px;
+  }
+  #quote {
+    font-size: 16px;
+    bottom: 60px;
+  }
+  #noCigar {
+    bottom: 80px;
+    font-size: 16px;
+  }
+  #yourProgress p {
+    margin-top: 10px;
+  }
+  button#PlayAnotherRound {
+    bottom: 20px;
+  }
+}
