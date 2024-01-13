@@ -345,8 +345,7 @@ The website was tested on the following devices:
 | Provide hint function  | When attempts left equals one a hint is provided that gives a clue as to the hidden thinks identity | Hint is correctly displayed at last attempt | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="docs/enterpress.png">
-<img src="docs/mouseclick.png">
+<img src="docs/hint.png">
 </details>
 
 4. Progress Tracking: A visual representation of my progress alongside the remaining number of attempts in each round, ensuring a clear understanding of my progress.
@@ -393,7 +392,7 @@ The website was tested on the following devices:
 <img src="docs/scoreboard2.png">
 </details>
 
-8. 8. Clear Game Understanding and navigation: Ensuring users easily comprehend the game mechanics for a seamless and enjoyable experience.
+8. Clear Game Understanding and navigation: Ensuring users easily comprehend the game mechanics for a seamless and enjoyable experience.
 
 | **Feature**        | **Action**                                                  | **Expected Result**             | **Actual Result** |
 | ------------------ | ----------------------------------------------------------- | ------------------------------- | ----------------- |
