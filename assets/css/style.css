@@ -479,9 +479,9 @@ h1{
     right: 1rem;
   }
   h1 {
-    margin-bottom: 38px;
+    margin-bottom: 35px;
     font-size: 43px;
-    margin-top: 47px;
+    margin-top: 35px;
   }
   h2 {
     font-size: 24px;
@@ -504,14 +504,14 @@ h1{
     margin-top: 200px;
   }
   #hint {
-    margin-bottom: 30px; 
-    margin-top: 10px;
+    margin-bottom: 10px; 
+    margin-top: 2px;
   }
   p {
     font-size: 18px; 
   }
   #philosopher1, #philosopher {
-    max-height: 25%;
+    max-height: 22%;
     left: 50%; 
     transform: translateX(-50%);
   }
