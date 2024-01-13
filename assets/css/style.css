@@ -1,6 +1,7 @@
 body {
   background: #daa520;
 }
+
 h1 {
   font-family: 'Poiret One', sans-serif;
   font-weight: bolder;
@@ -11,8 +12,8 @@ h1 {
   text-align: center;
   background-color: #e5d6c2;
   font-size: 3rem;
-  
 }
+
 h2 {
   font-family: 'Poiret One', sans-serif;
   font-weight: bolder;
@@ -23,14 +24,30 @@ h2 {
   text-align: center;
   font-size: 2rem;
 }
+
 p {
   margin: 0;
+  font-family: 'Lato', sans-serif;
+  
 }
+#philosopher1, #philosopher {
+  position: fixed;
+  bottom: 0; 
+  left: 0;
+
+}
+
+
+/* ..... Instructions Modal .....*/
 
 .modal-content {
   background-color: #363636;
   color: #daa520;   
 }
+
+
+
+/* ..... Main game screen .....*/
 
 #enterLetter {
   font-size: 2rem;
@@ -57,9 +74,7 @@ progress::-moz-progress-bar {
   background-color: #4caf50; 
   border-radius: 10px;
 }
-p {
-  font-family: 'Lato', sans-serif;
-}
+
 #message p {
   font-size: 1rem;
   font-family: 'Lato', sans-serif;
@@ -79,6 +94,25 @@ p {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
 }
+#wordDisplay {
+  font-size: 25px;
+  letter-spacing: 0.6rem;
+  white-space: pre;
+  margin-top: 1rem;
+}
+#hint {
+  font-weight: bold;
+  margin-top: 5px;
+}
+#backButton {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+
+/* ..... End game screen ..... */
+
+
 #quote {
   font-family: 'Lato', sans-serif;
   position: fixed;
@@ -107,31 +141,10 @@ p {
   top: 2%;
   left: 2%;
 }
-#wordDisplay {
-  font-size: 25px;
-  letter-spacing: 0.6rem;
-  white-space: pre;
-  margin-top: 1rem;
-}
 .hide {
   display: none;
 }
 
-#hint {
-  font-weight: bold;
-  margin-top: 5px;
-}
-#backButton {
-  position: absolute;
-  left: 2rem;
-  top: 2rem;
-}
-#philosopher1, #philosopher {
-  position: fixed;
-  bottom: 0; 
-  left: 0;
-
-}
 
 /* ....... small mobiles eg.galaxy fold .......*/
 @media only screen and (min-width: 260px) and (max-width: 300px) {
