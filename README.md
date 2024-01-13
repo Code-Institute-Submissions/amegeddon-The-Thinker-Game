@@ -274,7 +274,7 @@ JavaScript files were validated using the JSHint JS Validation Service, revealin
 
 ### Accessibility
 
-The WAVE WebAIM accessibility evaluation tool was utilized to ensure compliance with accessibility standards. No errors were identified, affirming the website's accessibility. An alert was identified, suggesting that the hidden word might be mistakenly perceived as a header. To enhance accessibility, an ARIA role of "text" and an ARIA level of "0" were implemented, ensuring that the hidden word is explicitly recognized as non-header content. However, the evaulation tool contiunes to flag the alert.
+The WAVE WebAIM accessibility evaluation tool was utilized to ensure compliance with accessibility standards. No errors were identified, affirming the website's accessibility. An alert was identified, suggesting that the hidden word might be mistakenly perceived as a header. To enhance accessibility, an ARIA role of "text" and an ARIA level of "0" were implemented, ensuring that the hidden word is explicitly recognized as non-header content. However, the evaulation tool contiuned to flag the alert, therefore I changed from div to a h3 element to resolve the issue.
 
 <details><summary>index.html</summary><img src="docs/wave.png"></details>
 <details><summary>404 error page</summary><img src="docs/wave404.png"></details>
@@ -494,7 +494,8 @@ The website was deployed using GitHub Pages by following these steps:
 ### Code
 
 - [Instructions Modal](https://getbootstrap.com/docs/5.1/components/modal) was built using the Bootstrap v5.1.3 documentation
-- https://codepen.io/cathydutton/pen/JjpxMm was used for guidance only in putting together the basic guessing game. 
+- https://codepen.io/cathydutton/pen/JjpxMm was used for guidance only in putting together the basic guessing game.
+ 
 
 ## Acknowledgements
 
