@@ -495,7 +495,8 @@ The website was deployed using GitHub Pages by following these steps:
 
 - [Instructions Modal](https://getbootstrap.com/docs/5.1/components/modal) was built using the Bootstrap v5.1.3 documentation
 - https://codepen.io/cathydutton/pen/JjpxMm was used for guidance only in putting together the basic guessing game.
-
+- For direction regarding readme structure and markdown formatting I referred to (https://aleksandracodes.github.io/CI_PP2_SunshineGuessing) by Aleksandra. 
+-  [w3schools](https://www.w3schools.com/js/js_timing.asp) was consulted to target media query at mobiles in landscape orientation. 
 
 ## Acknowledgements
 
