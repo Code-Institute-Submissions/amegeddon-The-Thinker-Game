@@ -137,10 +137,10 @@
 ### Wireframes
 
 <details><summary>Laptop & desktop</summary>
-<img src="docs/desktopwireframes.jpg">
+<img src="docs/desktopwireframes">
 </details>
 <details><summary>Mobile</summary>
-<img src="docs/mobilewireframes.jpg">
+<img src="docs/mobilewireframes">
 </details>
 
 ## Technologies Used
