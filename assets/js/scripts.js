@@ -243,14 +243,12 @@ function createGuessedNameArray(name) {
 
 /** Displays hint when attempts left = 1 */
 function provideHint() {
-  console.log('where is the hint!');
   const hintIndex = names.indexOf(hiddenName.toLowerCase());
 
 
   if (hintIndex !== -1 && hintIndex < hints.length) {
     hintElement.textContent = `Hint: ${hints[hintIndex]}`;
   }
-  console.log(hintIndex, hintElement.textContent, hiddenName);
 }
 
 /** Handles the guess and displays the appropiate message */
@@ -260,7 +258,6 @@ function handleGuess() {
     return;
   }
   if (attemptsLeft === 2) {
-    console.log('hint function called')
      provideHint();
    }
   
