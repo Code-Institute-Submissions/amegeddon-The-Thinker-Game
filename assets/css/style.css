@@ -479,13 +479,13 @@ h1{
     right: 1rem;
   }
   h1 {
-    margin-bottom: 68px;
+    margin-bottom: 38px;
     font-size: 43px;
     margin-top: 47px;
   }
   h2 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   #message p { 
     font-size: 18px;
@@ -509,6 +509,11 @@ h1{
   }
   p {
     font-size: 18px; 
+  }
+  #philosopher1, #philosopher {
+    max-height: 25%;
+    left: 50%; 
+    transform: translateX(-50%);
   }
 } 
 
