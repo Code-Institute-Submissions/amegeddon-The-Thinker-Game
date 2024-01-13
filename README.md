@@ -275,6 +275,7 @@ JavaScript files were validated using the JSHint JS Validation Service, revealin
 
 <details><summary>game.js</summary>
 <img src="docs/jsHint.png">
+</details>
 
 ### Accessibility
 
